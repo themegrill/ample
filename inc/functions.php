@@ -35,7 +35,7 @@ function ample_scripts() {
    wp_enqueue_style( 'ample-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300' );
 
    // Load fontawesome
-   wp_enqueue_style( 'ample-fontawesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.3.0' );
+   wp_enqueue_style( 'ample-fontawesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.6.1' );
 
    /**
    * Loads our main stylesheet.

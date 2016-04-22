@@ -54,6 +54,7 @@ and we will include it within the theme from next version update.
 == CHANGE LOG ==
 = Version 1.1.3 =
 * Fix - WooCommerce shop error fixed.
+* Tweaks - Updated Font Awesome to version 4.6.1.
 
 = Version 1.1.2 =
 * Tweaks - Theme information is properly organized in Customize panel.
