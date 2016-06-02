@@ -383,6 +383,9 @@ button:hover {
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
+.sub-toggle{
+   display: none;
+}
 
 /*
 ====> 5.1 Links
@@ -508,7 +511,7 @@ li.default-menu {
    background-color: #ffffff;
    left: -1px;
    position: absolute;
-   top: 70px;
+   top: 100%;
    width: 160px;
 }
 .main-navigation ul li .sub-menu a {
@@ -1819,32 +1822,52 @@ a#scroll-up:hover {
 /*--------------------------------------------------------------
 14.0 Responsive Structure
 --------------------------------------------------------------*/
-@media screen and (max-width: 1190px) {
-   #page {
-      width: 97%;
-   }
-   .wide #page {
-      width: 100%;
-   }
-   .inner-wrap {
-      width: 94%;
-   }
-   .business-template .widget.widget_call_to_action_block > .inner-wrap,
-   .business-template .widget.widget_portfolio_block > .inner-wrap {
-      width: 100%;
-   }
+    @media screen and (max-width: 1190px) {
+    #page {
+        width: 97%;
+    }
+    .wide #page {
+        width: 100%;
+    }
+    .inner-wrap {
+        width: 94%;
+    }
+    .business-template .widget.widget_call_to_action_block > .inner-wrap,
+    .business-template .widget.widget_portfolio_block > .inner-wrap {
+        width: 100%;
+    }
 }
+
 @media screen and (max-width: 768px) {
-   #header-left-section {
-      max-width: 80%;
-      margin-right: 0;
-   }
-   #header-right-section {
-      float: none;
-   }
-   #header-text {
-      padding-right: 0;
-   }
+    #site-navigation ul li .sub-menu {
+        display: none;
+    }
+    .main-small-navigation li {
+        position: relative;
+    }
+    .sub-toggle {
+        background-color: #19975D;
+        cursor: pointer;
+        display: block;
+        padding: 3px 10px;
+        position: absolute;
+        right: 11px;
+        top: 6px;
+    }
+    .sub-toggle .fa {
+        color: #fff;
+    }
+    #header-left-section {
+        max-width: 80%;
+        margin-right: 0;
+    }
+    #header-right-section {
+        float: none;
+    }
+    #header-text {
+        padding-right: 0;
+    }
+
    .big-slider .slider-entry-container {
       width: 80%;
    }
