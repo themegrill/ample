@@ -19,8 +19,7 @@ module.exports = function( grunt ){
 				'Gruntfile.js',
 				'<%= dirs.js %>/*.js',
 				'!<%= dirs.js %>/*.min.js',
-				'!<%= dirs.js %>/jquery.bxslider/jquery.bxslider.js',
-				'!<%= dirs.js %>/image-uploader.js'
+				'!<%= dirs.js %>/jquery.bxslider/jquery.bxslider.js'
 			]
 		},
 

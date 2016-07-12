@@ -139,16 +139,16 @@ class ample_service_widget extends WP_Widget {
       <textarea class="widefat" rows="10" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 
       <p>
-         <label for="<?php echo $this->get_field_id( 'image' ); ?>"> <?php _e( 'Image:', 'ample' ); ?> </label> <br />
-
-         <?php
-         if ( $image  != '' ) :
-            echo '<img id="' . $this->get_field_id( 'image' . 'preview') . '"src="' . $image . '"style="max-width: 250px;" /><br />';
-         endif;
-         ?>
-         <input type="text" class="widefat custom_media_url" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" value="<?php echo $image; ?>" style="margin-top:5px;"/>
-
-         <input type="button" class="button button-primary custom_media_button" id="custom_media_button_services" name="<?php echo $this->get_field_name( 'image' ); ?>" value="Upload Image" style="margin-top:5px; margin-right: 30px;" onclick="imageWidget.uploader( '<?php echo $this->get_field_id( 'image' ); ?>' ); return false;"/>
+         <label for="<?php echo $this->get_field_id( 'image' ); ?>"> <?php esc_html_e( 'Image:', 'ample' ); ?> </label> <br />
+         <div class="media-uploader" id="<?php echo $this->get_field_id( 'image' ); ?>">
+	         <div class="custom_media_preview">
+	            <?php if ( $image != '' ) : ?>
+	               <img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'image' ] ); ?>" style="max-width:100%;" />
+	            <?php endif; ?>
+	         </div>
+	         <input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" value="<?php echo esc_url( $instance[ 'image' ] ); ?>" style="margin-top:5px;" />
+	         <button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'image' ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'ample' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'ample' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'ample' ); ?></button>
+	      </div>
       </p>
 
       <p>
@@ -317,16 +317,16 @@ class ample_portfolio_widget extends WP_Widget {
       </p>
 
       <p>
-         <label for="<?php echo $this->get_field_id( 'background_image' ); ?>"> <?php _e( 'Image:', 'ample' ); ?> </label> <br />
-
-         <?php
-         if ( $background_image  != '' ) :
-            echo '<img id="' . $this->get_field_id( 'background_image' . 'preview') . '"src="' . $background_image . '"style="max-width:250px;" /><br />';
-         endif;
-         ?>
-         <input type="text" class="widefat custom_media_url" id="<?php echo $this->get_field_id( 'background_image' ); ?>" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="<?php echo $background_image; ?>" style="margin-top:5px;"/>
-
-         <input type="button" class="button button-primary custom_media_button" id="custom_media_button_portfolio" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="Upload Image" style="margin-top:5px; margin-right: 30px;" onclick="imageWidget.uploader( '<?php echo $this->get_field_id( 'background_image' ); ?>' ); return false;"/>
+         <label for="<?php echo $this->get_field_id( 'background_image' ); ?>"> <?php esc_html_e( 'Background Image:', 'ample' ); ?> </label> <br />
+         <div class="media-uploader" id="<?php echo $this->get_field_id( 'background_image' ); ?>">
+	         <div class="custom_media_preview">
+	            <?php if ( $background_image != '' ) : ?>
+	               <img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'background_image' ] ); ?>" style="max-width:100%;" />
+	            <?php endif; ?>
+	         </div>
+	         <input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'background_image' ); ?>" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="<?php echo esc_url( $instance[ 'background_image' ] ); ?>" style="margin-top:5px;" />
+	         <button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'background_image' ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'ample' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'ample' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'ample' ); ?></button>
+	      </div>
       </p>
 
       <p>
@@ -653,7 +653,7 @@ class ample_call_to_action_widget extends WP_Widget {
       $instance = wp_parse_args( (array) $instance, $ample_defaults );
 
       $background_color = esc_attr( $instance[ 'background_color' ] );
-      $text_additional = esc_url_raw( $instance[ 'background_image' ] );
+      $background_image = esc_url_raw( $instance[ 'background_image' ] );
       $bg_attachment = $instance[ 'bg_attachment' ];
       $text_main = esc_textarea( $instance[ 'text_main' ] );
       $button_text = esc_attr( $instance[ 'button_text' ] );
@@ -666,16 +666,16 @@ class ample_call_to_action_widget extends WP_Widget {
       </p>
 
       <p>
-         <label for="<?php echo $this->get_field_id( 'background_image' ); ?>"> <?php _e( 'Image:', 'ample' ); ?> </label> <br />
-
-         <?php
-         if ( $instance[ 'background_image' ]  != '' ) :
-            echo '<img id="' . $this->get_field_id( 'background_image' . 'preview') . '"src="' . $instance[ 'background_image' ] . '"style="max-width:250px;" /><br />';
-         endif;
-         ?>
-         <input type="text" class="widefat custom_media_url" id="<?php echo $this->get_field_id( 'background_image' ); ?>" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="<?php echo $instance[ 'background_image' ]; ?>" style="margin-top:5px;"/>
-
-         <input type="button" class="button button-primary custom_media_button" id="custom_media_button_action" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="Upload Image" style="margin-top:5px; margin-right: 30px;" onclick="imageWidget.uploader( '<?php echo $this->get_field_id( 'background_image' ); ?>' ); return false;"/>
+         <label for="<?php echo $this->get_field_id( 'background_image' ); ?>"> <?php esc_html_e( 'Background Image:', 'ample' ); ?> </label> <br />
+         <div class="media-uploader" id="<?php echo $this->get_field_id( 'background_image' ); ?>">
+	         <div class="custom_media_preview">
+	            <?php if ( $background_image != '' ) : ?>
+	               <img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'background_image' ] ); ?>" style="max-width:100%;" />
+	            <?php endif; ?>
+	         </div>
+	         <input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'background_image' ); ?>" name="<?php echo $this->get_field_name( 'background_image' ); ?>" value="<?php echo esc_url( $instance[ 'background_image' ] ); ?>" style="margin-top:5px;" />
+	         <button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'background_image' ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'ample' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'ample' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'ample' ); ?></button>
+	      </div>
       </p>
 
       <p>
