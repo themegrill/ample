@@ -653,7 +653,7 @@ class ample_call_to_action_widget extends WP_Widget {
       $instance = wp_parse_args( (array) $instance, $ample_defaults );
 
       $background_color = esc_attr( $instance[ 'background_color' ] );
-      $text_additional = esc_url_raw( $instance[ 'background_image' ] );
+      $background_image = esc_url_raw( $instance[ 'background_image' ] );
       $bg_attachment = $instance[ 'bg_attachment' ];
       $text_main = esc_textarea( $instance[ 'text_main' ] );
       $button_text = esc_attr( $instance[ 'button_text' ] );
