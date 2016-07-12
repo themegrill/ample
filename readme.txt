@@ -53,7 +53,7 @@ and we will include it within the theme from next version update.
 
 == CHANGE LOG ==
 = Version 1.1.4 =
-* changed enhance for media uploader used in widgets.
+* Tweaks - Enhancement for the media uploader scripts used in widgets.
 
 = Version 1.1.3 =
 * Fix - WooCommerce shop error fixed.
