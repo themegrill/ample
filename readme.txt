@@ -29,7 +29,7 @@ Ample is distributed under the terms of the GNU GPL
 == THEME USAGE ==
 
 = Theme Instruction =
-Get theme instruction at http://themegrill.com/theme-instruction/ample
+Get theme instruction at http://docs.themegrill.com/ample/
 
 = Free Support =
 Get free support at http://themegrill.com/support-forum
@@ -40,8 +40,7 @@ All available options can be used from Appearance->Theme Options
 /**********************************************************/
 
 == TRANSLATIONS ==
-If you've translated this theme into your language, feel free to send the translation over to themegrill@gmail.com
-and we will include it within the theme from next version update.
+If you want to translate this theme to your language, Please visit:- https://translate.wordpress.org/projects/wp-themes/ample
 
 /**********************************************************/
 
@@ -52,6 +51,10 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == CHANGE LOG ==
+= Version - 2016-09-01 =
+* Feature - Added RTL support.
+* Feature - Theme is now compatible with WooCommerce.
+
 = Version 1.1.4 =
 * Tweaks - Enhancement for the media uploader scripts used in widgets.
 

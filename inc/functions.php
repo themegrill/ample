@@ -582,6 +582,4 @@ function ample_wrapper_end() {
    ample_sidebar_select();
    echo '</div></div>';
 }
-
-add_theme_support( 'woocommerce' );
 ?>

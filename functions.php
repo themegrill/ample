@@ -64,6 +64,9 @@ function ample_setup() {
 	//Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 
+	// Added WooCommerce support.
+   add_theme_support( 'woocommerce' );
+
    // Cropping the images to different sizes to be used in the theme
 	add_image_size( 'ample-featured-blog-large', 710, 300, true );
 	add_image_size( 'ample-featured-blog-small', 230, 230, true );
