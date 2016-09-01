@@ -134,25 +134,12 @@ require_once( get_template_directory() . '/inc/customizer.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
- * Adding Admin Menu for theme options
+ * Assign the Ample version to a variable.
  */
-add_action( 'admin_menu', 'ample_theme_options_menu' );
+$theme            = wp_get_theme( 'ample' );
+$ample_version = $theme['Version'];
 
-function ample_theme_options_menu() {
-
-   add_theme_page( 'Theme Options', 'Theme Options', 'manage_options', 'ample-theme-options', 'ample_theme_options' );
-
-}
-function ample_theme_options() {
-
-   if ( !current_user_can( 'manage_options' ) )  {
-      wp_die( __( 'You do not have sufficient permissions to access this page.', 'ample' ) );
-   } ?>
-
-   <h1 class="ample-theme-options"><?php _e( 'Theme Options', 'ample' ); ?></h1>
-   <?php
-   printf( __('<p style="font-size: 16px; max-width: 800px";>As our themes are hosted on WordPress repository, we need to follow the WordPress theme guidelines and as per the new guiedlines we have migrated all our Theme Options to Customizer.</p><p style="font-size: 16px; max-width: 800px";>We too think this is a better move in the long run. All the options are unchanged, it is just that they are moved to customizer. So, please use this <a href="%1$s">link</a> to customize your site. If you have any issues then do let us know via our <a href="%2$s">Contact form</a></p>', 'ample'),
-      esc_url(admin_url( 'customize.php' ) ),
-      esc_url('http://themegrill.com/contact/')
-   );
+/* Calling in the admin area for the Welcome Page */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/class-ample-admin.php';
 }
