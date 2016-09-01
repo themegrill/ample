@@ -50,7 +50,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 /**********************************************************/
 
-== CHANGE LOG ==
+== Changelog ==
 = Version - 2016-09-01 =
 * Feature - Added RTL support.
 * Feature - Theme is now compatible with WooCommerce.
