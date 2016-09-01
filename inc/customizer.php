@@ -625,8 +625,8 @@ function ample_customize_register($wp_customize) {
          //Add Theme instruction, Support Forum, Demo Link, Rating Link
          $important_links = array(
             'theme-info' => array(
-               'link' => esc_url('http://themegrill.com/themes/ample/'),
-               'text' => __('Theme Info', 'ample'),
+               'link' => esc_url('http://themegrill.com/themes/ample-pro/'),
+               'text' => __('View Pro', 'ample'),
             ),
             'support' => array(
                'link' => esc_url('http://themegrill.com/support-forum/'),
@@ -732,20 +732,6 @@ add_action('customize_register', 'ample_customize_register');
 
 /*****************************************************************************************/
 
-/**
- * Enqueue scripts for customizer
- */
-function ample_customizer_js() {
-   wp_enqueue_script( 'ample_customizer_script', get_template_directory_uri() . '/js/ample_customizer.js', array("jquery"), 'false', true  );
-
-   wp_localize_script( 'ample_customizer_script', 'ample_customizer_obj', array(
-
-      'pro' => __('View PRO version','ample')
-
-   ) );
-}
-add_action( 'customize_controls_enqueue_scripts', 'ample_customizer_js' );
-
 /*
  * Custom Scripts
  */
@@ -758,7 +744,7 @@ function ample_customizer_custom_scripts() { ?>
 	li#accordion-section-ample_important_links h3.accordion-section-title:hover { background-color: #80ABC8 !important; color: #fff !important; }
 	li#accordion-section-ample_important_links h3.accordion-section-title:after { color: #fff !important; }
 	/* Upsell button CSS */
-	.themegrill-pro-info,
+
 	.customize-control-ample-important-links a {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8fc800+0,8fc800+100;Green+Flat+%232 */
 		background: #008EC2;
@@ -774,7 +760,6 @@ function ample_customizer_custom_scripts() { ?>
 		padding: 8px 0;
 	}
 
-	.themegrill-pro-info:hover,
 	.customize-control-ample-important-links a:hover {
 		color: #ffffff;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
