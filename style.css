@@ -417,6 +417,9 @@ a:focus, a:active, a:hover {
    position: relative;
    padding: 0 20px;
 }
+.sub-toggle{
+   display: none;
+}
 .main-navigation ul > li {
 }
 .main-navigation ul#menu-primary > li:last-child {
@@ -1867,6 +1870,22 @@ a#scroll-up:hover {
    .slide-next {
       margin-right: 8px;
    }
+   .sub-menu {
+  display: none;
+}
+   .main-small-navigation li{
+      position: relative;
+   }
+   .sub-toggle {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  display: block;
+  top: 6px;
+  color: #fff;
+  padding: 0 7px;
+  background-color: #000;
+}
    .menu-toggle,
    .main-navigation.toggled .menu-primary-container {
       display: block;
