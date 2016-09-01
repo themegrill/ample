@@ -1,0 +1,411 @@
+caption,
+th,
+td {
+    text-align: right;
+}
+
+li > ul,
+li > ol {
+    margin: 0 20px 0 0;
+}
+
+blockquote {
+    border-right: 3px solid #80abc8;
+}
+
+input.s {
+    padding: 4px 10px 4px 54px;
+}
+
+input.s:focus {
+    padding-right: 10px;
+}
+
+.main-navigation {
+    float: left;
+    padding-left: 10px;
+}
+
+.main-navigation li {
+    float: right;
+}
+
+.main-navigation ul#menu-primary > li:last-child {
+    margin-left: 15px;
+}
+
+.main-navigation a {
+    float: right;
+}
+
+.main-navigation li.menu-item-has-children > a:after,
+.main-navigation li li.menu-item-has-children > a:after,
+.main-navigation li.page_item_has_children > a:after,
+.main-navigation li li.page_item_has_children > a:after {
+    padding-right: 6px;
+}
+
+.main-navigation li li.menu-item-has-children > a:after,
+.main-navigation li li.page_item_has_children > a:after {
+    left: 8px;
+}
+
+.main-navigation ul li ul {
+    right: -1px;
+}
+
+.main-navigation ul li ul li {
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+}
+
+.main-navigation ul li ul li ul {
+    right: 158px;
+}
+
+.alignleft {
+    float: right;
+    margin-left: 30px;
+}
+
+.alignright {
+    float: left;
+    margin-right: 30px;
+}
+
+.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.big-slider .slider-entry-container {
+    right: 0;
+    left: 0;
+}
+
+.big-slider-wrapper .bx-wrapper .bx-viewport {
+    right: 0;
+}
+
+.slide-prev {
+    margin-right: 20px;
+}
+
+.slide-next {
+    left: 0;
+    right: auto;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.slide-prev a,
+.slide-next a {
+    transform: rotate(180deg);
+}
+
+.fa.search-top {
+    left: 0;
+    right: auto;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.search-wrap button {
+    margin-right: -2px;
+    left: 0;
+}
+
+.search-form-top {
+    left: 0;
+}
+
+.not-found .search-wrap button {
+    left: 175px;
+}
+
+.header-post-title-container .post-title-wrapper {
+    float: right;
+    padding-left: 30px;
+}
+
+#secondary .search-wrap button,
+#tertiary .search-wrap button {
+    left: 26px;
+    right: auto;
+}
+
+.both-sidebar #secondary .search-wrap button,
+.both-sidebar #tertiary .search-wrap button {
+    left: 0;
+}
+
+.call-to-action-button {
+    margin-right: 60px;
+}
+
+.single-post-image-wrap {
+    float: right;
+    margin-left: 20px;
+}
+
+.widget_featured_posts_block .single-post .entry-title {
+    margin: 0 0 6px 0;
+}
+
+.moving-box {
+    right: 0;
+    left: 0;
+}
+
+.view-detail a {
+    right: 0;
+    left: 0;
+}
+
+.portfolio-container .tg-one-fourth {
+    float: right;
+}
+
+.single-portfolio.tg-one-fourth.tg-one-fourth-last.tg-column-even {
+    margin-left: 0;
+}
+
+.breadcrumb {
+    float: left;
+    text-align: left;
+}
+
+#header-left-section {
+    float: right;
+    margin-left: 25px;
+}
+
+#header-logo-image {
+    float: right;
+    padding: 5px 0 5px 20px;
+}
+
+#header-text {
+    float: right;
+    padding-left: 20px;
+}
+
+#header-right-section {
+    float: left;
+}
+
+#primary {
+    float: right;
+}
+
+#secondary {
+    float: left;
+}
+
+.left-sidebar #primary {
+    float: left;
+}
+
+.left-sidebar #tertiary {
+    float: right;
+}
+
+.both-sidebar #primary #content {
+    float: left;
+}
+
+.both-sidebar #primary #tertiary {
+    float: right;
+}
+
+.tg-one-half {
+    float: right;
+    margin: 0 0 0 3.63636363%;
+}
+
+.tg-one-half-last {
+    float: left;
+    margin: 0;
+}
+
+.tg-one-third {
+    float: right;
+    margin: 0 0 0 3.63636363%;
+}
+
+.tg-one-third-last {
+    float: left;
+    margin-left: 0;
+}
+
+.tg-one-fourth {
+    float: right;
+    margin: 0 0 0 2.72727272%;
+}
+
+.entry-content ul,
+.entry-content ol {
+    padding: 0 20px 0 0;
+}
+
+.date-icon,
+.author-icon {
+    float: right;
+}
+
+.entry-meta > span {
+    padding-left: 15px;
+}
+
+.entry-meta .fa {
+    padding-left: 5px;
+}
+
+.default-wp-page li.previous {
+    float: right;
+}
+
+.default-wp-page li.next {
+    float: left;
+}
+
+.next {
+    float: left;
+}
+
+.nav-previous a {
+    float: right;
+}
+
+.nav-next a {
+    float: left;
+}
+
+#comments i {
+    padding-left: 10px;
+}
+
+.avatar {
+    float: right;
+}
+
+.comments-area .comment-edit-link,
+.comments-area .comment-permalink,
+.comments-area .comment-date-time,
+.comments-area .comment-author-link {
+    margin-right: 100px;
+}
+
+.comments-area .comment-author-link span {
+    margin-right: 10px;
+}
+
+.comments-area article header .comment-edit-link:before {
+    padding-left: 10px;
+}
+
+.comment ul,
+.comment ol {
+    margin: 0 20px 20px 0;
+}
+
+.comment .comment-reply-link {
+    float: left;
+}
+
+.comment .comment-reply-link:before {
+    padding-left: 10px;
+}
+
+.comment-list .children {
+    margin-right: 40px;
+}
+
+.comment-respond small {
+    float: left;
+}
+
+.copyright-info ul li {
+    float: right;
+    margin-right: 25px;
+}
+
+.extra-info {
+    float: left !important;
+}
+
+#colophon-box {
+    float: right;
+    margin-left: 4%;
+}
+
+.footer-widgets-area .tg-one-fourth .widget-title {
+    text-align: right;
+}
+
+.footer-widgets-area .tg-one-fourth p {
+    text-align: right;
+}
+
+.copyright-info {
+    float: right;
+    padding-left: 10px;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.footer-nav ul li {
+    padding-right: 10px;
+}
+
+a#scroll-up {
+    left: 20px;
+    right: auto;
+}
+
+@media screen and (max-width:768px) {
+    #header-left-section {
+        margin-left: 0;
+    }
+    #header-text {
+        padding-left: 0;
+    }
+    .slide-prev {
+        margin-right: 8px;
+    }
+    .slide-next {
+        margin-left: 8px;
+    }
+    .menu-toggle {
+        left: 48px;
+    }
+    .menu-primary-container ul ul li {
+        padding-left: 0;
+    }
+    .single-post-image-wrap {
+        margin-left: 0;
+    }
+    .footer-widgets-wrapper .tg-column-odd,
+    .widget_portfolio_block .tg-column-odd {
+        float: right;
+    }
+    .footer-widgets-wrapper .tg-column-even,
+    .widget_portfolio_block .tg-column-even {
+        float: left;
+        margin-left: 0;
+    }
+    .copyright-info {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .slide-prev {
+        margin-right: 4px;
+    }
+    .slide-next {
+        margin-left: 4px;
+    }
+}
