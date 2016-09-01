@@ -345,6 +345,7 @@ function ample_body_class( $classes ) {
    if( is_page_template( 'page-templates/template-business.php' ) ) {
       $classes[] = 'business-template';
    }
+   $classes[] = 'better-responsive-menu';
 
    return $classes;
 }
