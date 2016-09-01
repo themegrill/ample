@@ -214,7 +214,7 @@ function ample_custom_css() {
    if( $primary_color != '#80abc8' ) {
       $ample_internal_css = '.main-navigation .menu>ul>li.current_page_ancestor,.main-navigation .menu>ul>li.current_page_item,.main-navigation .menu>ul>li:hover,.main-navigation ul.menu>li.current-menu-ancestor,.main-navigation ul.menu>li.current-menu-item,.main-navigation ul.menu>li:hover,blockquote,.services-header h2,.slider-button:hover,.portfolio-button:hover,.call-to-action-button:hover,.read-btn a:hover, .single-page p a:hover, .single-page p a:hover,.read-btn a{border-color :'.$primary_color.'}a,.big-slider .entry-title a:hover,.main-navigation :hover,
 .main-navigation li.menu-item-has-children:hover>a:after,.main-navigation li.page_item_has_children:hover>a:after,.main-navigation ul li ul li a:hover,.main-navigation ul li ul li:hover>a,.main-navigation ul li.current-menu-ancestor a,.main-navigation ul li.current-menu-ancestor a:after,.main-navigation ul li.current-menu-item a,.main-navigation ul li.current-menu-item a:after,.main-navigation ul li.current-menu-item ul li a:hover,.main-navigation ul li.current_page_ancestor a,.main-navigation ul li.current_page_ancestor a:after,.main-navigation ul li.current_page_item a,.main-navigation ul li.current_page_item a:after,.main-navigation ul li:hover>a,#secondary .widget li a,#tertiary .widget li a,.fa.search-top,.widget_service_block h5 a:hover,.single-post-content a,.single-post-content .entry-title a:hover,.single-header h2,.single-page p a,.single-service span i,#colophon .copyright-info a:hover,#colophon .footer-nav ul li a:hover,#colophon a:hover,.comment .comment-reply-link:before,.comments-area article header .comment-edit-link:before,.copyright-info ul li a:hover,.footer-widgets-area a:hover,.menu-toggle:before,a#scroll-up i{color:'.$primary_color.'}#site-title a:hover,.hentry .entry-title a:hover,#comments i,.comments-area .comment-author-link a:hover,.comments-area a.comment-edit-link:hover,.comments-area a.comment-permalink:hover,.comments-area article header cite a:hover,.entry-meta .fa,.entry-meta a:hover,.nav-next a,.nav-previous a,.next a,.previous a{color:'.$primary_color.'}.ample-button,button,input[type=button],input[type=reset],input[type=submit],.comments-area .comment-author-link span,.slide-next,.slide-prev,.header-post-title-container,.read-btn a:hover,.single-service:hover .icons,.moving-box a,.slider-button:hover,.portfolio-button:hover,.call-to-action-button:hover,.ample-button, input[type="reset"], input[type="button"], input[type="submit"], button{background-color:'.$primary_color.'}.ample-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover{background-color:'.$primary_dark.'} .read-btn a:hover,.single-page p a:hover,.single-page p a:hover,.previous a:hover, .next a:hover,.tags a:hover,.fa.search-top:hover{color:'.$primary_dark.'}.single-service:hover .icons, .moving-box a{background:'.$primary_opacity.'}.read-btn a:hover{color:#ffffff}.woocommerce ul.products li.product .onsale,.woocommerce span.onsale,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{ background-color: '.$primary_color.';}.woocommerce ul.products li.product .price .amount, .entry-summary .price .amount,
-   .woocommerce .woocommerce-message::before{color: '.$primary_color.';} .woocommerce .woocommerce-message{border-top-color: '.$primary_color.';}';
+   .woocommerce .woocommerce-message::before{color: '.$primary_color.';} .woocommerce .woocommerce-message{border-top-color: '.$primary_color.';}.better-responsive-menu .sub-toggle{background:'.$primary_dark.'}';
    }
 
    if( ample_option( 'ample_header_title_background_image' ) ) {
@@ -335,6 +335,9 @@ function ample_body_class( $classes ) {
    elseif( $layout_meta == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
    elseif( $layout_meta == 'both_sidebar' ) { $classes[] = 'both-sidebar'; }
 
+   if( ample_option( 'ample_new_menu_enable', '1' ) == '1' ) {
+      $classes[] = 'better-responsive-menu';
+   }
    if( ample_option( 'ample_site_layout', 'wide' ) == 'wide' ) {
       $classes[] = 'wide';
    }
@@ -345,7 +348,6 @@ function ample_body_class( $classes ) {
    if( is_page_template( 'page-templates/template-business.php' ) ) {
       $classes[] = 'business-template';
    }
-   $classes[] = 'better-responsive-menu';
 
    return $classes;
 }

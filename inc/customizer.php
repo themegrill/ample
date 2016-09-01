@@ -61,6 +61,26 @@ function ample_customize_register($wp_customize) {
       )
    ));
 
+   // New Responsive Menu
+   $wp_customize->add_section('ample_new_menu', array(
+      'priority' => 25,
+      'title'    => __('Responsive Menu Style', 'ample'),
+      'panel'    => 'ample_header'
+   ));
+
+   $wp_customize->add_setting('ample[ample_new_menu_enable]', array(
+      'default'           => '1',
+      'type'              => 'option',
+      'capability'        => 'edit_theme_options',
+      'sanitize_callback' => 'ample_sanitize_checkbox'
+   ));
+
+   $wp_customize->add_control('ample[ample_new_menu_enable]', array(
+      'type'    => 'checkbox',
+      'label'   => __('Switch to new responsive menu.', 'ample'),
+      'section' => 'ample_new_menu'
+   ));
+
    // Header Title Bar Background Image upload option
 	$wp_customize->add_section('ample_header_title_bar', array(
 		'title'     => __( 'Header Title Bar Background Image', 'ample' ),
