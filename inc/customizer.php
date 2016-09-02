@@ -625,11 +625,11 @@ function ample_customize_register($wp_customize) {
          //Add Theme instruction, Support Forum, Demo Link, Rating Link
          $important_links = array(
          	'view-pro' => array(
-               'link' => esc_url('http://themegrill.com/themes/ample-pro/'),
+               'link' => esc_url('http://themegrill.com/themes/ample/'),
                'text' => __('View Pro', 'ample'),
             ),
             'theme-info' => array(
-               'link' => esc_url('http://themegrill.com/themes/ample-pro/'),
+               'link' => esc_url('http://themegrill.com/themes/ample/'),
                'text' => __('Theme Info', 'ample'),
             ),
             'support' => array(
