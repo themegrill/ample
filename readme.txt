@@ -51,11 +51,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version - 2016-09-01 =
+= Version 1.1.4 - 2016-09-02 =
 * Feature - Added RTL support.
 * Feature - Theme is now compatible with WooCommerce.
-
-= Version 1.1.4 =
 * Tweaks - Enhancement for the media uploader scripts used in widgets.
 
 = Version 1.1.3 =
