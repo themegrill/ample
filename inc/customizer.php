@@ -624,9 +624,13 @@ function ample_customize_register($wp_customize) {
       public function render_content() {
          //Add Theme instruction, Support Forum, Demo Link, Rating Link
          $important_links = array(
-            'theme-info' => array(
+         	'view-pro' => array(
                'link' => esc_url('http://themegrill.com/themes/ample-pro/'),
                'text' => __('View Pro', 'ample'),
+            ),
+            'theme-info' => array(
+               'link' => esc_url('http://themegrill.com/themes/ample-pro/'),
+               'text' => __('Theme Info', 'ample'),
             ),
             'support' => array(
                'link' => esc_url('http://themegrill.com/support-forum/'),
