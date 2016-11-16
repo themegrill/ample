@@ -585,4 +585,16 @@ function ample_wrapper_end() {
    ample_sidebar_select();
    echo '</div></div>';
 }
+// Displays the site logo
+ if ( ! function_exists( 'ample_the_custom_logo' ) ) {
+ 	/**
+ 	 * Displays the optional custom logo.
+ 	 */
+ 	function ample_the_custom_logo() {
+ 		if ( function_exists( 'the_custom_logo' )  && ( ample_option( 'ample_header_logo_image','' ) == '') ) {
+ 			the_custom_logo();
+ 		}
+ 	}
+ }
+
 ?>
