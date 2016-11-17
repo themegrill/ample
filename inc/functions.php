@@ -594,7 +594,7 @@ function ample_site_icon_migrate() {
 		return;
 	}
 
-	$image_url = ample_option( 'ample_favicon', '' );
+	$image_url = ample_option( 'ample_favicon_', '' );
 
 	if ( ! has_site_icon() && ! empty( $image_url ) ) {
 		$customizer_site_icon_id = attachment_url_to_postid( $image_url );
@@ -605,4 +605,5 @@ function ample_site_icon_migrate() {
 		delete_option( 'theme_mods_ample', 'ample_favicon' );
 	}
 }
+add_action( 'after_setup_theme', 'ample_site_icon_migrate' );
 ?>
