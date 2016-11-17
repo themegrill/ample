@@ -150,7 +150,7 @@ function ample_favicon() {
    if ( ample_option( 'ample_activate_favicon', '0' ) == '1' ) {
       $ample_favicon = ample_option( 'ample_favicon', '' );
       $ample_favicon_output = '';
-      if ( !empty( $ample_favicon ) ) {
+      if ( !empty( $ample_favicon ) && !has_site_icon() ) {
          $ample_favicon_output .= '<link rel="shortcut icon" href="'.esc_url( $ample_favicon ).'" type="image/x-icon" />';
       }
       echo $ample_favicon_output;
@@ -584,5 +584,25 @@ function ample_inner_wrapper_end() {
 function ample_wrapper_end() {
    ample_sidebar_select();
    echo '</div></div>';
+}
+
+/**
++ * Function to transfer the favicon added in Customizer Options of theme to Site Icon in Site Identity section
++ */
+function ample_site_icon_migrate() {
+	if ( get_option( 'ample_site_icon_transfer' ) ) {
+		return;
+	}
+
+	$image_url = get_theme_mod( 'ample_favicon_upload', '' );
+
+	if ( ! has_site_icon() && ! empty( $image_url ) ) {
+		$customizer_site_icon_id = attachment_url_to_postid( $image_url );
+		update_option( 'site_icon', $customizer_site_icon_id );
+		// Set the transfer as complete.
+		update_option( 'ample_site_icon_transfer', 1 );
+		// Delete the old favicon theme_mod option.
+		delete_option( 'theme_mods_ample', 'ample_favicon' );
+	}
 }
 ?>
