@@ -594,7 +594,7 @@ function ample_site_icon_migrate() {
 		return;
 	}
 
-	$image_url = get_theme_mod( 'ample_favicon_upload', '' );
+	$image_url = ample_option( 'ample_favicon', '' );
 
 	if ( ! has_site_icon() && ! empty( $image_url ) ) {
 		$customizer_site_icon_id = attachment_url_to_postid( $image_url );
