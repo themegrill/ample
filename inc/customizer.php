@@ -500,7 +500,7 @@ function ample_customize_register($wp_customize) {
       'title' => __('Additional', 'ample')
    ));
 
-   	if ( !has_site_icon() && ( ample_option( 'ample_favicon', '' ) != '' ) ) {
+	if ( ! function_exists( 'has_site_icon' ) || ( ! has_site_icon() && ( ample_option( 'ample_favicon', '' ) == '' ) ) ) {
 
 		// Favicon Activate Option
 		$wp_customize->add_section('ample_favicon_setting', array(
@@ -536,7 +536,6 @@ function ample_customize_register($wp_customize) {
 				'settings' 	=> 'ample[ample_favicon]'
 			))
 		);
-
 	}
 
 	// Multicheck Custom Control
