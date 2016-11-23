@@ -52,8 +52,8 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 
-= Version TBD =
-* Feature - Added backward compatibility for Site Icon introduced in WordPress 4.3
+= Version 1.1.5  TBD =
+* Feature - Added support for Site Icon introduced in WordPress 4.3
 
 = Version 1.1.4 - 2016-09-02 =
 * Feature - Added RTL support.
