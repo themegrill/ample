@@ -52,8 +52,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 
-= Version TBD =
-* Feature - Add support for Custom Logo introduced in WordPress 4.5
+= Version 1.1.5  TBD =
+* Feature - Added the Custom Site Logo feature introduced in WordPress 4.5
+* Feature - Added support for Site Icon introduced in WordPress 4.3
 
 = Version 1.1.4 - 2016-09-02 =
 * Feature - Added RTL support.

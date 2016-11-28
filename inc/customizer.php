@@ -502,40 +502,43 @@ function ample_customize_register($wp_customize) {
       'title' => __('Additional', 'ample')
    ));
 
-	// Favicon Activate Option
-	$wp_customize->add_section('ample_favicon_setting', array(
-		'title'     => __( 'Favicon', 'ample' ),
-		'priority'  => 10,
-  		'panel' => 'ample_additional_options'
-	));
+	if ( ! function_exists( 'has_site_icon' ) || ( ! has_site_icon() && ( ample_option( 'ample_favicon', '' ) == '' ) ) ) {
 
-	$wp_customize->add_setting('ample[ample_activate_favicon]',	array(
-		'default' => 0,
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
-		'sanitize_callback' => 'ample_sanitize_checkbox'
-	));
-	$wp_customize->add_control('ample[ample_activate_favicon]',	array(
-		'type' => 'checkbox',
-		'label' => __('Check to activate favicon. Upload fav icon from below option', 'ample' ),
-		'section' => 'ample_favicon_setting'
-	));
+		// Favicon Activate Option
+		$wp_customize->add_section('ample_favicon_setting', array(
+			'title'     => __( 'Favicon', 'ample' ),
+			'priority'  => 10,
+	  		'panel' => 'ample_additional_options'
+		));
 
-	// Fav icon upload option
-	$wp_customize->add_setting('ample[ample_favicon]', array(
-		'default' => '',
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
-      'sanitize_callback' => 'ample_sanitize_url',
-      'sanitize_js_callback' => 'ample_sanitize_js_url'
-	));
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control($wp_customize, 'ample[ample_favicon]', array(
-			'label' 		=> __( 'Upload favicon for your site.', 'ample' ),
-			'section' 	=> 'ample_favicon_setting',
-			'settings' 	=> 'ample[ample_favicon]'
-		))
-	);
+		$wp_customize->add_setting('ample[ample_activate_favicon]',	array(
+			'default' => 0,
+	      'capability' => 'edit_theme_options',
+	      'type' => 'option',
+			'sanitize_callback' => 'ample_sanitize_checkbox'
+		));
+		$wp_customize->add_control('ample[ample_activate_favicon]',	array(
+			'type' => 'checkbox',
+			'label' => __('Check to activate favicon. Upload fav icon from below option', 'ample' ),
+			'section' => 'ample_favicon_setting'
+		));
+
+		// Fav icon upload option
+		$wp_customize->add_setting('ample[ample_favicon]', array(
+			'default' => '',
+	      'capability' => 'edit_theme_options',
+	      'type' => 'option',
+	      'sanitize_callback' => 'ample_sanitize_url',
+	      'sanitize_js_callback' => 'ample_sanitize_js_url'
+		));
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control($wp_customize, 'ample[ample_favicon]', array(
+				'label' 		=> __( 'Upload favicon for your site.', 'ample' ),
+				'section' 	=> 'ample_favicon_setting',
+				'settings' 	=> 'ample[ample_favicon]'
+			))
+		);
+	}
 
 	// Multicheck Custom Control
 	class AMPLE_Controls_MultiCheck_Control extends WP_Customize_Control {
