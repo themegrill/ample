@@ -51,6 +51,10 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+
+= Version TBD =
+* Feature - Add support for Custom Logo introduced in WordPress 4.5
+
 = Version 1.1.4 - 2016-09-02 =
 * Feature - Added RTL support.
 * Feature - Theme is now compatible with WooCommerce.
