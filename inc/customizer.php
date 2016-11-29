@@ -359,6 +359,7 @@ function ample_customize_register($wp_customize) {
    	))
    );
 
+if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
    // Custom CSS setting
    class AMPLE_Custom_CSS_Control extends WP_Customize_Control {
 
@@ -394,6 +395,7 @@ function ample_customize_register($wp_customize) {
 	      'settings' => 'ample[ample_custom_css]'
    	))
    );
+  }
    // End of the Design Options
 
  /**************************************************************************************/
