@@ -635,7 +635,7 @@ add_action( 'after_setup_theme', 'ample_site_icon_migrate' );
  */
 function ample_custom_css_migrate() {
 	if ( function_exists( 'wp_update_custom_css_post' ) ) {
-		$custom_css = ample_options( 'ample_custom_css' );
+		$custom_css = ample_option( 'ample_custom_css' );
 		if ( $custom_css ) {
 			$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
 			$return = wp_update_custom_css_post( $core_css . $custom_css );
