@@ -359,43 +359,43 @@ function ample_customize_register($wp_customize) {
    	))
    );
 
-if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
-   // Custom CSS setting
-   class AMPLE_Custom_CSS_Control extends WP_Customize_Control {
+	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
+		// Custom CSS setting
+		class AMPLE_Custom_CSS_Control extends WP_Customize_Control {
 
-      public $type = 'custom_css';
+		  public $type = 'custom_css';
 
-      public function render_content() {
-      ?>
-         <label>
-            <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-            <textarea rows="5" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
-         </label>
-      <?php
-      }
-   }
+		  public function render_content() {
+		  ?>
+		     <label>
+		        <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+		        <textarea rows="5" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
+		     </label>
+		  <?php
+		  }
+		}
 
-   $wp_customize->add_section('ample_custom_css_setting', array(
-      'priority' => 60,
-      'title' => __('Custom CSS', 'ample'),
-      'panel' => 'ample_design_options'
-   ));
+		$wp_customize->add_section('ample_custom_css_setting', array(
+		  'priority' => 60,
+		  'title' => __('Custom CSS', 'ample'),
+		  'panel' => 'ample_design_options'
+		));
 
-   $wp_customize->add_setting('ample[ample_custom_css]', array(
-      'default' => '',
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
-      'sanitize_callback' => 'wp_filter_nohtml_kses',
-      'sanitize_js_callback' => 'wp_filter_nohtml_kses'
-   ));
-   $wp_customize->add_control(
-   	new AMPLE_Custom_CSS_Control($wp_customize, 'ample[ample_custom_css]', array(
-	      'label' => __('Write your custom css.', 'ample'),
-	      'section' => 'ample_custom_css_setting',
-	      'settings' => 'ample[ample_custom_css]'
-   	))
-   );
-  }
+		$wp_customize->add_setting('ample[ample_custom_css]', array(
+		  'default' => '',
+		  'capability' => 'edit_theme_options',
+		  'type' => 'option',
+		  'sanitize_callback' => 'wp_filter_nohtml_kses',
+		  'sanitize_js_callback' => 'wp_filter_nohtml_kses'
+		));
+		$wp_customize->add_control(
+			new AMPLE_Custom_CSS_Control($wp_customize, 'ample[ample_custom_css]', array(
+		      'label' => __('Write your custom css.', 'ample'),
+		      'section' => 'ample_custom_css_setting',
+		      'settings' => 'ample[ample_custom_css]'
+			))
+		);
+	}
    // End of the Design Options
 
  /**************************************************************************************/

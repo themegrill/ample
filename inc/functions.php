@@ -629,20 +629,32 @@ function ample_site_icon_migrate() {
 }
 add_action( 'after_setup_theme', 'ample_site_icon_migrate' );
 
+
 /**
  * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
  */
 function ample_custom_css_migrate() {
-    if ( function_exists( 'wp_update_custom_css_post' ) ) {
-        $custom_css = ample_option( 'ample_custom_css' );
-        if ( $custom_css ) {
-            $core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
-            $return = wp_update_custom_css_post( $core_css . $custom_css );
-            if ( ! is_wp_error( $return ) ) {
-                // Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
-                remove_theme_mod( 'ample_custom_css' );
-            }
-        }
-    }
+	if ( function_exists( 'wp_update_custom_css_post' ) ) {
+		$custom_css = ample_options( 'ample_custom_css' );
+		if ( $custom_css ) {
+			$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
+			$return = wp_update_custom_css_post( $core_css . $custom_css );
+
+			if ( ! is_wp_error( $return ) ) {
+
+				$theme_options = get_option( 'ample' );
+
+				// Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
+				foreach ( $theme_options as $option_key => $option_value ) {
+					if ( in_array( $option_key, array( 'ample_custom_css' ) ) ) {
+						unset( $theme_options[ $option_key ] );
+					}
+				}
+				// Finally, update ample theme options.
+				update_option( 'ample', $theme_options );
+			}
+		}
+	}
 }
+
 add_action( 'after_setup_theme', 'ample_custom_css_migrate' );
