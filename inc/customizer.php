@@ -15,7 +15,7 @@ function ample_customize_register($wp_customize) {
       'priority' => 300
    ));
 
-    if ( !function_exists('the_custom_logo') || ( ample_option('ample_header_logo_image', '') != '' ) ) {
+    if ( ! function_exists('the_custom_logo') ) {
 	    // Header Logo upload option
 		$wp_customize->add_section('ample_header_logo', array(
 			'title'     => __( 'Header Logo', 'ample' ),
