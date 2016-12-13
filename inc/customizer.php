@@ -15,7 +15,7 @@ function ample_customize_register($wp_customize) {
       'priority' => 300
    ));
 
-    if ( !function_exists('the_custom_logo') || ( ample_option('ample_header_logo_image', '') != '' ) ) {
+    if ( ! function_exists('the_custom_logo') ) {
 	    // Header Logo upload option
 		$wp_customize->add_section('ample_header_logo', array(
 			'title'     => __( 'Header Logo', 'ample' ),
@@ -504,7 +504,7 @@ function ample_customize_register($wp_customize) {
       'title' => __('Additional', 'ample')
    ));
 
-	if ( ! function_exists( 'has_site_icon' ) || ( ! has_site_icon() && ( ample_option( 'ample_favicon', '' ) == '' ) ) ) {
+	if ( ! function_exists( 'has_site_icon' ) || ( ! has_site_icon() && ( ample_option( 'ample_favicon', '' ) != '' ) ) ) {
 
 		// Favicon Activate Option
 		$wp_customize->add_section('ample_favicon_setting', array(

@@ -629,6 +629,30 @@ function ample_site_icon_migrate() {
 }
 add_action( 'after_setup_theme', 'ample_site_icon_migrate' );
 
+/**
+ * Function to transfer the Header Logo added in Customizer Options of theme to Site Logo in Site Identity section
+ */
+function ample_site_logo_migrate() {
+	if ( function_exists( 'the_custom_logo' ) && ! has_custom_logo( $blog_id = 0 ) ) {
+		$logo_url = ample_option( 'ample_header_logo_image' );
+
+		if ( $logo_url ) {
+			$customizer_site_logo_id = attachment_url_to_postid( $logo_url );
+			set_theme_mod( 'custom_logo', $customizer_site_logo_id );
+
+			// Delete the old Site Logo theme_mod option.
+			$theme_options = get_option( 'ample' );
+
+			if ( isset( $theme_options[ 'ample_header_logo_image' ] ) ) {
+				unset( $theme_options[ 'ample_header_logo_image' ] );
+			}
+
+			// Finally, update ample theme options.
+			update_option( 'ample', $theme_options );
+		}
+	}
+}
+add_action( 'after_setup_theme', 'ample_site_logo_migrate' );
 
 /**
  * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
@@ -656,5 +680,4 @@ function ample_custom_css_migrate() {
 		}
 	}
 }
-
 add_action( 'after_setup_theme', 'ample_custom_css_migrate' );
