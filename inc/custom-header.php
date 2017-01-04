@@ -17,15 +17,16 @@
 add_action( 'after_setup_theme', 'ample_custom_header_setup' );
 
 function ample_custom_header_setup() {
-   add_theme_support( 'custom-header', apply_filters( 'ample_custom_header_args', array(
-      'default-image'          => '',
-      'default-text-color'     => '222222',
-      'width'                  => 1500,
-      'height'                 => 400,
-      'flex-width'             => false,
-      'flex-height'            => true,
-      'wp-head-callback'       => 'ample_header_style',
-   ) ) );
+	add_theme_support( 'custom-header', apply_filters( 'ample_custom_header_args', array(
+		'default-image'			=> '',
+		'default-text-color'	=> '222222',
+		'width'					=> 1500,
+		'height'				=> 400,
+		'flex-width'			=> false,
+		'flex-height'			=> true,
+		'video'					=> true,
+		'wp-head-callback'		=> 'ample_header_style',
+	) ) );
 }
 
 if ( ! function_exists( 'ample_header_style' ) ) :

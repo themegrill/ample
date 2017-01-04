@@ -52,18 +52,41 @@ function ample_featured_image_slider() { ?>
 endif;
 
 /****************************************************************************************/
+// Filter the get_header_image_tag() for option of displaying the header image in old way
+function ample_header_image_markup( $html, $header, $attr ) {
+	$output = '';
+	$header_image = get_header_image();
+
+	if ( ! empty( $header_image ) ) {
+		$output .= '<img src="' . esc_url( $header_image ) . '" class="header-image" width="' . get_custom_header()->width . '" height="' . get_custom_header()->height . '" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
+	}
+
+	return $output;
+}
+
+function ample_header_image_markup_filter() {
+	add_filter( 'get_header_image_tag', 'ample_header_image_markup', 10, 3 );
+}
+
+add_action( 'ample_header_image_markup_render','ample_header_image_markup_filter' );
+
+/****************************************************************************************/
 
 if ( ! function_exists( 'ample_render_header_image' ) ) :
 /**
  * Display the header image.
  */
 function ample_render_header_image() {
-   $header_image = get_header_image();
-   if( !empty( $header_image ) ) {
-   ?>
-      <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-   <?php
-   }
+	if ( function_exists( 'the_custom_header_markup' ) ) {
+		do_action( 'ample_header_image_markup_render' );
+		the_custom_header_markup();
+	} else {
+		$header_image = get_header_image();
+		if ( ! empty( $header_image ) ) { ?>
+			<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+			<?php
+		}
+	}
 }
 endif;
 
