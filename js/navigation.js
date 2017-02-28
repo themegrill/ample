@@ -44,3 +44,15 @@ jQuery(document).ready(function() {
         jQuery(this).toggleClass('active');
     });
 });
+
+jQuery(document).on('click', '#site-navigation .menu li.menu-item-has-children > a', function(event) {
+    menuClass = jQuery(this).parent('.menu-item-has-children');
+    console.log('clicked');
+    if (! menuClass.hasClass('focus')){
+        menuClass.addClass('focus');
+        event.preventDefault();
+        menuClass.children('.sub-menu').css({
+           'display': 'block'
+        });
+    }
+  });
