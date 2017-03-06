@@ -151,3 +151,9 @@ $ample_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
 }
+/**
+* Load Demo Importer Configs.
+*/
+if ( class_exists( 'TG_Demo_Importer' ) ) {
+	require get_template_directory() . '/inc/demo-config.php';
+}
