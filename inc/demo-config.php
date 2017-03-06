@@ -22,7 +22,7 @@ function ample_demo_importer_packages( $packages ) {
 	$new_packages = array(
 		'ample-free' => array(
 			'name'    => esc_html__( 'Ample', 'ample' ),
-			'preview' => 'http://demo.themegrill.com/ample/',
+			'preview' => 'https://demo.themegrill.com/ample/',
 		),
 	);
 
