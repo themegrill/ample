@@ -53,6 +53,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 == Changelog ==
 = Version TBD =
 * Added - Support for Video Headers introduced in WordPress 4.7.
+* Feature - Added compatibility for ThemeGrill Demo Importer plugin
 
 = Version 1.1.5 - 2016-12-23 =
 * Tweaks - Updated Font Awessome to `v.4.7.0` for new icon  support.

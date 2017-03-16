@@ -142,6 +142,13 @@ require_once( get_template_directory() . '/inc/customizer.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
+ * Load Demo Importer Configs.
+ */
+if ( class_exists( 'TG_Demo_Importer' ) ) {
+	require get_template_directory() . '/inc/demo-config.php';
+}
+
+/**
  * Assign the Ample version to a variable.
  */
 $theme            = wp_get_theme( 'ample' );
@@ -150,10 +157,4 @@ $ample_version = $theme['Version'];
 /* Calling in the admin area for the Welcome Page */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
-}
-/**
-* Load Demo Importer Configs.
-*/
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
 }
