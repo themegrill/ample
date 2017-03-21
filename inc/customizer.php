@@ -632,27 +632,27 @@ function ample_customize_register($wp_customize) {
          //Add Theme instruction, Support Forum, Demo Link, Rating Link
          $important_links = array(
          	'view-pro' => array(
-               'link' => esc_url('http://themegrill.com/themes/ample/'),
+               'link' => esc_url('https://themegrill.com/themes/ample/'),
                'text' => __('View Pro', 'ample'),
             ),
             'theme-info' => array(
-               'link' => esc_url('http://themegrill.com/themes/ample/'),
+               'link' => esc_url('https://themegrill.com/themes/ample/'),
                'text' => __('Theme Info', 'ample'),
             ),
             'support' => array(
-               'link' => esc_url('http://themegrill.com/support-forum/'),
+               'link' => esc_url('https://themegrill.com/support-forum/'),
                'text' => __('Free Support', 'ample'),
             ),
             'documentation' => array(
-               'link' => esc_url('http://themegrill.com/theme-instruction/ample/'),
+               'link' => esc_url('https://themegrill.com/theme-instruction/ample/'),
                'text' => __('Documentation', 'ample'),
             ),
             'demo' => array(
-               'link' => esc_url('http://demo.themegrill.com/ample/'),
+               'link' => esc_url('https://demo.themegrill.com/ample/'),
                'text' => __('View Demo', 'ample'),
             ),
             'rating' => array(
-               'link' => esc_url('http://wordpress.org/support/view/theme-reviews/ample?filter=5'),
+               'link' => esc_url('https://wordpress.org/support/view/theme-reviews/ample?filter=5'),
                'text' => __('Rate this theme', 'ample'),
             ),
          );

@@ -127,11 +127,11 @@ class Ample_Admin {
 		</div>
 
 		<p class="ample-actions">
-			<a href="<?php echo esc_url( 'http://themegrill.com/themes/ample/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( 'https://themegrill.com/themes/ample/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'ample' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://demo.themegrill.com/ample/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://demo.themegrill.com/ample/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'ample' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
 
 			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://wordpress.org/support/view/theme-reviews/ample?filter=5#postform' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'ample' ); ?></a>
 		</p>
@@ -189,25 +189,25 @@ class Ample_Admin {
 					<div class="col">
 						<h3><?php esc_html_e( 'Documentation', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'ample' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://docs.themegrill.com/ample/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'ample' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://docs.themegrill.com/ample/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Got theme support question?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'ample' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'ample' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Need more features?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'ample' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/themes/ample-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/themes/ample-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Got sales related question?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please send it via our sales contact page.', 'ample' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
@@ -470,7 +470,7 @@ class Ample_Admin {
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'ample' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'ample' ); ?></a>
 						</td>
 				</tbody>
 			</table>

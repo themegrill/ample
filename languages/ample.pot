@@ -987,7 +987,7 @@ msgid "Right"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://themegrill.com/themes/ample/"
+msgid "https://themegrill.com/themes/ample/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -995,12 +995,12 @@ msgid ""
 "Ample is a multipurpose responsive WordPress theme made to help you create "
 "a beautiful professional looking site in no time. It has numerous built-in "
 "options to give your site the look that you want. Get free support at "
-"http://themegrill.com/support-forum/ and check the demo at "
-"http://demo.themegrill.com/ample/"
+"https://themegrill.com/support-forum/ and check the demo at "
+"https://demo.themegrill.com/ample/"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://themegrill.com"
+msgid "https://themegrill.com"
 msgstr ""
 
 #. Template Name of the plugin/theme

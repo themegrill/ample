@@ -6,9 +6,8 @@
  * @subpackage Ample
  * @since Ample 0.1
  */
-?>
 
-<?php get_header();
+ get_header();
 
    do_action( 'ample_before_body_content' ); ?>
 

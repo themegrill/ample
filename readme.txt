@@ -1,6 +1,6 @@
 == Ample ==
 
-Ample is a multipurpose responsive WordPress theme made to help you create a beautiful professional looking site in no time. It has numerous built-in options to give your site the look that you want. Get free support at http://themegrill.com/support-forum/ and check the demo at http://demo.themegrill.com/ample/
+Ample is a multipurpose responsive WordPress theme made to help you create a beautiful professional looking site in no time. It has numerous built-in options to give your site the look that you want. Get free support at https://themegrill.com/support-forum/ and check the demo at https://demo.themegrill.com/ample/
 
 /**********************************************************/
 
@@ -29,10 +29,10 @@ Ample is distributed under the terms of the GNU GPL
 == THEME USAGE ==
 
 = Theme Instruction =
-Get theme instruction at http://docs.themegrill.com/ample/
+Get theme instruction at https://docs.themegrill.com/ample/
 
 = Free Support =
-Get free support at http://themegrill.com/support-forum
+Get free support at https://themegrill.com/support-forum
 
 = Theme Features Usage =
 All available options can be used from Appearance->Theme Options
