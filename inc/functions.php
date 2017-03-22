@@ -130,7 +130,7 @@ function ample_footer_copyright() {
 
    $wp_link = '<a href="' . 'http://wordpress.org' . '" target="_blank" title="' . esc_attr__( 'WordPress', 'ample' ) . '"><span>' . __( 'WordPress', 'ample' ) . '</span></a>';
 
-   $tg_link =  '<a href="'. 'http://themegrill.com/themes/ample' .'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'ample' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'ample') .'</span></a>';
+   $tg_link =  '<a href="'. 'https://themegrill.com/themes/ample' .'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'ample' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'ample') .'</span></a>';
 
    $default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'ample' ), date( 'Y' ), $site_link ).' '.sprintf( __( 'Powered by %s.', 'ample' ), $wp_link ).' '.sprintf( __( 'Theme: %1$s by %2$s.', 'ample' ), 'Ample', $tg_link );
 
