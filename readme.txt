@@ -54,6 +54,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 = Version TBD =
 * Added - Support for Video Headers introduced in WordPress 4.7.
 * Feature - Added compatibility for ThemeGrill Demo Importer plugin
+* Tweaks - Add theme support for WooCommerce 3.0's new gallery feature
 
 = Version 1.1.5 - 2016-12-23 =
 * Tweaks - Updated Font Awessome to `v.4.7.0` for new icon  support.

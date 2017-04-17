@@ -65,7 +65,10 @@ function ample_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Added WooCommerce support.
-   add_theme_support( 'woocommerce' );
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
 
    // Cropping the images to different sizes to be used in the theme
 	add_image_size( 'ample-featured-blog-large', 710, 300, true );
