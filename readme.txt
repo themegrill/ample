@@ -51,7 +51,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.1.6 - 2017-04-27 =
 * Added - Support for Video Headers introduced in WordPress 4.7.
 * Feature - Added compatibility for ThemeGrill Demo Importer plugin
 * Tweaks - Add theme support for WooCommerce 3.0's new gallery feature
