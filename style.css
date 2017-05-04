@@ -1906,10 +1906,12 @@ iframe#wp-custom-header-video {
 		font-size: 12px;
 		padding: 10px 14px;
 		letter-spacing: 1px;
+	}.slide-prev a, .slide-next a{
+		padding: 0;
 	}
 	.slide-prev a:before, .slide-next a:before {
 		font-size: 24px;
-		padding: 14px 18px;
+		padding: 5px 20px;
 	}
 	.slide-prev {
 		margin-left: 8px;
@@ -2069,7 +2071,7 @@ iframe#wp-custom-header-video {
 	}
 	.slide-prev a:before, .slide-next a:before {
 		font-size: 18px;
-		padding: 6px 12px;
+		padding: 5px 15px;
 	}
 	.slide-prev {
 		margin-left: 4px;
