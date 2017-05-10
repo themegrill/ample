@@ -17,6 +17,7 @@ Resources packed within the theme.
    http://pixabay.com/en/office-freelancer-computer-business-583839/
 * The BxSlider is licensed under MIT link:
    https://github.com/stevenwanderski/bxslider-4
+* TGM-Plugin-Activation by Thomas Griffin, Gary Jones, Juliette Reinders Folmer | GPL v2 Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3
@@ -51,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.1.7 - 2017-05-10 =
 * Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
 
 = Version 1.1.6 - 2017-04-27 =
