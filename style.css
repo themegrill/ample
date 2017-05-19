@@ -826,6 +826,10 @@ img#wpstats {
 	padding: 10px 24px;
 	display: block;
 }
+.big-slider-wrapper .bx-wrapper{
+box-shadow: none;
+border:none;
+}
 
 /*
 ====> 10.2 Search Design
