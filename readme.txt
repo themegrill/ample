@@ -53,6 +53,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 = Version TBD =
+* Tweak - Add theme support for Jetpack Responsive Videos.
 * Tweaks - Introduce selective refresh for site title and description
 
 = Version 1.1.7 - 2017-05-10 =

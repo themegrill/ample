@@ -681,3 +681,10 @@ function ample_custom_css_migrate() {
 	}
 }
 add_action( 'after_setup_theme', 'ample_custom_css_migrate' );
+
+/**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require_once get_template_directory() . '/inc/jetpack.php';
+}
