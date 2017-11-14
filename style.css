@@ -554,6 +554,9 @@ li.default-menu {
 	display: none;
 }
 
+.main-navigation ul li.focus > ul.sub-menu {
+	display: block;
+}
 /*
 ====> 5.4 Responsive Menu
 --------------------------------------------------------------*/
