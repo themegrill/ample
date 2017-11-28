@@ -1961,7 +1961,8 @@ iframe#wp-custom-header-video {
 		position: absolute;
 		top: -10px;
 	}
-	.menu-primary-container {
+	.menu-primary-container,
+	.nav-menu {
 		clear: both;
 	}
 	.menu-primary-container > ul > li > a,
@@ -1969,7 +1970,8 @@ iframe#wp-custom-header-video {
 		line-height: 50px;
 		height: 88px;
 	}
-	.menu-primary-container ul ul li {
+	.menu-primary-container ul ul li,
+	.nav-menu ul ul li {
 		padding-right: 0;
 	}
 	.menu-primary-container > ul > li > a,
@@ -1977,7 +1979,8 @@ iframe#wp-custom-header-video {
 		height: auto;
 		line-height: 1;
 	}
-	#masthead .menu-primary-container li a {
+	#masthead .menu-primary-container li a,
+	#masthead .nav-menu li a {
 		border-bottom: 1px solid #f8f8f8;
 		color: #777777;
 		display: block;
