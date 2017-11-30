@@ -447,7 +447,9 @@ li.default-menu {
 .main-navigation .menu > ul > li.current_page_item,
 .main-navigation .menu > ul > li.current_page_ancestor,
 .main-navigation ul.menu > li:hover,
-.main-navigation .menu > ul > li:hover {
+.main-navigation ul.menu > li.focus,
+.main-navigation .menu > ul > li:hover,
+.main-navigation .menu > ul > li.focus {
 	border-top: 2px solid #80abc8;
 	margin-top: -2px;
 }
@@ -461,8 +463,11 @@ li.default-menu {
 .main-navigation ul li.current_page_ancestor a,
 .main-navigation ul li.current_page_ancestor a:after,
 .main-navigation ul li:hover > a,
+.main-navigation ul li.focus > a,
 .main-navigation li.menu-item-has-children:hover > a:after,
 .main-navigation li.page_item_has_children:hover > a:after,
+.main-navigation ul li.focus.menu-item-has-children > a:after,
+.main-navigation ul li.focus.page_item_has_children > a:after,
 .main-navigation ul.menu li.current-menu-ancestor ul li.current-menu-item> a {
 	color: #80abc8;
 }
@@ -493,19 +498,12 @@ li.default-menu {
 /*
 ====> 5.3 Primary Menu Dropdown
 --------------------------------------------------------------*/
-.main-navigation ul li ul,
-.main-navigation ul li:hover ul ul,
-.main-navigation ul ul li:hover ul ul,
-.main-navigation ul ul ul li:hover ul ul,
-.main-navigation ul ul ul ul li:hover ul ul {
+.main-navigation ul li ul {
 	display:none;
 	z-index: 9999;
 }
-.main-navigation ul li:hover ul,
-.main-navigation ul ul li:hover ul,
-.main-navigation ul ul ul li:hover ul,
-.main-navigation ul ul ul ul li:hover ul,
-.main-navigation ul ul ul ul ul li:hover ul {
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
 	display:block;
 }
 .main-navigation ul li ul {
@@ -554,9 +552,6 @@ li.default-menu {
 	display: none;
 }
 
-.main-navigation ul li.focus > ul.sub-menu {
-	display: block;
-}
 /*
 ====> 5.4 Responsive Menu
 --------------------------------------------------------------*/
