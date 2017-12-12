@@ -185,13 +185,14 @@ function ample_customize_register($wp_customize) {
 	$wp_customize->add_section('ample_site_layout_setting', array(
 		'title'     => __( 'Site Layout', 'ample' ),
 		'priority'  => 10,
-		'panel' => 'ample_design_options'
+		'panel'     => 'ample_design_options'
 	));
 
 	$wp_customize->add_setting('ample[ample_site_layout]', array(
-      'default' => 'wide',
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
+      'default'           => 'wide',
+      'capability'        => 'edit_theme_options',
+      'transport'         => 'postMessage',
+      'type'              => 'option',
       'sanitize_callback' => 'ample_radio_sanitize'
    ));
    $wp_customize->add_control('ample[ample_site_layout]', array(
