@@ -111,7 +111,11 @@ function ample_widgets_init() {
  */
 class ample_service_widget extends WP_Widget {
    function __construct() {
-      $widget_ops = array( 'classname' => 'widget_service_block', 'description' => __( 'Show your some pages as services.', 'ample' ) );
+      $widget_ops = array(
+         'classname' => 'widget_service_block',
+         'description' => __( 'Show your some pages as services.', 'ample' ),
+         'customize_selective_refresh' => true,
+      );
       $control_ops = array( 'width' => 200, 'height' =>250 );
       parent::__construct( false, $name = __( 'TG: Service Widget', 'ample' ), $widget_ops, $control_ops);
    }
@@ -282,7 +286,11 @@ class ample_service_widget extends WP_Widget {
 class ample_portfolio_widget extends WP_Widget {
 
    function __construct() {
-      $widget_ops = array( 'classname' => 'widget_portfolio_block', 'description' => __( 'Display portfolio by using specific category', 'ample') );
+      $widget_ops = array(
+         'classname'                   => 'widget_portfolio_block',
+         'description'                 => __( 'Display portfolio by using specific category', 'ample'),
+         'customize_selective_refresh' => true,
+      );
       $control_ops = array( 'width' => 200, 'height' =>250 );
       parent::__construct( false,$name= __( 'TG: Portfolio', 'ample' ), $widget_ops);
    }
@@ -484,7 +492,11 @@ class ample_portfolio_widget extends WP_Widget {
 class ample_featured_posts_widget extends WP_Widget {
 
    function __construct() {
-      $widget_ops = array( 'classname' => 'widget_featured_posts_block', 'description' => __( 'Display latest posts or posts of specific category', 'ample') );
+      $widget_ops = array(
+         'classname'                   => 'widget_featured_posts_block',
+         'description'                 => __( 'Display latest posts or posts of specific category', 'ample'),
+         'customize_selective_refresh' => true,
+      );
       $control_ops = array( 'width' => 200, 'height' =>250 );
       parent::__construct( false,$name= __( 'TG: Featured Posts', 'ample' ),$widget_ops);
    }
@@ -637,7 +649,11 @@ class ample_featured_posts_widget extends WP_Widget {
  */
 class ample_call_to_action_widget extends WP_Widget {
    function __construct() {
-      $widget_ops = array( 'classname' => 'widget_call_to_action_block', 'description' => __( 'Use this widget to show the call to action section.', 'ample' ) );
+      $widget_ops = array(
+         'classname' => 'widget_call_to_action_block',
+         'description' => __( 'Use this widget to show the call to action section.', 'ample' ),
+         
+      );
       $control_ops = array( 'width' => 200, 'height' =>250 );
       parent::__construct( false, $name = __( 'TG: Call To Action Widget', 'ample' ), $widget_ops, $control_ops);
    }
