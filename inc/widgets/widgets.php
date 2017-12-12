@@ -652,7 +652,7 @@ class ample_call_to_action_widget extends WP_Widget {
       $widget_ops = array(
          'classname' => 'widget_call_to_action_block',
          'description' => __( 'Use this widget to show the call to action section.', 'ample' ),
-         
+         'customize_selective_refresh' => true,
       );
       $control_ops = array( 'width' => 200, 'height' =>250 );
       parent::__construct( false, $name = __( 'TG: Call To Action Widget', 'ample' ), $widget_ops, $control_ops);
