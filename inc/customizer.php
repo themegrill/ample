@@ -756,6 +756,16 @@ function ample_customize_register($wp_customize) {
 add_action('customize_register', 'ample_customize_register');
 
 /**
+ * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+ *
+ * @since Ample 1.1.8
+ */
+function ample_customize_preview_js() {
+   wp_enqueue_script( 'ample-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), false, true );
+}
+add_action( 'customize_preview_init', 'ample_customize_preview_js' );
+
+/**
  * Render the site title for the selective refresh partial.
  *
  * @return void
