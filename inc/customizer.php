@@ -7,6 +7,9 @@
  * @since Ample 1.0.7
  */
 function ample_customize_register($wp_customize) {
+	 // Transport postMessage variable set
+	$customizer_selective_refresh = isset( $wp_customize->selective_refresh ) ? 'postMessage' : 'refresh';
+
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
@@ -426,20 +429,30 @@ function ample_customize_register($wp_customize) {
 	$wp_customize->add_section('ample_activate_slider_setting', array(
 		'title'     => __( 'Activate slider', 'ample' ),
 		'priority'  => 10,
-		'panel' => 'ample_slider_options'
+		'panel'     => 'ample_slider_options'
 	));
 
 	$wp_customize->add_setting('ample[ample_activate_slider]',	array(
-		'default' => 0,
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
+		'default'           => 0,
+        'capability'        => 'edit_theme_options',
+        'transport'         => $customizer_selective_refresh,
+        'type'              => 'option',
 		'sanitize_callback' => 'ample_sanitize_checkbox'
 	));
+
 	$wp_customize->add_control('ample[ample_activate_slider]',	array(
 		'type' => 'checkbox',
 		'label' => __('Check to activate slider.', 'ample' ),
 		'section' => 'ample_activate_slider_setting'
 	));
+
+   // Selective refresh for slider
+    if ( isset( $wp_customize->selective_refresh ) ) {
+       $wp_customize->selective_refresh->add_partial( 'ample[ample_activate_slider]', array(
+          'selector'        => '.big-slider-wrapper',
+          'render_callback' => '',
+       ) );
+    }
 
 	// Slide options
 	for( $i=1; $i<=4; $i++) {
