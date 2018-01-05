@@ -7,6 +7,9 @@
  * @since Ample 1.0.7
  */
 function ample_customize_register($wp_customize) {
+	 // Transport postMessage variable set
+	$customizer_selective_refresh = isset( $wp_customize->selective_refresh ) ? 'postMessage' : 'refresh';
+
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
@@ -185,13 +188,14 @@ function ample_customize_register($wp_customize) {
 	$wp_customize->add_section('ample_site_layout_setting', array(
 		'title'     => __( 'Site Layout', 'ample' ),
 		'priority'  => 10,
-		'panel' => 'ample_design_options'
+		'panel'     => 'ample_design_options'
 	));
 
 	$wp_customize->add_setting('ample[ample_site_layout]', array(
-      'default' => 'wide',
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
+      'default'           => 'wide',
+      'capability'        => 'edit_theme_options',
+      'transport'         => 'postMessage',
+      'type'              => 'option',
       'sanitize_callback' => 'ample_radio_sanitize'
    ));
    $wp_customize->add_control('ample[ample_site_layout]', array(
@@ -425,20 +429,30 @@ function ample_customize_register($wp_customize) {
 	$wp_customize->add_section('ample_activate_slider_setting', array(
 		'title'     => __( 'Activate slider', 'ample' ),
 		'priority'  => 10,
-		'panel' => 'ample_slider_options'
+		'panel'     => 'ample_slider_options'
 	));
 
 	$wp_customize->add_setting('ample[ample_activate_slider]',	array(
-		'default' => 0,
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
+		'default'           => 0,
+        'capability'        => 'edit_theme_options',
+        'transport'         => $customizer_selective_refresh,
+        'type'              => 'option',
 		'sanitize_callback' => 'ample_sanitize_checkbox'
 	));
+
 	$wp_customize->add_control('ample[ample_activate_slider]',	array(
 		'type' => 'checkbox',
 		'label' => __('Check to activate slider.', 'ample' ),
 		'section' => 'ample_activate_slider_setting'
 	));
+
+   // Selective refresh for slider
+    if ( isset( $wp_customize->selective_refresh ) ) {
+       $wp_customize->selective_refresh->add_partial( 'ample[ample_activate_slider]', array(
+          'selector'        => '.big-slider-wrapper',
+          'render_callback' => '',
+       ) );
+    }
 
 	// Slide options
 	for( $i=1; $i<=4; $i++) {
@@ -754,6 +768,16 @@ function ample_customize_register($wp_customize) {
    }
 }
 add_action('customize_register', 'ample_customize_register');
+
+/**
+ * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+ *
+ * @since Ample 1.1.8
+ */
+function ample_customize_preview_js() {
+   wp_enqueue_script( 'ample-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), false, true );
+}
+add_action( 'customize_preview_init', 'ample_customize_preview_js' );
 
 /**
  * Render the site title for the selective refresh partial.
