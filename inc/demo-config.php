@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Setup demo importer packages.
  *
  * @param  array $packages
+ *
  * @return array
  */
 function ample_demo_importer_packages( $packages ) {
@@ -23,6 +24,16 @@ function ample_demo_importer_packages( $packages ) {
 		'ample-free' => array(
 			'name'    => esc_html__( 'Ample', 'ample' ),
 			'preview' => 'https://demo.themegrill.com/ample/',
+		),
+		'ample-pro'  => array(
+			'name'     => __( 'Ample Pro', 'ample' ),
+			'preview'  => 'https://demo.themegrill.com/ample-pro/',
+			'pro_link' => 'https://themegrill.com/themes/ample/',
+		),
+		'ample-pro-one-page'  => array(
+			'name'     => __( 'Ample Pro One Page', 'ample' ),
+			'preview'  => 'https://demo.themegrill.com/ample-pro-one-page/',
+			'pro_link' => 'https://themegrill.com/themes/ample/',
 		),
 	);
 
