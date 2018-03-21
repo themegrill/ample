@@ -104,6 +104,9 @@ nav,
 section {
 	display: block;
 }
+* {
+    box-sizing: border-box;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: "";
@@ -337,9 +340,9 @@ textarea:focus {
 	border: 1px solid #eaeaea;
 }
 input.s {
-	width: 60%;
+	width: 80%;
 	padding: 4px 54px 4px 10px;
-	height: 36px;
+	height: 45px;
 	color: #666666;
 	background-color: #ffffff;
 	margin: 0;
@@ -829,7 +832,6 @@ img#wpstats {
 ====> 10.2 Search Design
 --------------------------------------------------------------*/
 #masthead .search-wrap input.s {
-	width: 180px;
 }
 .fa.search-top {
 	color: #80abc8;
@@ -2055,6 +2057,10 @@ iframe#wp-custom-header-video {
 		float: none;
 		width: 100%;
 		margin: 0;
+	}
+
+	input.s {
+		width: 90%;
 	}
 }
 @media screen and (max-width: 600px) {
