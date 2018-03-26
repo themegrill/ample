@@ -1,14 +1,14 @@
-# Copyright (C) 2017 ThemeGrill
+# Copyright (C) 2018 ThemeGrill
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.1.7\n"
+"Project-Id-Version: Ample 1.1.8\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2017-05-10 08:52:47+00:00\n"
+"POT-Creation-Date: 2018-03-26 09:06:31+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Tagged on: "
 msgstr ""
 
-#: content.php:42 inc/widgets/widgets.php:618
+#: content.php:42 inc/widgets/widgets.php:630
 msgid "Read more"
 msgstr ""
 
@@ -109,11 +109,11 @@ msgstr ""
 msgid "Get started with Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:130 inc/customizer.php:640
+#: inc/admin/class-ample-admin.php:130 inc/customizer.php:668
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:132 inc/customizer.php:652
+#: inc/admin/class-ample-admin.php:132 inc/customizer.php:680
 msgid "View Demo"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "View PRO version"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:136 inc/customizer.php:656
+#: inc/admin/class-ample-admin.php:136 inc/customizer.php:684
 msgid "Rate this theme"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgid "Customize"
 msgstr ""
 
 #: inc/admin/class-ample-admin.php:190 inc/admin/class-ample-admin.php:192
-#: inc/customizer.php:648
+#: inc/customizer.php:676
 msgid "Documentation"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgstr ""
 msgid "Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:350
+#: inc/admin/class-ample-admin.php:350 inc/demo-config.php:29
 msgid "Ample Pro"
 msgstr ""
 
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:365 inc/customizer.php:407
+#: inc/admin/class-ample-admin.php:365 inc/customizer.php:425
 msgid "Slider"
 msgstr ""
 
@@ -402,7 +402,7 @@ msgstr ""
 msgid "Emails/Priority Support Ticket"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:473 inc/customizer.php:636
+#: inc/admin/class-ample-admin.php:473 inc/customizer.php:664
 msgid "View Pro"
 msgstr ""
 
@@ -434,217 +434,221 @@ msgstr ""
 msgid "Both Sidebar"
 msgstr ""
 
-#: inc/customizer.php:13
+#: inc/customizer.php:30
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:21
+#: inc/customizer.php:38
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:35
+#: inc/customizer.php:52
 msgid "Upload logo for your header."
 msgstr ""
 
-#: inc/customizer.php:43
+#: inc/customizer.php:60
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:56
+#: inc/customizer.php:73
 msgid "Choose the option that you want."
 msgstr ""
 
-#: inc/customizer.php:59
+#: inc/customizer.php:76
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:60
+#: inc/customizer.php:77
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:61
+#: inc/customizer.php:78
 msgid "Show Both"
 msgstr ""
 
-#: inc/customizer.php:62
+#: inc/customizer.php:79
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:69
+#: inc/customizer.php:86
 msgid "Responsive Menu Style"
 msgstr ""
 
-#: inc/customizer.php:82
+#: inc/customizer.php:99
 msgid "Switch to new responsive menu."
 msgstr ""
 
-#: inc/customizer.php:88
+#: inc/customizer.php:105
 msgid "Header Title Bar Background Image"
 msgstr ""
 
-#: inc/customizer.php:101
+#: inc/customizer.php:118
 msgid "Upload Background Image for Header Title Bar."
 msgstr ""
 
-#: inc/customizer.php:116
+#: inc/customizer.php:133
 msgid "Choose Background Color for Header Title Bar"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:148
 msgid "Choose Text Color for Header Title Bar"
 msgstr ""
 
-#: inc/customizer.php:139
+#: inc/customizer.php:156
 msgid "Header Image Position"
 msgstr ""
 
-#: inc/customizer.php:152
+#: inc/customizer.php:169
 msgid "Choose top header image display position."
 msgstr ""
 
-#: inc/customizer.php:155
+#: inc/customizer.php:172
 msgid ""
 "Position Above (Default): Display the Header image just above the site "
 "title and main menu part."
 msgstr ""
 
-#: inc/customizer.php:156
+#: inc/customizer.php:173
 msgid ""
 "Position Below: Display the Header image just below the site title and main "
 "menu part."
 msgstr ""
 
-#: inc/customizer.php:165
+#: inc/customizer.php:182
 msgid "Design"
 msgstr ""
 
-#: inc/customizer.php:172
+#: inc/customizer.php:189
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:185
+#: inc/customizer.php:203
 msgid "Choose your site layout. The change is reflected in whole site."
 msgstr ""
 
-#: inc/customizer.php:188
+#: inc/customizer.php:206
 msgid "Wide layout"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:207
 msgid "Boxed layout"
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:276
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:272
+#: inc/customizer.php:290
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, search etc. The layout for a single post and page can be "
 "controlled from below options."
 msgstr ""
 
-#: inc/customizer.php:286
+#: inc/customizer.php:304
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:300
+#: inc/customizer.php:318
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/customizer.php:332
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:346
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:344
+#: inc/customizer.php:362
 msgid "Primary color option"
 msgstr ""
 
-#: inc/customizer.php:356
+#: inc/customizer.php:374
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site."
 msgstr ""
 
-#: inc/customizer.php:380
+#: inc/customizer.php:398
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:393
+#: inc/customizer.php:411
 msgid "Write your custom css."
 msgstr ""
 
-#: inc/customizer.php:412
+#: inc/customizer.php:430
 msgid "Activate slider"
 msgstr ""
 
-#: inc/customizer.php:425
+#: inc/customizer.php:445
 msgid "Check to activate slider."
 msgstr ""
 
-#: inc/customizer.php:433
+#: inc/customizer.php:461
 msgid "Slider #%1$s"
 msgstr ""
 
-#: inc/customizer.php:447
+#: inc/customizer.php:475
 msgid "Upload image"
 msgstr ""
 
-#: inc/customizer.php:462
+#: inc/customizer.php:490
 msgid "Enter title for this slide"
 msgstr ""
 
-#: inc/customizer.php:476
+#: inc/customizer.php:504
 msgid "Enter button text"
 msgstr ""
 
-#: inc/customizer.php:491
+#: inc/customizer.php:519
 msgid "Enter link to redirect"
 msgstr ""
 
-#: inc/customizer.php:504
+#: inc/customizer.php:532
 msgid "Additional"
 msgstr ""
 
-#: inc/customizer.php:511
+#: inc/customizer.php:539
 msgid "Favicon"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:552
 msgid "Check to activate favicon. Upload fav icon from below option"
 msgstr ""
 
-#: inc/customizer.php:538
+#: inc/customizer.php:566
 msgid "Upload favicon for your site."
 msgstr ""
 
-#: inc/customizer.php:603
+#: inc/customizer.php:631
 msgid "Category to hide from Blog"
 msgstr ""
 
-#: inc/customizer.php:616
+#: inc/customizer.php:644
 msgid "Select a Category or Categories to hide its posts from Blog page."
 msgstr ""
 
-#: inc/customizer.php:644
+#: inc/customizer.php:672
 msgid "Free Support"
 msgstr ""
 
-#: inc/customizer.php:676
+#: inc/customizer.php:704
 msgid "Ample Important Links"
 msgstr ""
 
-#: inc/customizer.php:689
+#: inc/customizer.php:717
 msgid "If you like our work. Buy us a beer."
+msgstr ""
+
+#: inc/demo-config.php:34
+msgid "Ample Pro One Page"
 msgstr ""
 
 #: inc/functions.php:131
@@ -746,34 +750,34 @@ msgid "You are here:"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
-#: inc/tgm-plugin-activation/tgmpa-ample.php:40
+#: inc/tgm-plugin-activation/tgmpa-ample.php:55
 msgid "Install Required Plugins"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:328
-#: inc/tgm-plugin-activation/tgmpa-ample.php:41
+#: inc/tgm-plugin-activation/tgmpa-ample.php:56
 msgid "Install Plugins"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:330
-#: inc/tgm-plugin-activation/tgmpa-ample.php:43
+#: inc/tgm-plugin-activation/tgmpa-ample.php:58
 #. translators: %s: plugin name.
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:332
-#: inc/tgm-plugin-activation/tgmpa-ample.php:45
+#: inc/tgm-plugin-activation/tgmpa-ample.php:60
 #. translators: %s: plugin name.
 msgid "Updating Plugin: %s"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
-#: inc/tgm-plugin-activation/tgmpa-ample.php:46
+#: inc/tgm-plugin-activation/tgmpa-ample.php:61
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:370
-#: inc/tgm-plugin-activation/tgmpa-ample.php:83
+#: inc/tgm-plugin-activation/tgmpa-ample.php:98
 #. translators: 1: plugin name(s).
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
@@ -781,21 +785,21 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:375
-#: inc/tgm-plugin-activation/tgmpa-ample.php:88
+#: inc/tgm-plugin-activation/tgmpa-ample.php:103
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:380
-#: inc/tgm-plugin-activation/tgmpa-ample.php:93
+#: inc/tgm-plugin-activation/tgmpa-ample.php:108
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:385
-#: inc/tgm-plugin-activation/tgmpa-ample.php:98
+#: inc/tgm-plugin-activation/tgmpa-ample.php:113
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
@@ -808,24 +812,24 @@ msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:387
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3159
-#: inc/tgm-plugin-activation/tgmpa-ample.php:99
+#: inc/tgm-plugin-activation/tgmpa-ample.php:114
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:388
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2952
-#: inc/tgm-plugin-activation/tgmpa-ample.php:100
+#: inc/tgm-plugin-activation/tgmpa-ample.php:115
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:390
-#: inc/tgm-plugin-activation/tgmpa-ample.php:102
+#: inc/tgm-plugin-activation/tgmpa-ample.php:117
 #. translators: 1: plugin name.
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:392
-#: inc/tgm-plugin-activation/tgmpa-ample.php:104
+#: inc/tgm-plugin-activation/tgmpa-ample.php:119
 #. translators: 1: plugin name.
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
@@ -833,25 +837,25 @@ msgid ""
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:394
-#: inc/tgm-plugin-activation/tgmpa-ample.php:106
+#: inc/tgm-plugin-activation/tgmpa-ample.php:121
 #. translators: 1: dashboard link.
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:395
-#: inc/tgm-plugin-activation/tgmpa-ample.php:107
+#: inc/tgm-plugin-activation/tgmpa-ample.php:122
 msgid "Dismiss this notice"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:396
-#: inc/tgm-plugin-activation/tgmpa-ample.php:108
+#: inc/tgm-plugin-activation/tgmpa-ample.php:123
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
-#: inc/tgm-plugin-activation/tgmpa-ample.php:109
+#: inc/tgm-plugin-activation/tgmpa-ample.php:124
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
@@ -1165,140 +1169,140 @@ msgstr ""
 msgid "Footer Sidebar4"
 msgstr ""
 
-#: inc/widgets/widgets.php:114
+#: inc/widgets/widgets.php:116
 msgid "Show your some pages as services."
 msgstr ""
 
-#: inc/widgets/widgets.php:116
+#: inc/widgets/widgets.php:120
 msgid "TG: Service Widget"
 msgstr ""
 
-#: inc/widgets/widgets.php:135 inc/widgets/widgets.php:341
-#: inc/widgets/widgets.php:509
+#: inc/widgets/widgets.php:139 inc/widgets/widgets.php:349
+#: inc/widgets/widgets.php:521
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets/widgets.php:138 inc/widgets/widgets.php:345
-#: inc/widgets/widgets.php:512
+#: inc/widgets/widgets.php:142 inc/widgets/widgets.php:353
+#: inc/widgets/widgets.php:524
 msgid "Description"
 msgstr ""
 
-#: inc/widgets/widgets.php:142
+#: inc/widgets/widgets.php:146
 msgid "Image:"
 msgstr ""
 
-#: inc/widgets/widgets.php:150 inc/widgets/widgets.php:328
-#: inc/widgets/widgets.php:677
+#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
+#: inc/widgets/widgets.php:693
 msgid "Choose an image"
 msgstr ""
 
-#: inc/widgets/widgets.php:150 inc/widgets/widgets.php:328
-#: inc/widgets/widgets.php:677
+#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
+#: inc/widgets/widgets.php:693
 msgid "Use image"
 msgstr ""
 
-#: inc/widgets/widgets.php:150 inc/widgets/widgets.php:328
-#: inc/widgets/widgets.php:677
+#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
+#: inc/widgets/widgets.php:693
 msgid "Select an Image"
 msgstr ""
 
-#: inc/widgets/widgets.php:157
+#: inc/widgets/widgets.php:161
 msgid "<a href=\"%s\" target=\"_blank\">Refer here</a> For Icon Class"
 msgstr ""
 
-#: inc/widgets/widgets.php:162
+#: inc/widgets/widgets.php:166
 msgid "Select the page to display Title and Excerpt."
 msgstr ""
 
-#: inc/widgets/widgets.php:167
+#: inc/widgets/widgets.php:171
 msgid "Page"
 msgstr ""
 
-#: inc/widgets/widgets.php:173
+#: inc/widgets/widgets.php:177
 msgid "Icon Class:"
 msgstr ""
 
-#: inc/widgets/widgets.php:285
+#: inc/widgets/widgets.php:291
 msgid "Display portfolio by using specific category"
 msgstr ""
 
-#: inc/widgets/widgets.php:287
+#: inc/widgets/widgets.php:295
 msgid "TG: Portfolio"
 msgstr ""
 
-#: inc/widgets/widgets.php:314 inc/widgets/widgets.php:663
+#: inc/widgets/widgets.php:322 inc/widgets/widgets.php:679
 msgid "DESIGN SETTINGS :"
 msgstr ""
 
-#: inc/widgets/widgets.php:315 inc/widgets/widgets.php:664
+#: inc/widgets/widgets.php:323 inc/widgets/widgets.php:680
 msgid "Background Color:"
 msgstr ""
 
-#: inc/widgets/widgets.php:320 inc/widgets/widgets.php:669
+#: inc/widgets/widgets.php:328 inc/widgets/widgets.php:685
 msgid "Background Image:"
 msgstr ""
 
-#: inc/widgets/widgets.php:333 inc/widgets/widgets.php:682
+#: inc/widgets/widgets.php:341 inc/widgets/widgets.php:698
 msgid "Background attachment:"
 msgstr ""
 
-#: inc/widgets/widgets.php:334 inc/widgets/widgets.php:683
+#: inc/widgets/widgets.php:342 inc/widgets/widgets.php:699
 msgid "Scroll"
 msgstr ""
 
-#: inc/widgets/widgets.php:335 inc/widgets/widgets.php:684
+#: inc/widgets/widgets.php:343 inc/widgets/widgets.php:700
 msgid "Fixed"
 msgstr ""
 
-#: inc/widgets/widgets.php:338 inc/widgets/widgets.php:687
+#: inc/widgets/widgets.php:346 inc/widgets/widgets.php:703
 msgid "OTHER SETTINGS :"
 msgstr ""
 
-#: inc/widgets/widgets.php:349 inc/widgets/widgets.php:516
+#: inc/widgets/widgets.php:357 inc/widgets/widgets.php:528
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets/widgets.php:354 inc/widgets/widgets.php:526
+#: inc/widgets/widgets.php:362 inc/widgets/widgets.php:538
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets/widgets.php:359 inc/widgets/widgets.php:693
+#: inc/widgets/widgets.php:367 inc/widgets/widgets.php:709
 msgid "Button Text:"
 msgstr ""
 
-#: inc/widgets/widgets.php:363 inc/widgets/widgets.php:697
+#: inc/widgets/widgets.php:371 inc/widgets/widgets.php:713
 msgid "Button Redirect Link:"
 msgstr ""
 
-#: inc/widgets/widgets.php:366
+#: inc/widgets/widgets.php:374
 msgid "Note: Link to redirect. If empty than it will redirect to selected category."
 msgstr ""
 
-#: inc/widgets/widgets.php:487
+#: inc/widgets/widgets.php:497
 msgid "Display latest posts or posts of specific category"
 msgstr ""
 
-#: inc/widgets/widgets.php:489
+#: inc/widgets/widgets.php:501
 msgid "TG: Featured Posts"
 msgstr ""
 
-#: inc/widgets/widgets.php:521
+#: inc/widgets/widgets.php:533
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets/widgets.php:522
+#: inc/widgets/widgets.php:534
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets/widgets.php:640
+#: inc/widgets/widgets.php:654
 msgid "Use this widget to show the call to action section."
 msgstr ""
 
-#: inc/widgets/widgets.php:642
+#: inc/widgets/widgets.php:658
 msgid "TG: Call To Action Widget"
 msgstr ""
 
-#: inc/widgets/widgets.php:689
+#: inc/widgets/widgets.php:705
 msgid "Call to Action Main Text"
 msgstr ""
 

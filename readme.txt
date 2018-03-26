@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.1.8 - 2018-03-26 =
 * Fix - bxslider link unclickable in Firefox > 59
 * Tweak - Add theme support for Jetpack Responsive Videos.
 * Tweaks - Introduce selective refresh for site title and description
