@@ -26,7 +26,7 @@ function ample_register_required_plugins() {
 
 		// TGMPA recommendation for evfs plugin
 		array(
-			'name'     => 'Everest Forms – Easy Contact Form and Form Builder',
+			'name'     => 'Everest Forms - Easy Contact Form and Form Builder',
 			'slug'     => 'everest-forms',
 			'required' => false,
 		),
