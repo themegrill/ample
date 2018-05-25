@@ -647,6 +647,26 @@ function ample_customize_register($wp_customize) {
 			'choices' => $options_categories
 		))
 	);
+
+	// Author bio opion.
+	$wp_customize->add_section( 'ample_author_bio_section', array(
+		'title'    => esc_html__( 'Author Bio Option', 'ample' ),
+		'priority' => 60,
+		'panel'    => 'ample_additional_options',
+	) );
+
+	$wp_customize->add_setting( 'ample[ample_author_bio_setting]', array(
+		'default'           => 0,
+		'capability'        => 'edit_theme_options',
+		'type'              => 'option',
+		'sanitize_callback' => 'ample_sanitize_checkbox',
+	) );
+	$wp_customize->add_control( 'ample[ample_author_bio_setting]', array(
+		'type'    => 'checkbox',
+		'label'   => __( 'Check to display author bio', 'ample' ),
+		'section' => 'ample_author_bio_section',
+		'setting' => 'ample[ample_author_bio_setting]',
+	) );
 	// End of the Additional Options
 
  /**************************************************************************************/

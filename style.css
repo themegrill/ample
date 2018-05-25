@@ -1099,6 +1099,12 @@ img#wpstats {
 .single-post-content .entry-title a{color: #666666;}
 .single-post-content .entry-title a:hover{color: #80abc8;}
 
+/* author-bio */
+
+.author-description-wrapper {
+    margin-left: 120px;
+}
+
 /*
 ====> 11.5 Portfolio Widget
 --------------------------------------------------------------*/
@@ -2092,6 +2098,14 @@ iframe#wp-custom-header-video {
 	.gallery-columns-8 .gallery-item,
 	.gallery-columns-9 .gallery-item {
 		width:25%;
+	}
+
+	.author-img .avatar {
+		float: none;
+	}
+
+	.author-description-wrapper {
+		margin-left: 0;
 	}
 }
 @media only screen and (max-width: 420px) {
