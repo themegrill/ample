@@ -667,6 +667,45 @@ function ample_customize_register($wp_customize) {
 		'section' => 'ample_author_bio_section',
 		'setting' => 'ample[ample_author_bio_setting]',
 	) );
+
+	// Related posts option.
+	$wp_customize->add_section( 'ample_related_posts_section', array(
+		'title'    => esc_html__( 'Related Posts', 'ample' ),
+		'priority' => 60,
+		'panel'    => 'ample_additional_options',
+	) );
+
+	$wp_customize->add_setting( 'ample[ample_related_posts_setting]', array(
+		'default'           => 0,
+		'capability'        => 'edit_theme_options',
+		'type'              => 'option',
+		'sanitize_callback' => 'ample_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'ample[ample_related_posts_setting]', array(
+		'type'     => 'checkbox',
+		'label'    => esc_html__( 'Check to display related posts', 'ample' ),
+		'section'  => 'ample_related_posts_section',
+		'settings' => 'ample[ample_related_posts_setting]',
+	) );
+
+	$wp_customize->add_setting( 'ample[ample_related_posts]', array(
+		'default'           => 'categories',
+		'capability'        => 'edit_theme_options',
+		'type'              => 'option',
+		'sanitize_callback' => 'ample_radio_sanitize',
+	) );
+
+	$wp_customize->add_control( 'ample[ample_related_posts]', array(
+		'type'     => 'radio',
+		'label'    => esc_html__( 'Related Posts Must Be Shown As:', 'ample' ),
+		'section'  => 'ample_related_posts_section',
+		'settings' => 'ample[ample_related_posts]',
+		'choices'  => array(
+			'categories' => esc_html__( 'Related Posts By Categories', 'ample' ),
+			'tags'       => esc_html__( 'Related Posts By Tags', 'ample' ),
+		),
+	) );
 	// End of the Additional Options
 
  /**************************************************************************************/
