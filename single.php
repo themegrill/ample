@@ -33,6 +33,10 @@ get_header();
 							</div>
 						<?php } ?>
 
+						<?php if ( ample_option( 'ample_related_posts_setting', 0 ) == 1 ) {
+							get_template_part( 'inc/related-posts' );
+						} ?>
+
 						<?php
 							do_action( 'ample_before_comments_template' );
 							// If comments are open or we have at least one comment, load up the comment template
