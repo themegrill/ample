@@ -1500,6 +1500,29 @@ article.post {
 	display: inline-block;
 }
 
+/* Related Posts */
+
+.related-posts-wrapper .entry-title {
+	font-size: 21px;
+	padding-bottom: 5px;
+}
+
+.related-posts-wrapper .entry-title a {
+	color: #666666;
+}
+
+.related-posts-wrapper .entry-title a:hover {
+	color: #80abc8;
+}
+
+.related-posts-wrapper .entry-meta {
+	font-size: 12px;
+}
+
+.related-posts-wrapper .entry-meta > span {
+	padding-right: 10px;
+}
+
 /*
 ====> 13.6 Pagination
 --------------------------------------------------------------*/
