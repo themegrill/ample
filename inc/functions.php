@@ -689,12 +689,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require_once get_template_directory() . '/inc/jetpack.php';
 }
 
-if ( ! function_exists( 'ample_rlated_posts_function' ) ) {
+if ( ! function_exists( 'ample_related_posts_function' ) ) {
 
 	/**
 	 * Display the related posts.
 	 */
-	function ample_rlated_posts_function() {
+	function ample_related_posts_function() {
 		wp_reset_postdata();
 		global $post;
 

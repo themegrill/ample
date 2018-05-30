@@ -1,4 +1,4 @@
-<?php $related_posts = ample_rlated_posts_function(); ?>
+<?php $related_posts = ample_related_posts_function(); ?>
 
 <?php if ( $related_posts->have_posts() ): ?>
 
