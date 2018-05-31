@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.1.9 - 2018-03-26 =
 * Feature - Added Author Bio display option
 * Feature - Added Related posts display option
 
