@@ -52,6 +52,10 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Feature - Added Author Bio display option
+* Feature - Added Related posts display option
+
 = Version 1.1.8 - 2018-03-26 =
 * Fix - bxslider link unclickable in Firefox > 59
 * Tweak - Add theme support for Jetpack Responsive Videos.
