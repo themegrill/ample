@@ -9,18 +9,18 @@
 
 	// Nav
 	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
+	if ( !container ) {
 		return;
 	}
 
 	// Hamburger button
-	button = container.getElementsByClassName( 'menu-toggle' )[0];
+	button = container.getElementsByClassName( 'menu-toggle' )[ 0 ];
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
 
 	// first ul inside nav
-	menu = container.getElementsByTagName( 'ul' )[0];
+	menu = container.getElementsByTagName( 'ul' )[ 0 ];
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
@@ -52,8 +52,8 @@
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
+		links[ i ].addEventListener( 'focus', toggleFocus, true );
+		links[ i ].addEventListener( 'blur', toggleFocus, true );
 	}
 
 	/**
@@ -83,20 +83,20 @@
 	 */
 	( function( container ) {
 		var touchStartFn, i,
-			// Link with submenu
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+		    // Link with submenu
+		    parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
 		if ( 'ontouchstart' in window ) {
 			touchStartFn = function( e ) {
 				var menuItem = this.parentNode, i;
 
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
+				if ( !menuItem.classList.contains( 'focus' ) ) {
 					e.preventDefault();
 					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
+						if ( menuItem === menuItem.parentNode.children[ i ] ) {
 							continue;
 						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
+						menuItem.parentNode.children[ i ].classList.remove( 'focus' );
 					}
 					menuItem.classList.add( 'focus' );
 				} else {
@@ -106,20 +106,70 @@
 
 			// on touch in device
 			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+				parentLink[ i ].addEventListener( 'touchstart', touchStartFn, false );
 			}
 		} // if ( 'ontouchstart' in window ) {
 	}( container ) );
 
 } )();
 
-jQuery(document).ready( function() {
-    jQuery( '.better-responsive-menu #site-navigation .menu-item-has-children' )
-    	.append( '<span class="sub-toggle"> <i class="fa fa-caret-down"></i> </span>' );
+jQuery( document ).ready( function() {
+	jQuery( '.better-responsive-menu #site-navigation .menu-item-has-children' )
+		.append( '<span class="sub-toggle"> <i class="fa fa-caret-down"></i> </span>' );
 
-    jQuery( '.better-responsive-menu #site-navigation .sub-toggle' ).click( function() {
-        jQuery(this).parent( '.menu-item-has-children' ).children( 'ul.sub-menu' ).first().slideToggle( '1000' );
-        jQuery(this).children( '<i class="fa fa-caret-down"></i>' ).first().toggleClass( '<i class="fa fa-caret-down"></i>' );
-        jQuery(this).toggleClass( 'active' );
-    });
-});
+	jQuery( '.better-responsive-menu #site-navigation .sub-toggle' ).click( function() {
+		jQuery( this ).parent( '.menu-item-has-children' ).children( 'ul.sub-menu' ).first().slideToggle( '1000' );
+		jQuery( this ).children( '<i class="fa fa-caret-down"></i>' ).first().toggleClass( '<i class="fa fa-caret-down"></i>' );
+		jQuery( this ).toggleClass( 'active' );
+	} );
+} );
+
+/**
+ * Fix: Menu out of view port
+ */
+( function() {
+
+	var subMenu;
+
+	jQuery( '.main-navigation ul li a' ).on( {
+
+		'mouseover touchstart': function() {
+
+			function isElementInViewport( subMenu ) {
+
+				if ( 'function' === typeof jQuery && subMenu instanceof jQuery ) {
+					subMenu = subMenu[ 0 ];
+				}
+
+				// In case browser doesn't support getBoundingClientRect function.
+				if ( 'function' === typeof subMenu.getBoundingClientRect ) {
+
+					var rect = subMenu.getBoundingClientRect();
+
+					if ( rect.right > ( window.innerWidth || document.documentElement.clientWidth ) ) {
+						return 'sub-menu--left'; // menu goes out of viewport from right.
+					} else if ( rect.left < 0 ) {
+						return 'sub-menu--right'; // menu goes out of viewport from left.
+					} else {
+						return false;
+					}
+				}
+			}
+
+			subMenu = jQuery( this ).next( '.sub-menu, .children' );
+
+			// If menu item has submenu
+			if ( subMenu.length > 0 ) {
+
+				var viewportClass = isElementInViewport( subMenu );
+
+				if ( false !== viewportClass ) {
+					subMenu.addClass( viewportClass );
+				}
+			}
+
+		}
+
+	} );
+
+} )();
