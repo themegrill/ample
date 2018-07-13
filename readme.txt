@@ -53,6 +53,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 = TBD =
+
 * Fix - Image upload button in customize option
 
 = Version 1.1.9 - 2018-03-26 =
