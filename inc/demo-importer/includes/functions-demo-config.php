@@ -2,37 +2,33 @@
 /**
  * Functions for configuring demo importer.
  *
- * @author   ThemeGrill
- * @category Admin
- * @package  Importer/Functions
- * @version  1.0.0
+ * @package Importer/Functions
+ * @version 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Setup demo importer packages.
  *
  * @deprecated 1.5.0
  *
- * @param  array $packages
+ * @param  array $packages Demo packages.
  *
  * @return array
  */
 function ample_demo_importer_packages( $packages ) {
 	$new_packages = array(
-		'ample-free' => array(
+		'ample-free'         => array(
 			'name'    => esc_html__( 'Ample', 'ample' ),
 			'preview' => 'https://demo.themegrill.com/ample/',
 		),
-		'ample-pro'  => array(
+		'ample-pro'          => array(
 			'name'     => __( 'Ample Pro', 'ample' ),
 			'preview'  => 'https://demo.themegrill.com/ample-pro/',
 			'pro_link' => 'https://themegrill.com/themes/ample/',
 		),
-		'ample-pro-one-page'  => array(
+		'ample-pro-one-page' => array(
 			'name'     => __( 'Ample Pro One Page', 'ample' ),
 			'preview'  => 'https://demo.themegrill.com/ample-pro-one-page/',
 			'pro_link' => 'https://themegrill.com/themes/ample/',
