@@ -15,11 +15,13 @@ function ample_featured_image_slider() { ?>
    <div class="big-slider-wrapper">
       <div class="big-slider">
          <?php
-         for($i=1; $i<=4; $i++) {
-            $ample_slider_image = ample_option('ample_slider_image' . $i , '');
-            $ample_slider_title = ample_option('ample_slider_title' . $i , '');
-            $ample_slider_button_text = ample_option('ample_slider_button_text' . $i , '');
-            $ample_slider_link = ample_option('ample_slider_link' . $i , '');
+         for ( $i = 1; $i <= 4; $i++ ) {
+	         $ample_slider_image       = ample_option( 'ample_slider_image' . $i, '' );
+	         $ample_slider_title       = ample_option( 'ample_slider_title' . $i, '' );
+	         $ample_slider_button_text = ample_option( 'ample_slider_button_text' . $i, '' );
+	         $ample_slider_link        = ample_option( 'ample_slider_link' . $i, '' );
+	         $attachment_post_id       = attachment_url_to_postid( $ample_slider_image );
+	         $image_attributes         = wp_get_attachment_image_src( $attachment_post_id, 'full' );
 
             if ( $i == 1 ) { $classes = "slides displayblock"; } else { $classes = "slides displaynone"; }
 
@@ -39,7 +41,7 @@ function ample_featured_image_slider() { ?>
                      </div>
                   <?php } ?>
                   <figure>
-                     <img alt="<?php echo esc_attr( $ample_slider_title ); ?>" src="<?php echo esc_url( $ample_slider_image ); ?>" >
+                     <img width="<?php echo esc_attr($image_attributes[1]); ?>" height="<?php echo esc_attr($image_attributes[2]); ?>" alt="<?php echo esc_attr( $ample_slider_title ); ?>" src="<?php echo esc_url( $ample_slider_image ); ?>" >
                   </figure>
                </div>
             <?php }
