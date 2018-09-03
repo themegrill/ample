@@ -220,7 +220,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 							<h3><?php esc_html_e( 'Got theme support question?', 'ample' ); ?></h3>
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'ample' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'ample' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=ample-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support', 'ample' ); ?></a>
 							</p>
 						</div>
 
@@ -236,7 +236,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 							<h3><?php esc_html_e( 'Got sales related question?', 'ample' ); ?></h3>
 							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'ample' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=ample-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a>
 							</p>
 						</div>
 
