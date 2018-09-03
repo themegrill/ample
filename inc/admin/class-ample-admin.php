@@ -134,7 +134,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 
 				<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://demo.themegrill.com/ample/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'ample' ); ?></a>
 
-				<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
+				<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample/?utm_source=ample-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
 
 				<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://wordpress.org/support/theme/ample/reviews/?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'ample' ); ?></a>
 			</p>
@@ -228,7 +228,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 							<h3><?php esc_html_e( 'Need more features?', 'ample' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'ample' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/themes/ample-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/ample/?utm_source=ample-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
 							</p>
 						</div>
 
@@ -510,7 +510,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'ample' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'https://themegrill.com/themes/ample/?utm_source=ample-free-vs-pro-table&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'ample' ); ?></a>
 						</td>
 					</tbody>
 				</table>
