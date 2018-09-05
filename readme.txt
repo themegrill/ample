@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.0 - 2018-09-05 =
 * Fix   - Image upload button in customize option
 * Tweak - Width and height attribute for slider
 * Update - Upsell link
