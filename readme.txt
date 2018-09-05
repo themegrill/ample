@@ -55,6 +55,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 = TBD =
 * Fix   - Image upload button in customize option
 * Tweak - Width and height attribute for slider
+* Update - Upsell link
 
 = Version 1.1.9 - 2018-03-26 =
 * Feature - Added Author Bio display option
