@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.1.9\n"
+"Project-Id-Version: Ample 1.2.0\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-05-31 04:59:36+00:00\n"
+"POT-Creation-Date: 2018-09-05 04:40:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,19 +13,19 @@ msgstr ""
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: inc/admin/class-ample-admin.php:391
+#: inc/admin/class-ample-admin.php:431
 msgid "1"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:426
+#: inc/admin/class-ample-admin.php:466
 msgid "4"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:392
+#: inc/admin/class-ample-admin.php:432
 msgid "5"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:427
+#: inc/admin/class-ample-admin.php:467
 msgid "9"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Tagged on: "
 msgstr ""
 
-#: content.php:42 inc/widgets/widgets.php:630
+#: content.php:42 inc/widgets/class-ample-featured-posts-widget.php:144
 msgid "Read more"
 msgstr ""
 
@@ -83,182 +83,182 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:36 inc/admin/class-ample-admin.php:115
+#: inc/admin/class-ample-admin.php:36 inc/admin/class-ample-admin.php:118
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:74
+#: inc/admin/class-ample-admin.php:77
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:78
+#: inc/admin/class-ample-admin.php:81
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:92
+#: inc/admin/class-ample-admin.php:95
 msgid "Dismiss"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:93
+#: inc/admin/class-ample-admin.php:96
 msgid ""
 "Welcome! Thank you for choosing ample! To fully take advantage of the best "
 "our theme can offer please make sure you visit our %swelcome page%s."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:95
+#: inc/admin/class-ample-admin.php:98
 msgid "Get started with Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:130 inc/customizer.php:727
+#: inc/admin/class-ample-admin.php:133
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:132 inc/customizer.php:739
+#: inc/admin/class-ample-admin.php:135
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:134 inc/admin/class-ample-admin.php:204
+#: inc/admin/class-ample-admin.php:137 inc/admin/class-ample-admin.php:231
+#: inc/customizer.php:761
 msgid "View PRO version"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:136 inc/customizer.php:743
+#: inc/admin/class-ample-admin.php:139
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:144
+#: inc/admin/class-ample-admin.php:154
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:147
+#: inc/admin/class-ample-admin.php:162
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:150
+#: inc/admin/class-ample-admin.php:170
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:184
+#: inc/admin/class-ample-admin.php:204
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:185
+#: inc/admin/class-ample-admin.php:205
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:186
+#: inc/admin/class-ample-admin.php:207
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:190 inc/admin/class-ample-admin.php:192
-#: inc/customizer.php:735
+#: inc/admin/class-ample-admin.php:212 inc/admin/class-ample-admin.php:215
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:191
+#: inc/admin/class-ample-admin.php:213
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:196
+#: inc/admin/class-ample-admin.php:220
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:197
+#: inc/admin/class-ample-admin.php:221
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:198 inc/admin/class-ample-admin.php:465
+#: inc/admin/class-ample-admin.php:223 inc/admin/class-ample-admin.php:505
 msgid "Support"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:202
+#: inc/admin/class-ample-admin.php:228
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:203 inc/admin/class-ample-admin.php:343
+#: inc/admin/class-ample-admin.php:229 inc/admin/class-ample-admin.php:383
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:208
+#: inc/admin/class-ample-admin.php:236
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:209
+#: inc/admin/class-ample-admin.php:237
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:210 sidebar.php:23
+#: inc/admin/class-ample-admin.php:239 sidebar.php:23
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:216 inc/admin/class-ample-admin.php:224
+#: inc/admin/class-ample-admin.php:246 inc/admin/class-ample-admin.php:254
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:220
+#: inc/admin/class-ample-admin.php:250
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:236
+#: inc/admin/class-ample-admin.php:266
 msgid "Return to Updates"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:236
+#: inc/admin/class-ample-admin.php:266
 msgid "Return to Dashboard &rarr; Updates"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:239
+#: inc/admin/class-ample-admin.php:269
 msgid "Go to Dashboard &rarr; Home"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:239
+#: inc/admin/class-ample-admin.php:269
 msgid "Go to Dashboard"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:256
+#: inc/admin/class-ample-admin.php:286
 msgid "View changelog below:"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:309
+#: inc/admin/class-ample-admin.php:341
 msgid "This theme recommends following plugins:"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:311
+#: inc/admin/class-ample-admin.php:344
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:312 inc/admin/class-ample-admin.php:315
+#: inc/admin/class-ample-admin.php:345 inc/admin/class-ample-admin.php:349
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:314
+#: inc/admin/class-ample-admin.php:348
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:317
+#: inc/admin/class-ample-admin.php:352
 msgid "Contact Form 7"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:318
+#: inc/admin/class-ample-admin.php:355
 msgid "WP-PageNavi"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:319
+#: inc/admin/class-ample-admin.php:358
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:321
+#: inc/admin/class-ample-admin.php:361
 msgid "Polylang"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:322 inc/admin/class-ample-admin.php:326
+#: inc/admin/class-ample-admin.php:362 inc/admin/class-ample-admin.php:366
 msgid "Fully Compatible in Pro Version"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:325
+#: inc/admin/class-ample-admin.php:365
 msgid "WPML"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:348
+#: inc/admin/class-ample-admin.php:388
 msgid "Features"
 msgstr ""
 
@@ -266,67 +266,67 @@ msgstr ""
 msgid "Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:350 inc/demo-config.php:29
+#: inc/admin/class-ample-admin.php:390 inc/demo-config.php:26
 msgid "Ample Pro"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:355
+#: inc/admin/class-ample-admin.php:395
 msgid "Price"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:356
+#: inc/admin/class-ample-admin.php:396
 msgid "Free"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:357
+#: inc/admin/class-ample-admin.php:397
 msgid "$69"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:360
+#: inc/admin/class-ample-admin.php:400
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:365 inc/customizer.php:425
+#: inc/admin/class-ample-admin.php:405 inc/customizer.php:429
 msgid "Slider"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:366
+#: inc/admin/class-ample-admin.php:406
 msgid "4 Slides"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:367
+#: inc/admin/class-ample-admin.php:407
 msgid "Unlimited Slides"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:370
+#: inc/admin/class-ample-admin.php:410
 msgid "Slider Settings"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:372
+#: inc/admin/class-ample-admin.php:412
 msgid "Slides type, duration & delay time"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:375
+#: inc/admin/class-ample-admin.php:415
 msgid "Google Fonts"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:377
+#: inc/admin/class-ample-admin.php:417
 msgid "600+"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:380
+#: inc/admin/class-ample-admin.php:420
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:381
+#: inc/admin/class-ample-admin.php:421
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:382
+#: inc/admin/class-ample-admin.php:422
 msgid "Primary color option & 35+"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:385
+#: inc/admin/class-ample-admin.php:425
 msgid "Font Size options"
 msgstr ""
 
@@ -334,75 +334,75 @@ msgstr ""
 msgid "Business Template"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:395
+#: inc/admin/class-ample-admin.php:435
 msgid "Social Links"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:400
+#: inc/admin/class-ample-admin.php:440
 msgid "Additional Top Header"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:402
+#: inc/admin/class-ample-admin.php:442
 msgid "Social Links + Header text option"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:405
+#: inc/admin/class-ample-admin.php:445
 msgid "Translation Ready"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:410
+#: inc/admin/class-ample-admin.php:450
 msgid "Woocommerce Compatible"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:415
+#: inc/admin/class-ample-admin.php:455
 msgid "Woocommerce archive page Layout"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:420
+#: inc/admin/class-ample-admin.php:460
 msgid "WPML/Polylang Compatible"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:425
+#: inc/admin/class-ample-admin.php:465
 msgid "Custom Widgets"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:430
+#: inc/admin/class-ample-admin.php:470
 msgid "TG: Testimonial"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:435
+#: inc/admin/class-ample-admin.php:475
 msgid "TG: Our Clients"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:440
+#: inc/admin/class-ample-admin.php:480
 msgid "TG: Fun Facts"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:445
+#: inc/admin/class-ample-admin.php:485
 msgid "TG: Team"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:450
+#: inc/admin/class-ample-admin.php:490
 msgid "TG: Pricing Table"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:455
+#: inc/admin/class-ample-admin.php:495
 msgid "Footer Copyright Editor"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:460
+#: inc/admin/class-ample-admin.php:500
 msgid "Demo Content"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:466
+#: inc/admin/class-ample-admin.php:506
 msgid "Forum"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:467
+#: inc/admin/class-ample-admin.php:507
 msgid "Emails/Priority Support Ticket"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:473 inc/customizer.php:723
+#: inc/admin/class-ample-admin.php:513
 msgid "View Pro"
 msgstr ""
 
@@ -534,148 +534,136 @@ msgstr ""
 msgid "Boxed layout"
 msgstr ""
 
-#: inc/customizer.php:276
+#: inc/customizer.php:280
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:290
+#: inc/customizer.php:294
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, search etc. The layout for a single post and page can be "
 "controlled from below options."
 msgstr ""
 
-#: inc/customizer.php:304
+#: inc/customizer.php:308
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:318
+#: inc/customizer.php:322
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/customizer.php:332
+#: inc/customizer.php:336
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:346
+#: inc/customizer.php:350
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:362
+#: inc/customizer.php:366
 msgid "Primary color option"
 msgstr ""
 
-#: inc/customizer.php:374
+#: inc/customizer.php:378
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site."
 msgstr ""
 
-#: inc/customizer.php:398
+#: inc/customizer.php:402
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:411
+#: inc/customizer.php:415
 msgid "Write your custom css."
 msgstr ""
 
-#: inc/customizer.php:430
+#: inc/customizer.php:434
 msgid "Activate slider"
 msgstr ""
 
-#: inc/customizer.php:445
+#: inc/customizer.php:449
 msgid "Check to activate slider."
 msgstr ""
 
-#: inc/customizer.php:461
+#: inc/customizer.php:465
 msgid "Slider #%1$s"
 msgstr ""
 
-#: inc/customizer.php:475
+#: inc/customizer.php:479
 msgid "Upload image"
 msgstr ""
 
-#: inc/customizer.php:490
+#: inc/customizer.php:494
 msgid "Enter title for this slide"
 msgstr ""
 
-#: inc/customizer.php:504
+#: inc/customizer.php:508
 msgid "Enter button text"
 msgstr ""
 
-#: inc/customizer.php:519
+#: inc/customizer.php:523
 msgid "Enter link to redirect"
 msgstr ""
 
-#: inc/customizer.php:532
+#: inc/customizer.php:536
 msgid "Additional"
 msgstr ""
 
-#: inc/customizer.php:539
+#: inc/customizer.php:543
 msgid "Favicon"
 msgstr ""
 
-#: inc/customizer.php:552
+#: inc/customizer.php:556
 msgid "Check to activate favicon. Upload fav icon from below option"
 msgstr ""
 
-#: inc/customizer.php:566
+#: inc/customizer.php:570
 msgid "Upload favicon for your site."
 msgstr ""
 
-#: inc/customizer.php:631
+#: inc/customizer.php:637
 msgid "Category to hide from Blog"
 msgstr ""
 
-#: inc/customizer.php:644
+#: inc/customizer.php:650
 msgid "Select a Category or Categories to hide its posts from Blog page."
 msgstr ""
 
-#: inc/customizer.php:653
+#: inc/customizer.php:659
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:666
+#: inc/customizer.php:672
 msgid "Check to display author bio"
 msgstr ""
 
-#: inc/customizer.php:673
+#: inc/customizer.php:679
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:687
+#: inc/customizer.php:693
 msgid "Check to display related posts"
 msgstr ""
 
-#: inc/customizer.php:701
+#: inc/customizer.php:707
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:705
+#: inc/customizer.php:711
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:706
+#: inc/customizer.php:712
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:731
-msgid "Free Support"
-msgstr ""
-
-#: inc/customizer.php:763
-msgid "Ample Important Links"
-msgstr ""
-
-#: inc/customizer.php:776
-msgid "If you like our work. Buy us a beer."
-msgstr ""
-
-#: inc/demo-config.php:34
+#: inc/demo-config.php:31
 msgid "Ample Pro One Page"
 msgstr ""
 
@@ -745,35 +733,35 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
-#: inc/header-functions.php:112
+#: inc/header-functions.php:114
 msgid "Author: %s"
 msgstr ""
 
-#: inc/header-functions.php:120
+#: inc/header-functions.php:122
 msgid "Day: %s"
 msgstr ""
 
-#: inc/header-functions.php:123
+#: inc/header-functions.php:125
 msgid "Month: %s"
 msgstr ""
 
-#: inc/header-functions.php:126
+#: inc/header-functions.php:128
 msgid "Year: %s"
 msgstr ""
 
-#: inc/header-functions.php:133
+#: inc/header-functions.php:135
 msgid "Archives"
 msgstr ""
 
-#: inc/header-functions.php:138
+#: inc/header-functions.php:140
 msgid "Page NOT Found"
 msgstr ""
 
-#: inc/header-functions.php:141
+#: inc/header-functions.php:143
 msgid "Search Results For: %s"
 msgstr ""
 
-#: inc/header-functions.php:173
+#: inc/header-functions.php:175
 msgid "You are here:"
 msgstr ""
 
@@ -1148,6 +1136,159 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#: inc/widgets/class-ample-call-to-action-widget.php:10
+msgid "Use this widget to show the call to action section."
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:14
+msgid "TG: Call To Action Widget"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:35
+#: inc/widgets/class-ample-portfolio-widget.php:42
+msgid "DESIGN SETTINGS :"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:36
+#: inc/widgets/class-ample-portfolio-widget.php:43
+msgid "Background Color:"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:41
+#: inc/widgets/class-ample-portfolio-widget.php:48
+msgid "Background Image:"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:49
+#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-service-widget.php:48
+msgid "Choose an image"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:49
+#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-service-widget.php:48
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:49
+#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-service-widget.php:48
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:54
+#: inc/widgets/class-ample-portfolio-widget.php:61
+msgid "Background attachment:"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:55
+#: inc/widgets/class-ample-portfolio-widget.php:62
+msgid "Scroll"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:56
+#: inc/widgets/class-ample-portfolio-widget.php:63
+msgid "Fixed"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:59
+#: inc/widgets/class-ample-portfolio-widget.php:66
+msgid "OTHER SETTINGS :"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:61
+msgid "Call to Action Main Text"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:65
+#: inc/widgets/class-ample-portfolio-widget.php:87
+msgid "Button Text:"
+msgstr ""
+
+#: inc/widgets/class-ample-call-to-action-widget.php:69
+#: inc/widgets/class-ample-portfolio-widget.php:91
+msgid "Button Redirect Link:"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:11
+msgid "Display latest posts or posts of specific category"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:15
+msgid "TG: Featured Posts"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:35
+#: inc/widgets/class-ample-portfolio-widget.php:69
+#: inc/widgets/class-ample-service-widget.php:33
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:38
+#: inc/widgets/class-ample-portfolio-widget.php:73
+#: inc/widgets/class-ample-service-widget.php:36
+msgid "Description"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:42
+#: inc/widgets/class-ample-portfolio-widget.php:77
+msgid "Number of posts to display:"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:47
+msgid "Show latest Posts"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:48
+msgid "Show posts from a category"
+msgstr ""
+
+#: inc/widgets/class-ample-featured-posts-widget.php:52
+#: inc/widgets/class-ample-portfolio-widget.php:82
+msgid "Select category"
+msgstr ""
+
+#: inc/widgets/class-ample-portfolio-widget.php:11
+msgid "Display portfolio by using specific category"
+msgstr ""
+
+#: inc/widgets/class-ample-portfolio-widget.php:15
+msgid "TG: Portfolio"
+msgstr ""
+
+#: inc/widgets/class-ample-portfolio-widget.php:94
+msgid "Note: Link to redirect. If empty than it will redirect to selected category."
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:10
+msgid "Show your some pages as services."
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:14
+msgid "TG: Service Widget"
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:40
+msgid "Image:"
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:55
+msgid "<a href=\"%s\" target=\"_blank\">Refer here</a> For Icon Class"
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:60
+msgid "Select the page to display Title and Excerpt."
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:65
+msgid "Page"
+msgstr ""
+
+#: inc/widgets/class-ample-service-widget.php:71
+msgid "Icon Class:"
+msgstr ""
+
 #: inc/widgets/widgets.php:22
 msgid "Shows widgets at right side."
 msgstr ""
@@ -1199,143 +1340,6 @@ msgstr ""
 
 #: inc/widgets/widgets.php:92
 msgid "Footer Sidebar4"
-msgstr ""
-
-#: inc/widgets/widgets.php:116
-msgid "Show your some pages as services."
-msgstr ""
-
-#: inc/widgets/widgets.php:120
-msgid "TG: Service Widget"
-msgstr ""
-
-#: inc/widgets/widgets.php:139 inc/widgets/widgets.php:349
-#: inc/widgets/widgets.php:521
-msgid "Title:"
-msgstr ""
-
-#: inc/widgets/widgets.php:142 inc/widgets/widgets.php:353
-#: inc/widgets/widgets.php:524
-msgid "Description"
-msgstr ""
-
-#: inc/widgets/widgets.php:146
-msgid "Image:"
-msgstr ""
-
-#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
-#: inc/widgets/widgets.php:693
-msgid "Choose an image"
-msgstr ""
-
-#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
-#: inc/widgets/widgets.php:693
-msgid "Use image"
-msgstr ""
-
-#: inc/widgets/widgets.php:154 inc/widgets/widgets.php:336
-#: inc/widgets/widgets.php:693
-msgid "Select an Image"
-msgstr ""
-
-#: inc/widgets/widgets.php:161
-msgid "<a href=\"%s\" target=\"_blank\">Refer here</a> For Icon Class"
-msgstr ""
-
-#: inc/widgets/widgets.php:166
-msgid "Select the page to display Title and Excerpt."
-msgstr ""
-
-#: inc/widgets/widgets.php:171
-msgid "Page"
-msgstr ""
-
-#: inc/widgets/widgets.php:177
-msgid "Icon Class:"
-msgstr ""
-
-#: inc/widgets/widgets.php:291
-msgid "Display portfolio by using specific category"
-msgstr ""
-
-#: inc/widgets/widgets.php:295
-msgid "TG: Portfolio"
-msgstr ""
-
-#: inc/widgets/widgets.php:322 inc/widgets/widgets.php:679
-msgid "DESIGN SETTINGS :"
-msgstr ""
-
-#: inc/widgets/widgets.php:323 inc/widgets/widgets.php:680
-msgid "Background Color:"
-msgstr ""
-
-#: inc/widgets/widgets.php:328 inc/widgets/widgets.php:685
-msgid "Background Image:"
-msgstr ""
-
-#: inc/widgets/widgets.php:341 inc/widgets/widgets.php:698
-msgid "Background attachment:"
-msgstr ""
-
-#: inc/widgets/widgets.php:342 inc/widgets/widgets.php:699
-msgid "Scroll"
-msgstr ""
-
-#: inc/widgets/widgets.php:343 inc/widgets/widgets.php:700
-msgid "Fixed"
-msgstr ""
-
-#: inc/widgets/widgets.php:346 inc/widgets/widgets.php:703
-msgid "OTHER SETTINGS :"
-msgstr ""
-
-#: inc/widgets/widgets.php:357 inc/widgets/widgets.php:528
-msgid "Number of posts to display:"
-msgstr ""
-
-#: inc/widgets/widgets.php:362 inc/widgets/widgets.php:538
-msgid "Select category"
-msgstr ""
-
-#: inc/widgets/widgets.php:367 inc/widgets/widgets.php:709
-msgid "Button Text:"
-msgstr ""
-
-#: inc/widgets/widgets.php:371 inc/widgets/widgets.php:713
-msgid "Button Redirect Link:"
-msgstr ""
-
-#: inc/widgets/widgets.php:374
-msgid "Note: Link to redirect. If empty than it will redirect to selected category."
-msgstr ""
-
-#: inc/widgets/widgets.php:497
-msgid "Display latest posts or posts of specific category"
-msgstr ""
-
-#: inc/widgets/widgets.php:501
-msgid "TG: Featured Posts"
-msgstr ""
-
-#: inc/widgets/widgets.php:533
-msgid "Show latest Posts"
-msgstr ""
-
-#: inc/widgets/widgets.php:534
-msgid "Show posts from a category"
-msgstr ""
-
-#: inc/widgets/widgets.php:654
-msgid "Use this widget to show the call to action section."
-msgstr ""
-
-#: inc/widgets/widgets.php:658
-msgid "TG: Call To Action Widget"
-msgstr ""
-
-#: inc/widgets/widgets.php:705
-msgid "Call to Action Main Text"
 msgstr ""
 
 #: navigation.php:24
