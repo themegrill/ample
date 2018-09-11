@@ -61,6 +61,9 @@ function ample_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	// Gutenberg layout support.
+	add_theme_support( 'align-wide' );
+
 	//Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 
