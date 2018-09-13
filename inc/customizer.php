@@ -71,7 +71,7 @@ function ample_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'ample[ample_show_header_logo_text]', array(
 		'type'    => 'radio',
 		'label'   => __( 'Choose the option that you want.', 'ample' ),
-		'section' => 'ample_header_logo_text',
+		'section' => 'title_tagline',
 		'choices' => array(
 			'logo_only' => __( 'Header Logo Only', 'ample' ),
 			'text_only' => __( 'Header Text Only', 'ample' ),
