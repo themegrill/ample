@@ -141,24 +141,6 @@ endif;
 
 /**************************************************************************************/
 
-add_action( 'admin_head', 'ample_favicon' );
-add_action( 'wp_head', 'ample_favicon' );
-/**
- * Fav icon for the site
- */
-function ample_favicon() {
-	if ( ample_option( 'ample_activate_favicon', '0' ) == '1' ) {
-		$ample_favicon = ample_option( 'ample_favicon', '' );
-		$ample_favicon_output = '';
-		if ( ! function_exists( 'has_site_icon' ) || ( ! empty( $ample_favicon ) && ! has_site_icon() ) ) {
-			$ample_favicon_output .= '<link rel="shortcut icon" href="'.esc_url( $ample_favicon ).'" type="image/x-icon" />';
-		}
-		echo $ample_favicon_output;
-	}
-}
-
-/**************************************************************************************/
-
 /**
  * Change hex code to RGB
  * Source: https://css-tricks.com/snippets/php/convert-hex-to-rgb/#comment-1052011
@@ -597,37 +579,6 @@ function ample_wrapper_end() {
 		}
 	}
  }
-
-/**************************************************************************************/
-
-/**
- * Function to transfer the favicon added in Customizer Options of theme to Site Icon in Site Identity section
- */
-function ample_site_icon_migrate() {
-	if ( get_option( 'ample_site_icon_transfer' ) ) {
-		return;
-	}
-	$ample_favicon = ample_option( 'ample_favicon', 0 );
-	// Migrate ample site icon.
-	if ( function_exists( 'has_site_icon' ) && ( ! empty( $ample_favicon ) && ! has_site_icon() ) ) {
-		$theme_options = get_option( 'ample' );
-		$attachment_id = attachment_url_to_postid( $ample_favicon );
-		// Update site icon transfer options.
-		if ( $theme_options && $attachment_id ) {
-			update_option( 'site_icon', $attachment_id );
-			update_option( 'ample_site_icon_transfer', 1 );
-			// Remove old favicon options.
-			foreach ( $theme_options as $option_key => $option_value ) {
-				if ( in_array( $option_key, array( 'ample_favicon', 'ample_activate_favicon' ) ) ) {
-					unset( $theme_options[ $option_key ] );
-				}
-			}
-		}
-		// Finally, update ample theme options.
-		update_option( 'ample', $theme_options );
-	}
-}
-add_action( 'after_setup_theme', 'ample_site_icon_migrate' );
 
 /**
  * Function to transfer the Header Logo added in Customizer Options of theme to Site Logo in Site Identity section
