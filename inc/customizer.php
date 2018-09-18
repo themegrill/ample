@@ -32,29 +32,6 @@ function ample_customize_register( $wp_customize ) {
 		'priority'   => 300,
 	) );
 
-	if ( ! function_exists( 'the_custom_logo' ) ) {
-		// Header Logo upload option
-		$wp_customize->add_section( 'ample_header_logo', array(
-			'title'    => __( 'Header Logo', 'ample' ),
-			'priority' => 10,
-			'panel'    => 'ample_header',
-		) );
-
-		$wp_customize->add_setting( 'ample[ample_header_logo_image]', array(
-			'default'              => '',
-			'capability'           => 'edit_theme_options',
-			'type'                 => 'option',
-			'sanitize_callback'    => 'ample_sanitize_url',
-			'sanitize_js_callback' => 'ample_sanitize_js_url',
-		) );
-		$wp_customize->add_control(
-			new WP_Customize_Image_Control( $wp_customize, 'ample[ample_header_logo_image]', array(
-				'label'    => __( 'Upload logo for your header.', 'ample' ),
-				'section'  => 'ample_header_logo',
-				'settings' => 'ample[ample_header_logo_image]',
-			) )
-		);
-	}
 	// Header logo and text display type option
 	$wp_customize->add_section( 'ample_header_logo_text', array(
 		'title'    => __( 'Show', 'ample' ),
