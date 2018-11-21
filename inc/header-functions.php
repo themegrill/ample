@@ -40,8 +40,10 @@ function ample_featured_image_slider() { ?>
                         <?php endif; ?>
                      </div>
                   <?php } ?>
+	               <?php $img_altr = get_post_meta( $attachment_post_id, '_wp_attachment_image_alt', true );
+	               $img_alt        = ! empty( $img_altr ) ? $img_altr : $ample_slider_title; ?>
                   <figure>
-                     <img width="<?php echo esc_attr($image_attributes[1]); ?>" height="<?php echo esc_attr($image_attributes[2]); ?>" alt="<?php echo esc_attr( $ample_slider_title ); ?>" src="<?php echo esc_url( $ample_slider_image ); ?>" >
+                     <img width="<?php echo esc_attr($image_attributes[1]); ?>" height="<?php echo esc_attr($image_attributes[2]); ?>" alt="<?php echo esc_attr( $img_alt ); ?>" src="<?php echo esc_url( $ample_slider_image ); ?>" >
                   </figure>
                </div>
             <?php }
