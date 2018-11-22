@@ -822,7 +822,7 @@ function ample_customizer_custom_scripts() { ?>
 			display: block;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			text-decoration: none!important;
+			text-decoration: none !important;
 		}
 
 		li#accordion-section-ample_upsell_section h3.accordion-section-title a {
