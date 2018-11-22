@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD
+= Version 1.2.2 - 2018-11-22 =
 * Added - Gutenberg compatibility
 * Tweak - Add alt attributes to missed img tags
 

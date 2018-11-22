@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.2.1\n"
+"Project-Id-Version: Ample 1.2.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-11-22 05:55:34+00:00\n"
+"POT-Creation-Date: 2018-11-22 06:10:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Tagged on: "
 msgstr ""
 
-#: content.php:48 inc/widgets/class-ample-featured-posts-widget.php:147
+#: content.php:48 inc/widgets/class-ample-featured-posts-widget.php:164
 msgid "Read more"
 msgstr ""
 
@@ -118,6 +118,7 @@ msgid "View Demo"
 msgstr ""
 
 #: inc/admin/class-ample-admin.php:137 inc/admin/class-ample-admin.php:231
+#: inc/customizer.php:700
 msgid "View PRO version"
 msgstr ""
 
@@ -285,7 +286,7 @@ msgstr ""
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:405
+#: inc/admin/class-ample-admin.php:405 inc/customizer.php:406
 msgid "Slider"
 msgstr ""
 
@@ -437,6 +438,211 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
+#: inc/customizer.php:37
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Choose the option that you want."
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "Header Logo Only"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Header Text Only"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Show Both"
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Responsive Menu Style"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Switch to new responsive menu."
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Header Title Bar Background Image"
+msgstr ""
+
+#: inc/customizer.php:95
+msgid "Upload Background Image for Header Title Bar."
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "Choose Background Color for Header Title Bar"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Choose Text Color for Header Title Bar"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Header Image Position"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Choose top header image display position."
+msgstr ""
+
+#: inc/customizer.php:149
+msgid ""
+"Position Above (Default): Display the Header image just above the site "
+"title and main menu part."
+msgstr ""
+
+#: inc/customizer.php:150
+msgid ""
+"Position Below: Display the Header image just below the site title and main "
+"menu part."
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "Design"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Site Layout"
+msgstr ""
+
+#: inc/customizer.php:180
+msgid "Choose your site layout. The change is reflected in whole site."
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "Wide layout"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "Boxed layout"
+msgstr ""
+
+#: inc/customizer.php:257
+msgid "Default layout"
+msgstr ""
+
+#: inc/customizer.php:271
+msgid ""
+"Select default layout. This layout will be reflected in whole site "
+"archives, search etc. The layout for a single post and page can be "
+"controlled from below options."
+msgstr ""
+
+#: inc/customizer.php:285
+msgid "Default layout for pages only"
+msgstr ""
+
+#: inc/customizer.php:299
+msgid ""
+"Select default layout for pages. This layout will be reflected in all pages "
+"unless unique layout is set for specific page."
+msgstr ""
+
+#: inc/customizer.php:313
+msgid "Default layout for single posts only"
+msgstr ""
+
+#: inc/customizer.php:327
+msgid ""
+"Select default layout for single posts. This layout will be reflected in "
+"all single posts unless unique layout is set for specific post."
+msgstr ""
+
+#: inc/customizer.php:343
+msgid "Primary color option"
+msgstr ""
+
+#: inc/customizer.php:355
+msgid ""
+"This will reflect in links, buttons and many others. Choose a color to "
+"match your site."
+msgstr ""
+
+#: inc/customizer.php:379
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:392
+msgid "Write your custom css."
+msgstr ""
+
+#: inc/customizer.php:411
+msgid "Activate slider"
+msgstr ""
+
+#: inc/customizer.php:426
+msgid "Check to activate slider."
+msgstr ""
+
+#: inc/customizer.php:442
+msgid "Slider #%1$s"
+msgstr ""
+
+#: inc/customizer.php:456
+msgid "Upload image"
+msgstr ""
+
+#: inc/customizer.php:471
+msgid "Enter title for this slide"
+msgstr ""
+
+#: inc/customizer.php:485
+msgid "Enter button text"
+msgstr ""
+
+#: inc/customizer.php:500
+msgid "Enter link to redirect"
+msgstr ""
+
+#: inc/customizer.php:513
+msgid "Additional"
+msgstr ""
+
+#: inc/customizer.php:576
+msgid "Category to hide from Blog"
+msgstr ""
+
+#: inc/customizer.php:589
+msgid "Select a Category or Categories to hide its posts from Blog page."
+msgstr ""
+
+#: inc/customizer.php:598
+msgid "Author Bio Option"
+msgstr ""
+
+#: inc/customizer.php:611
+msgid "Check to display author bio"
+msgstr ""
+
+#: inc/customizer.php:618
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer.php:632
+msgid "Check to display related posts"
+msgstr ""
+
+#: inc/customizer.php:646
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: inc/customizer.php:650
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: inc/customizer.php:651
+msgid "Related Posts By Tags"
+msgstr ""
+
 #: inc/demo-config.php:31
 msgid "Ample Pro One Page"
 msgstr ""
@@ -507,35 +713,35 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
-#: inc/header-functions.php:116
+#: inc/header-functions.php:120
 msgid "Author: %s"
 msgstr ""
 
-#: inc/header-functions.php:124
+#: inc/header-functions.php:128
 msgid "Day: %s"
 msgstr ""
 
-#: inc/header-functions.php:127
+#: inc/header-functions.php:131
 msgid "Month: %s"
 msgstr ""
 
-#: inc/header-functions.php:130
+#: inc/header-functions.php:134
 msgid "Year: %s"
 msgstr ""
 
-#: inc/header-functions.php:137
+#: inc/header-functions.php:141
 msgid "Archives"
 msgstr ""
 
-#: inc/header-functions.php:142
+#: inc/header-functions.php:145
 msgid "Page NOT Found"
 msgstr ""
 
-#: inc/header-functions.php:145
+#: inc/header-functions.php:147
 msgid "Search Results For: %s"
 msgstr ""
 
-#: inc/header-functions.php:177
+#: inc/header-functions.php:175
 msgid "You are here:"
 msgstr ""
 
@@ -934,40 +1140,40 @@ msgid "Background Image:"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:49
-#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-portfolio-widget.php:57
 #: inc/widgets/class-ample-service-widget.php:48
 msgid "Choose an image"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:49
-#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-portfolio-widget.php:57
 #: inc/widgets/class-ample-service-widget.php:48
 msgid "Use image"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:49
-#: inc/widgets/class-ample-portfolio-widget.php:56
+#: inc/widgets/class-ample-portfolio-widget.php:57
 #: inc/widgets/class-ample-service-widget.php:48
 msgid "Select an Image"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:54
-#: inc/widgets/class-ample-portfolio-widget.php:61
+#: inc/widgets/class-ample-portfolio-widget.php:62
 msgid "Background attachment:"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:55
-#: inc/widgets/class-ample-portfolio-widget.php:62
+#: inc/widgets/class-ample-portfolio-widget.php:63
 msgid "Scroll"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:56
-#: inc/widgets/class-ample-portfolio-widget.php:63
+#: inc/widgets/class-ample-portfolio-widget.php:64
 msgid "Fixed"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:59
-#: inc/widgets/class-ample-portfolio-widget.php:66
+#: inc/widgets/class-ample-portfolio-widget.php:67
 msgid "OTHER SETTINGS :"
 msgstr ""
 
@@ -976,12 +1182,12 @@ msgid "Call to Action Main Text"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:65
-#: inc/widgets/class-ample-portfolio-widget.php:87
+#: inc/widgets/class-ample-portfolio-widget.php:93
 msgid "Button Text:"
 msgstr ""
 
 #: inc/widgets/class-ample-call-to-action-widget.php:69
-#: inc/widgets/class-ample-portfolio-widget.php:91
+#: inc/widgets/class-ample-portfolio-widget.php:97
 msgid "Button Redirect Link:"
 msgstr ""
 
@@ -994,19 +1200,19 @@ msgid "TG: Featured Posts"
 msgstr ""
 
 #: inc/widgets/class-ample-featured-posts-widget.php:35
-#: inc/widgets/class-ample-portfolio-widget.php:69
+#: inc/widgets/class-ample-portfolio-widget.php:70
 #: inc/widgets/class-ample-service-widget.php:33
 msgid "Title:"
 msgstr ""
 
 #: inc/widgets/class-ample-featured-posts-widget.php:38
-#: inc/widgets/class-ample-portfolio-widget.php:73
+#: inc/widgets/class-ample-portfolio-widget.php:74
 #: inc/widgets/class-ample-service-widget.php:36
 msgid "Description"
 msgstr ""
 
 #: inc/widgets/class-ample-featured-posts-widget.php:42
-#: inc/widgets/class-ample-portfolio-widget.php:77
+#: inc/widgets/class-ample-portfolio-widget.php:78
 msgid "Number of posts to display:"
 msgstr ""
 
@@ -1014,12 +1220,12 @@ msgstr ""
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets/class-ample-featured-posts-widget.php:48
+#: inc/widgets/class-ample-featured-posts-widget.php:49
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets/class-ample-featured-posts-widget.php:52
-#: inc/widgets/class-ample-portfolio-widget.php:82
+#: inc/widgets/class-ample-featured-posts-widget.php:54
+#: inc/widgets/class-ample-portfolio-widget.php:83
 msgid "Select category"
 msgstr ""
 
@@ -1031,7 +1237,7 @@ msgstr ""
 msgid "TG: Portfolio"
 msgstr ""
 
-#: inc/widgets/class-ample-portfolio-widget.php:94
+#: inc/widgets/class-ample-portfolio-widget.php:100
 msgid "Note: Link to redirect. If empty than it will redirect to selected category."
 msgstr ""
 
