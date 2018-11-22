@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ample 1.2.1\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-09-28 05:38:19+00:00\n"
+"POT-Creation-Date: 2018-11-22 05:55:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,15 +71,15 @@ msgstr ""
 msgid "Tagged on: "
 msgstr ""
 
-#: content.php:42 inc/widgets/class-ample-featured-posts-widget.php:144
+#: content.php:48 inc/widgets/class-ample-featured-posts-widget.php:147
 msgid "Read more"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:83
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:81
+#: functions.php:84
 msgid "Footer Menu"
 msgstr ""
 
@@ -118,7 +118,6 @@ msgid "View Demo"
 msgstr ""
 
 #: inc/admin/class-ample-admin.php:137 inc/admin/class-ample-admin.php:231
-#: inc/customizer.php:700
 msgid "View PRO version"
 msgstr ""
 
@@ -286,7 +285,7 @@ msgstr ""
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:405 inc/customizer.php:406
+#: inc/admin/class-ample-admin.php:405
 msgid "Slider"
 msgstr ""
 
@@ -438,211 +437,6 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:37
-msgid "Show"
-msgstr ""
-
-#: inc/customizer.php:50
-msgid "Choose the option that you want."
-msgstr ""
-
-#: inc/customizer.php:53
-msgid "Header Logo Only"
-msgstr ""
-
-#: inc/customizer.php:54
-msgid "Header Text Only"
-msgstr ""
-
-#: inc/customizer.php:55
-msgid "Show Both"
-msgstr ""
-
-#: inc/customizer.php:56
-msgid "Disable"
-msgstr ""
-
-#: inc/customizer.php:63
-msgid "Responsive Menu Style"
-msgstr ""
-
-#: inc/customizer.php:76
-msgid "Switch to new responsive menu."
-msgstr ""
-
-#: inc/customizer.php:82
-msgid "Header Title Bar Background Image"
-msgstr ""
-
-#: inc/customizer.php:95
-msgid "Upload Background Image for Header Title Bar."
-msgstr ""
-
-#: inc/customizer.php:110
-msgid "Choose Background Color for Header Title Bar"
-msgstr ""
-
-#: inc/customizer.php:125
-msgid "Choose Text Color for Header Title Bar"
-msgstr ""
-
-#: inc/customizer.php:133
-msgid "Header Image Position"
-msgstr ""
-
-#: inc/customizer.php:146
-msgid "Choose top header image display position."
-msgstr ""
-
-#: inc/customizer.php:149
-msgid ""
-"Position Above (Default): Display the Header image just above the site "
-"title and main menu part."
-msgstr ""
-
-#: inc/customizer.php:150
-msgid ""
-"Position Below: Display the Header image just below the site title and main "
-"menu part."
-msgstr ""
-
-#: inc/customizer.php:159
-msgid "Design"
-msgstr ""
-
-#: inc/customizer.php:166
-msgid "Site Layout"
-msgstr ""
-
-#: inc/customizer.php:180
-msgid "Choose your site layout. The change is reflected in whole site."
-msgstr ""
-
-#: inc/customizer.php:183
-msgid "Wide layout"
-msgstr ""
-
-#: inc/customizer.php:184
-msgid "Boxed layout"
-msgstr ""
-
-#: inc/customizer.php:257
-msgid "Default layout"
-msgstr ""
-
-#: inc/customizer.php:271
-msgid ""
-"Select default layout. This layout will be reflected in whole site "
-"archives, search etc. The layout for a single post and page can be "
-"controlled from below options."
-msgstr ""
-
-#: inc/customizer.php:285
-msgid "Default layout for pages only"
-msgstr ""
-
-#: inc/customizer.php:299
-msgid ""
-"Select default layout for pages. This layout will be reflected in all pages "
-"unless unique layout is set for specific page."
-msgstr ""
-
-#: inc/customizer.php:313
-msgid "Default layout for single posts only"
-msgstr ""
-
-#: inc/customizer.php:327
-msgid ""
-"Select default layout for single posts. This layout will be reflected in "
-"all single posts unless unique layout is set for specific post."
-msgstr ""
-
-#: inc/customizer.php:343
-msgid "Primary color option"
-msgstr ""
-
-#: inc/customizer.php:355
-msgid ""
-"This will reflect in links, buttons and many others. Choose a color to "
-"match your site."
-msgstr ""
-
-#: inc/customizer.php:379
-msgid "Custom CSS"
-msgstr ""
-
-#: inc/customizer.php:392
-msgid "Write your custom css."
-msgstr ""
-
-#: inc/customizer.php:411
-msgid "Activate slider"
-msgstr ""
-
-#: inc/customizer.php:426
-msgid "Check to activate slider."
-msgstr ""
-
-#: inc/customizer.php:442
-msgid "Slider #%1$s"
-msgstr ""
-
-#: inc/customizer.php:456
-msgid "Upload image"
-msgstr ""
-
-#: inc/customizer.php:471
-msgid "Enter title for this slide"
-msgstr ""
-
-#: inc/customizer.php:485
-msgid "Enter button text"
-msgstr ""
-
-#: inc/customizer.php:500
-msgid "Enter link to redirect"
-msgstr ""
-
-#: inc/customizer.php:513
-msgid "Additional"
-msgstr ""
-
-#: inc/customizer.php:576
-msgid "Category to hide from Blog"
-msgstr ""
-
-#: inc/customizer.php:589
-msgid "Select a Category or Categories to hide its posts from Blog page."
-msgstr ""
-
-#: inc/customizer.php:598
-msgid "Author Bio Option"
-msgstr ""
-
-#: inc/customizer.php:611
-msgid "Check to display author bio"
-msgstr ""
-
-#: inc/customizer.php:618
-msgid "Related Posts"
-msgstr ""
-
-#: inc/customizer.php:632
-msgid "Check to display related posts"
-msgstr ""
-
-#: inc/customizer.php:646
-msgid "Related Posts Must Be Shown As:"
-msgstr ""
-
-#: inc/customizer.php:650
-msgid "Related Posts By Categories"
-msgstr ""
-
-#: inc/customizer.php:651
-msgid "Related Posts By Tags"
-msgstr ""
-
 #: inc/demo-config.php:31
 msgid "Ample Pro One Page"
 msgstr ""
@@ -667,7 +461,7 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/functions.php:487 inc/related-posts.php:53
+#: inc/functions.php:487 inc/related-posts.php:61
 msgid ""
 "<span class=\"entry-date\"><i class=\"fa fa-aw fa-calendar-o\"></i> <a "
 "href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">%3$s</a></span>"
@@ -713,35 +507,35 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
-#: inc/header-functions.php:114
+#: inc/header-functions.php:116
 msgid "Author: %s"
 msgstr ""
 
-#: inc/header-functions.php:122
+#: inc/header-functions.php:124
 msgid "Day: %s"
 msgstr ""
 
-#: inc/header-functions.php:125
+#: inc/header-functions.php:127
 msgid "Month: %s"
 msgstr ""
 
-#: inc/header-functions.php:128
+#: inc/header-functions.php:130
 msgid "Year: %s"
 msgstr ""
 
-#: inc/header-functions.php:135
+#: inc/header-functions.php:137
 msgid "Archives"
 msgstr ""
 
-#: inc/header-functions.php:140
+#: inc/header-functions.php:142
 msgid "Page NOT Found"
 msgstr ""
 
-#: inc/header-functions.php:143
+#: inc/header-functions.php:145
 msgid "Search Results For: %s"
 msgstr ""
 
-#: inc/header-functions.php:175
+#: inc/header-functions.php:177
 msgid "You are here:"
 msgstr ""
 

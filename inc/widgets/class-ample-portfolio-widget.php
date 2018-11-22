@@ -173,7 +173,10 @@ class ample_portfolio_widget extends WP_Widget {
 										 'alt'   => esc_attr( $img_alt ),
 											'title' => esc_attr( $title ),
 										);
-										the_post_thumbnail('ample-portfolio-image', $post_thumbnail_attr); ?>
+
+										the_post_thumbnail('ample-portfolio-image', $post_thumbnail_attr);
+										?>
+
 										<div class="view-detail">
 											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><i class="fa fa-link"></i></a>
 										</div>
