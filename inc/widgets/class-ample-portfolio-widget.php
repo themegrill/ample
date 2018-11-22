@@ -166,7 +166,14 @@ class ample_portfolio_widget extends WP_Widget {
 								<div class="single-portfolio-thumbnail">
 									<?php
 									if( has_post_thumbnail() ) {
-										the_post_thumbnail('ample-portfolio-image'); ?>
+										$thumb_id = get_post_thumbnail_id( get_the_ID() );
+										$img_altr = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
+										$img_alt = ! empty( $img_altr ) ? $img_altr : $title;
+										$post_thumbnail_attr = array(
+										 'alt'   => esc_attr( $img_alt ),
+											'title' => esc_attr( $title ),
+										);
+										the_post_thumbnail('ample-portfolio-image', $post_thumbnail_attr); ?>
 										<div class="view-detail">
 											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><i class="fa fa-link"></i></a>
 										</div>
