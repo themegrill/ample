@@ -2,7 +2,12 @@ jQuery(document).ready(function(){
 
    // For Search Icon Toggle effect added at the top
    jQuery('.search-top').click(function(){
-      jQuery('#masthead .search-form-top').toggle();
+      jQuery('#masthead .search-form-top').toggleClass( 'show' );
+
+	   // focus after some time to fix conflict with toggleClass.
+	   setTimeout(  function(){
+		   jQuery( '#masthead .search-form-top.show input' ).focus();
+	   }, 200 );
    });
 
    // For Scroll to top button
