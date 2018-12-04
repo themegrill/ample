@@ -1,31 +1,48 @@
-jQuery(document).ready(function(){
+jQuery( document ).ready( function () {
 
-   // For Search Icon Toggle effect added at the top
-   jQuery('.search-top').click(function(){
-      jQuery('#masthead .search-form-top').toggleClass( 'show' );
+	// For Search Icon Toggle effect added at the top
+	var hideSearchForm = function () {
+		jQuery( '#masthead .search-form-top' ).removeClass( 'show' );
+	};
 
-	   // focus after some time to fix conflict with toggleClass.
-	   setTimeout(  function(){
-		   jQuery( '#masthead .search-form-top.show input' ).focus();
-	   }, 200 );
-   });
+	// For Search Icon Toggle effect added at the top
+	jQuery( '.search-top' ).click( function () {
+		jQuery( '#masthead .search-form-top' ).toggleClass( 'show' );
 
-   // For Scroll to top button
-   jQuery('#scroll-up').hide();
-   jQuery(function () {
-      jQuery(window).scroll(function () {
-         if (jQuery(this).scrollTop() > 1000) {
-            jQuery('#scroll-up').fadeIn();
-         } else {
-            jQuery('#scroll-up').fadeOut();
-         }
-      });
-      jQuery('a#scroll-up').click(function () {
-         jQuery('body,html').animate({
-            scrollTop: 0
-         }, 800);
-         return false;
-      });
-   });
+		// focus after some time to fix conflict with toggleClass.
+		setTimeout( function () {
+			jQuery( '#masthead .search-form-top.show input' ).focus();
+		}, 200 );
 
-});
+		// For esc key press.
+		jQuery( document ).on( 'keyup', function ( e ) {
+
+			//on esc key press.
+			if ( 27 === e.keyCode ) {
+				//if search box is opened.
+				if ( jQuery( '.search-form-top' ).hasClass( 'show' ) ) {
+					hideSearchForm();
+				}
+			}
+		} );
+	} );
+
+	// For Scroll to top button
+	jQuery( '#scroll-up' ).hide();
+	jQuery( function () {
+		jQuery( window ).scroll( function () {
+			if ( jQuery( this ).scrollTop() > 1000 ) {
+				jQuery( '#scroll-up' ).fadeIn();
+			} else {
+				jQuery( '#scroll-up' ).fadeOut();
+			}
+		} );
+		jQuery( 'a#scroll-up' ).click( function () {
+			jQuery( 'body,html' ).animate( {
+				scrollTop : 0
+			}, 800 );
+			return false;
+		} );
+	} );
+
+} );
