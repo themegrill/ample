@@ -1527,6 +1527,9 @@ article.post {
 .tags a {
 	display: inline-block;
 }
+ul.wp-block-gallery {
+	padding: 0;
+}
 
 /* Related Posts */
 
