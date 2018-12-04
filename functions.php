@@ -163,9 +163,12 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 $theme            = wp_get_theme( 'ample' );
 $ample_version = $theme['Version'];
 
-/* Calling in the admin area for the Welcome Page */
+/**
+ * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
+ */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
+	require get_template_directory() . '/inc/admin/class-ample-new-theme-notice.php';
 }
 
 /**
