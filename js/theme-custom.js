@@ -25,6 +25,19 @@ jQuery( document ).ready( function () {
 				}
 			}
 		} );
+
+		// For click out of search box.
+		jQuery( document ).on( 'click.outEvent', function( e ){
+			if ( e.target.closest('.search-form-top') || e.target.closest('.search-top') ) {
+				return;
+			}
+
+			hideSearchForm();
+
+			// Unbind current click event.
+			jQuery( document ).off( 'click.outEvent' );
+		} );
+
 	} );
 
 	// For Scroll to top button
