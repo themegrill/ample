@@ -54,6 +54,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 == Changelog ==
 = Version TBD =
 * Fix - Gallery padding for Gutenberg
+* Tweak - Improve search with autofocus, hide on esc and clicking outside it.
 
 = Version 1.2.2 - 2018-11-22 =
 * Added - Gutenberg compatibility
