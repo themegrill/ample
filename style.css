@@ -873,6 +873,9 @@ img#wpstats {
 	z-index: 9999;
 	background-color: #ffffff;
 }
+.search-form-top.show {
+    display: block;
+}
 .not-found .search-wrap button {
 	 right: 175px;
 }
