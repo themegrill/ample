@@ -57,7 +57,7 @@ function ample_scripts() {
 	}
 
 	if ( ( $slider > 1 ) && is_front_page() && ample_option( 'ample_activate_slider', '0' ) == '1' ) {
-		wp_enqueue_script( 'ample-slider', get_template_directory_uri() . '/js/slider-setting.js', array( 'ample-bxslider' ), false, true );
+		wp_enqueue_script( 'ample-bxslider' );
 	}
 	wp_enqueue_script( 'ample-custom', get_template_directory_uri() . '/js/theme-custom.js', array( 'jquery' ), false, true );
 
