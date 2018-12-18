@@ -23,6 +23,7 @@ jQuery( document ).ready( function () {
 		} );
 	} );
 
+	// For bx slider setting.
 	if ( typeof jQuery.fn.bxSlider !== 'undefined' ) {
 		jQuery( '.big-slider' ).bxSlider( {
 			mode           : 'fade',
