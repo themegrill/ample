@@ -52,6 +52,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Tweak - Utilize single custom JS file for required theme JS settings.
+
 = Version 1.2.3 - 2018-12-04 =
 * Fix - Gallery padding for Gutenberg
 * Tweak - Improve search with autofocus, hide on esc and clicking outside it.
