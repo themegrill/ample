@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version 1.2.4 - 2019-12-04 =
+= Version 1.2.4 - 2019-01-16 =
 * Tweak - Utilize single custom JS file for required theme JS settings.
 
 = Version 1.2.3 - 2018-12-04 =
