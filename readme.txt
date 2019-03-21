@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.5 - 2019-03-21 =
 * Tweak - Modify pingback url autodiscovery for single posts, pages, or attachments.
 * Tweak - separate customize control class via different file
 * Update - BxSlider to 4.2.15

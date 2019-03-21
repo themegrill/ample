@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.2.4\n"
+"Project-Id-Version: Ample 1.2.5\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2019-01-16 05:03:56+00:00\n"
+"POT-Creation-Date: 2019-03-21 09:51:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -118,7 +118,7 @@ msgid "View Demo"
 msgstr ""
 
 #: inc/admin/class-ample-admin.php:137 inc/admin/class-ample-admin.php:231
-#: inc/customizer.php:700
+#: inc/customizer.php:539
 msgid "View PRO version"
 msgstr ""
 
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:405 inc/customizer.php:406
+#: inc/admin/class-ample-admin.php:405 inc/customizer.php:331
 msgid "Slider"
 msgstr ""
 
@@ -450,212 +450,212 @@ msgstr ""
 msgid "Both Sidebar"
 msgstr ""
 
-#: inc/customizer.php:30
+#: inc/customizer.php:36
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:37
+#: inc/customizer.php:43
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:50
+#: inc/customizer.php:56
 msgid "Choose the option that you want."
 msgstr ""
 
-#: inc/customizer.php:53
+#: inc/customizer.php:59
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:54
+#: inc/customizer.php:60
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:55
+#: inc/customizer.php:61
 msgid "Show Both"
 msgstr ""
 
-#: inc/customizer.php:56
+#: inc/customizer.php:62
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:63
+#: inc/customizer.php:69
 msgid "Responsive Menu Style"
 msgstr ""
 
-#: inc/customizer.php:76
+#: inc/customizer.php:82
 msgid "Switch to new responsive menu."
 msgstr ""
 
-#: inc/customizer.php:82
+#: inc/customizer.php:88
 msgid "Header Title Bar Background Image"
 msgstr ""
 
-#: inc/customizer.php:95
+#: inc/customizer.php:101
 msgid "Upload Background Image for Header Title Bar."
 msgstr ""
 
-#: inc/customizer.php:110
+#: inc/customizer.php:116
 msgid "Choose Background Color for Header Title Bar"
 msgstr ""
 
-#: inc/customizer.php:125
+#: inc/customizer.php:131
 msgid "Choose Text Color for Header Title Bar"
 msgstr ""
 
-#: inc/customizer.php:133
+#: inc/customizer.php:139
 msgid "Header Image Position"
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:152
 msgid "Choose top header image display position."
 msgstr ""
 
-#: inc/customizer.php:149
+#: inc/customizer.php:155
 msgid ""
 "Position Above (Default): Display the Header image just above the site "
 "title and main menu part."
 msgstr ""
 
-#: inc/customizer.php:150
+#: inc/customizer.php:156
 msgid ""
 "Position Below: Display the Header image just below the site title and main "
 "menu part."
 msgstr ""
 
-#: inc/customizer.php:159
+#: inc/customizer.php:165
 msgid "Design"
 msgstr ""
 
-#: inc/customizer.php:166
+#: inc/customizer.php:172
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:180
+#: inc/customizer.php:186
 msgid "Choose your site layout. The change is reflected in whole site."
 msgstr ""
 
-#: inc/customizer.php:183
+#: inc/customizer.php:189
 msgid "Wide layout"
 msgstr ""
 
-#: inc/customizer.php:184
+#: inc/customizer.php:190
 msgid "Boxed layout"
 msgstr ""
 
-#: inc/customizer.php:257
+#: inc/customizer.php:196
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:271
+#: inc/customizer.php:210
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, search etc. The layout for a single post and page can be "
 "controlled from below options."
 msgstr ""
 
-#: inc/customizer.php:285
+#: inc/customizer.php:224
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:238
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/customizer.php:313
+#: inc/customizer.php:252
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:327
+#: inc/customizer.php:266
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:343
+#: inc/customizer.php:282
 msgid "Primary color option"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:294
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site."
 msgstr ""
 
-#: inc/customizer.php:379
+#: inc/customizer.php:304
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:392
+#: inc/customizer.php:317
 msgid "Write your custom css."
 msgstr ""
 
-#: inc/customizer.php:411
+#: inc/customizer.php:336
 msgid "Activate slider"
 msgstr ""
 
-#: inc/customizer.php:426
+#: inc/customizer.php:351
 msgid "Check to activate slider."
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:367
 msgid "Slider #%1$s"
 msgstr ""
 
-#: inc/customizer.php:456
+#: inc/customizer.php:381
 msgid "Upload image"
 msgstr ""
 
-#: inc/customizer.php:471
+#: inc/customizer.php:396
 msgid "Enter title for this slide"
 msgstr ""
 
-#: inc/customizer.php:485
+#: inc/customizer.php:410
 msgid "Enter button text"
 msgstr ""
 
-#: inc/customizer.php:500
+#: inc/customizer.php:425
 msgid "Enter link to redirect"
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:438
 msgid "Additional"
 msgstr ""
 
-#: inc/customizer.php:576
+#: inc/customizer.php:450
 msgid "Category to hide from Blog"
 msgstr ""
 
-#: inc/customizer.php:589
+#: inc/customizer.php:463
 msgid "Select a Category or Categories to hide its posts from Blog page."
 msgstr ""
 
-#: inc/customizer.php:598
+#: inc/customizer.php:472
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:611
+#: inc/customizer.php:485
 msgid "Check to display author bio"
 msgstr ""
 
-#: inc/customizer.php:618
+#: inc/customizer.php:492
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:632
+#: inc/customizer.php:506
 msgid "Check to display related posts"
 msgstr ""
 
-#: inc/customizer.php:646
+#: inc/customizer.php:520
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:650
+#: inc/customizer.php:524
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:651
+#: inc/customizer.php:525
 msgid "Related Posts By Tags"
 msgstr ""
 
