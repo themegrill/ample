@@ -21,6 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php
+if ( function_exists( 'wp_body_open' ) ) {
+	wp_body_open();
+}
+?>
+
 <div id="page" class="hfeed site">
 	<?php
 	if ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) {
