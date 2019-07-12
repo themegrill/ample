@@ -52,7 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.6 - 2019-07-12 =
 * Remove - Removed dashboard message to align with the theme review guidelines
 
 = Version 1.2.5 - 2019-03-21 =
