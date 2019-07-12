@@ -52,6 +52,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Remove - Removed dashboard message to align with the theme review guidelines
+
 = Version 1.2.5 - 2019-03-21 =
 * Tweak - Modify pingback url autodiscovery for single posts, pages, or attachments.
 * Tweak - separate customize control class via different file
