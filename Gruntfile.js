@@ -71,7 +71,7 @@ module.exports = function( grunt ){
 		// Compress files and folders.
 		compress: {
 			options: {
-				archive: 'ample.zip'
+				archive: 'dist/ample.zip'
 			},
 			files: {
 				src: [
