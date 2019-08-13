@@ -62,6 +62,9 @@ function ample_scripts() {
 	wp_enqueue_script( 'ample-custom', get_template_directory_uri() . '/js/theme-custom.js', array( 'jquery' ), false, true );
 
 	wp_enqueue_script( 'ample-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), false, true );
+
+	// Skip link focus fix JS enqueue.
+	wp_enqueue_script( 'ample-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), false, true );
 }
 
 /**************************************************************************************/
