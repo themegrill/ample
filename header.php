@@ -29,6 +29,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 
 <div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'ample' ); ?></a>
+
 	<?php
 	if ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) {
 		$header_extra_class = 'logo-disable';
@@ -106,7 +108,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 			} ?>
 		</div><!-- .header -->
 	</header><!-- end of header -->
-	<div class="main-wrapper">
+	<div class="main-wrapper" id="main">
 
 		<?php if ( ample_option( 'ample_activate_slider', '0' ) == '1' ) {
 			if ( is_front_page() ) {
