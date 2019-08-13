@@ -530,19 +530,18 @@ li.default-menu {
 ====> 5.3 Primary Menu Dropdown
 --------------------------------------------------------------*/
 .main-navigation ul li ul {
-	display:none;
+	background-color: #ffffff;
+	position: absolute;
+	top: 70px;
+	width: 160px;
+}
+.main-navigation ul li ul {
+	left: -99999px;
 	z-index: 9999;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	display:block;
-}
-.main-navigation ul li ul {
-	background-color: #ffffff;
 	left: -1px;
-	position: absolute;
-	top: 70px;
-	width: 160px;
 }
 .main-navigation ul li .sub-menu a {
 	text-transform: none;
@@ -576,8 +575,11 @@ li.default-menu {
 	color: #80abc8;
 }
 .main-navigation ul li ul li ul {
-	left: 158px;
 	top: -1px;
+}
+.main-navigation ul li ul li:hover > ul,
+.main-navigation ul li ul li.focus > ul {
+	left: 100%;
 }
 .main-navigation select {
 	display: none;
