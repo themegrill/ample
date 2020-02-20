@@ -169,10 +169,6 @@ $ample_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
 	require get_template_directory() . '/inc/admin/class-ample-tdi-notice.php';
-
-	if ( ! function_exists( 'get_plugins' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/plugin.php';
-	}
 }
 
 /**
