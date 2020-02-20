@@ -1,14 +1,14 @@
-# Copyright (C) 2019 ThemeGrill
+# Copyright (C) 2020 ThemeGrill
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.2.5\n"
+"Project-Id-Version: Ample 1.2.7\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2019-07-12 15:37:48+00:00\n"
+"POT-Creation-Date: 2020-02-20 10:18:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -81,6 +81,10 @@ msgstr ""
 
 #: functions.php:84
 msgid "Footer Menu"
+msgstr ""
+
+#: header.php:32
+msgid "Skip to content"
 msgstr ""
 
 #: inc/admin/class-ample-admin.php:36 inc/admin/class-ample-admin.php:118
@@ -406,6 +410,35 @@ msgstr ""
 msgid "View Pro"
 msgstr ""
 
+#: inc/admin/class-ample-tdi-notice.php:40
+#. Translators: 1: Notice text 2: Plugin Name 3. CTA
+msgid ""
+"%1$s: Please update \"%2$s\" plugin to latest version to make sure your "
+"site is all secure. We released a security patch in the latest version of "
+"this plugin. %3$s"
+msgstr ""
+
+#: inc/admin/class-ample-tdi-notice.php:41
+msgid "Action Required"
+msgstr ""
+
+#: inc/admin/class-ample-tdi-notice.php:42
+#: inc/admin/class-ample-tdi-notice.php:54
+msgid "ThemeGrill Demo Importer"
+msgstr ""
+
+#: inc/admin/class-ample-tdi-notice.php:47
+#. Translators: 1: CTA link 2: CTA text
+msgid "Update Now"
+msgstr ""
+
+#: inc/admin/class-ample-tdi-notice.php:53
+#. Translators: 1: Plugin name
+msgid ""
+"Also, if the purpose of importing the demo via \"%1$s\" plugin is "
+"fulfilled, you can simply delete this plugin now."
+msgstr ""
+
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
 msgid "Select Layout"
 msgstr ""
@@ -647,7 +680,7 @@ msgstr ""
 msgid "Ample Pro One Page"
 msgstr ""
 
-#: inc/functions.php:132
+#: inc/functions.php:135
 msgid "WordPress"
 msgstr ""
 
@@ -655,61 +688,61 @@ msgstr ""
 msgid "ThemeGrill"
 msgstr ""
 
-#: inc/functions.php:136
+#: inc/functions.php:139
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/functions.php:136
+#: inc/functions.php:139
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/functions.php:136
+#: inc/functions.php:139
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/functions.php:487 inc/related-posts.php:61
+#: inc/functions.php:490 inc/related-posts.php:61
 msgid ""
 "<span class=\"entry-date\"><i class=\"fa fa-aw fa-calendar-o\"></i> <a "
 "href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">%3$s</a></span>"
 msgstr ""
 
-#: inc/functions.php:498
+#: inc/functions.php:501
 msgid "No Comments"
 msgstr ""
 
-#: inc/functions.php:498
+#: inc/functions.php:501
 msgid "1 Comment"
 msgstr ""
 
-#: inc/functions.php:498
+#: inc/functions.php:501
 msgid "% Comments"
 msgstr ""
 
-#: inc/functions.php:498
+#: inc/functions.php:501
 msgid "Comments Off"
 msgstr ""
 
-#: inc/functions.php:521
+#: inc/functions.php:524
 msgid "Pingback:"
 msgstr ""
 
-#: inc/functions.php:521
+#: inc/functions.php:524
 msgid "(Edit)"
 msgstr ""
 
-#: inc/functions.php:536
+#: inc/functions.php:539
 msgid "Post author"
 msgstr ""
 
-#: inc/functions.php:539
+#: inc/functions.php:542
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/functions.php:547
+#: inc/functions.php:550
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/functions.php:553
+#: inc/functions.php:556
 msgid "Reply"
 msgstr ""
 
