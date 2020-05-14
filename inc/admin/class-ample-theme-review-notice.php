@@ -38,7 +38,6 @@ class Ample_Theme_Review_Notice {
 		// Set the installed time in `ample_theme_installed_time` option table.
 		$option = get_option( 'ample_theme_installed_time' );
 
-
 		if ( ! $option ) {
 			update_option( 'ample_theme_installed_time', time() );
 		}
@@ -54,8 +53,7 @@ class Ample_Theme_Review_Notice {
 	 */
 	public function ample_theme_review_notice() {
 
-		global $current_user;
-		$user_id                  = $current_user->ID;
+		$user_id                  = get_current_user_id();
 		$current_user             = wp_get_current_user();
 		$ignored_notice           = get_user_meta( $user_id, 'ample_ignore_theme_review_notice', true );
 		$ignored_notice_partially = get_user_meta( $user_id, 'nag_ample_ignore_theme_review_notice_partially', true );
@@ -78,7 +76,8 @@ class Ample_Theme_Review_Notice {
 				printf(
 				/* Translators: %1$s current user display name. */
 					esc_html__(
-						'Howdy, %1$s! It seems that you have been using this theme for more than 15 days. We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!', 'ample'
+						'Howdy, %1$s! It seems that you have been using this theme for more than 15 days. We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!',
+						'ample'
 					),
 					'<strong>' . esc_html( $current_user->display_name ) . '</strong>'
 				);
@@ -117,16 +116,13 @@ class Ample_Theme_Review_Notice {
 	/**
 	 * Function to remove the theme review notice permanently as requested by the user.
 	 */
-	public function ample_ignore_theme_review_notice()
-	{
-
-		global $current_user;
-		$user_id = $current_user->ID;
+	public function ample_ignore_theme_review_notice() {
+		$user_id = get_current_user_id();
 
 		/* If user clicks to ignore the notice, add that to their user meta */
-		if (isset($_GET['nag_ample_ignore_theme_review_notice']) && '0' === $_GET['nag_ample_ignore_theme_review_notice']
+		if ( isset( $_GET['nag_ample_ignore_theme_review_notice'] ) && '0' === $_GET['nag_ample_ignore_theme_review_notice']
 		) {
-			add_user_meta($user_id, 'ample_ignore_theme_review_notice', 'true', true);
+			add_user_meta( $user_id, 'ample_ignore_theme_review_notice', 'true', true );
 		}
 
 	}
@@ -136,8 +132,7 @@ class Ample_Theme_Review_Notice {
 	 */
 	public function ample_ignore_theme_review_notice_partially() {
 
-		global $current_user;
-		$user_id = $current_user->ID;
+		$user_id = get_current_user_id();
 
 		/* If user clicks to ignore the notice, add that to their user meta */
 		if ( isset( $_GET['nag_ample_ignore_theme_review_notice_partially'] ) && '0' === $_GET['nag_ample_ignore_theme_review_notice_partially'] ) {
