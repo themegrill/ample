@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.2.7\n"
+"Project-Id-Version: Ample 1.2.8\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-02-20 10:18:15+00:00\n"
+"POT-Creation-Date: 2020-05-22 12:35:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,19 +13,19 @@ msgstr ""
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: inc/admin/class-ample-admin.php:431
+#: inc/admin/class-ample-admin.php:441
 msgid "1"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:466
+#: inc/admin/class-ample-admin.php:476
 msgid "4"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:432
+#: inc/admin/class-ample-admin.php:442
 msgid "5"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:467
+#: inc/admin/class-ample-admin.php:477
 msgid "9"
 msgstr ""
 
@@ -87,182 +87,166 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:36 inc/admin/class-ample-admin.php:118
+#: inc/admin/class-ample-admin.php:39
+msgid "Processing..."
+msgstr ""
+
+#: inc/admin/class-ample-admin.php:53 inc/admin/class-ample-admin.php:54
+#: inc/admin/class-ample-admin.php:79
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:77
-msgid "Action failed. Please refresh the page and retry."
-msgstr ""
-
-#: inc/admin/class-ample-admin.php:81
-msgid "Cheatin&#8217; huh?"
-msgstr ""
-
-#: inc/admin/class-ample-admin.php:95
-msgid "Dismiss"
-msgstr ""
-
-#: inc/admin/class-ample-admin.php:96
-msgid ""
-"Welcome! Thank you for choosing ample! To fully take advantage of the best "
-"our theme can offer please make sure you visit our %swelcome page%s."
-msgstr ""
-
-#: inc/admin/class-ample-admin.php:98
-msgid "Get started with Ample"
-msgstr ""
-
-#: inc/admin/class-ample-admin.php:133
+#: inc/admin/class-ample-admin.php:94
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:135
+#: inc/admin/class-ample-admin.php:96
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:137 inc/admin/class-ample-admin.php:231
+#: inc/admin/class-ample-admin.php:98 inc/admin/class-ample-admin.php:241
 #: inc/customizer.php:539
 msgid "View PRO version"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:139
+#: inc/admin/class-ample-admin.php:100
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:154
+#: inc/admin/class-ample-admin.php:134
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:162
+#: inc/admin/class-ample-admin.php:157
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:170
+#: inc/admin/class-ample-admin.php:180
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:204
+#: inc/admin/class-ample-admin.php:214
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:205
+#: inc/admin/class-ample-admin.php:215
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:207
+#: inc/admin/class-ample-admin.php:217
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:212 inc/admin/class-ample-admin.php:215
+#: inc/admin/class-ample-admin.php:222 inc/admin/class-ample-admin.php:225
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:213
+#: inc/admin/class-ample-admin.php:223
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:220
+#: inc/admin/class-ample-admin.php:230
+#: inc/admin/class-ample-theme-review-notice.php:95
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:221
+#: inc/admin/class-ample-admin.php:231
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:223 inc/admin/class-ample-admin.php:505
+#: inc/admin/class-ample-admin.php:233 inc/admin/class-ample-admin.php:515
 msgid "Support"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:228
+#: inc/admin/class-ample-admin.php:238
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:229 inc/admin/class-ample-admin.php:383
+#: inc/admin/class-ample-admin.php:239 inc/admin/class-ample-admin.php:393
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:236
+#: inc/admin/class-ample-admin.php:246
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:237
+#: inc/admin/class-ample-admin.php:247
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:239 sidebar.php:23
+#: inc/admin/class-ample-admin.php:249 sidebar.php:23
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:246 inc/admin/class-ample-admin.php:254
+#: inc/admin/class-ample-admin.php:256 inc/admin/class-ample-admin.php:264
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:250
+#: inc/admin/class-ample-admin.php:260
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:266
+#: inc/admin/class-ample-admin.php:276
 msgid "Return to Updates"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:266
+#: inc/admin/class-ample-admin.php:276
 msgid "Return to Dashboard &rarr; Updates"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:269
+#: inc/admin/class-ample-admin.php:279
 msgid "Go to Dashboard &rarr; Home"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:269
+#: inc/admin/class-ample-admin.php:279
 msgid "Go to Dashboard"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:286
+#: inc/admin/class-ample-admin.php:296
 msgid "View changelog below:"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:341
+#: inc/admin/class-ample-admin.php:351
 msgid "This theme recommends following plugins:"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:344
+#: inc/admin/class-ample-admin.php:354
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:345 inc/admin/class-ample-admin.php:349
+#: inc/admin/class-ample-admin.php:355 inc/admin/class-ample-admin.php:359
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:348
+#: inc/admin/class-ample-admin.php:358
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:352
+#: inc/admin/class-ample-admin.php:362
 msgid "Contact Form 7"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:355
+#: inc/admin/class-ample-admin.php:365
 msgid "WP-PageNavi"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:358
+#: inc/admin/class-ample-admin.php:368
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:361
+#: inc/admin/class-ample-admin.php:371
 msgid "Polylang"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:362 inc/admin/class-ample-admin.php:366
+#: inc/admin/class-ample-admin.php:372 inc/admin/class-ample-admin.php:376
 msgid "Fully Compatible in Pro Version"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:365
+#: inc/admin/class-ample-admin.php:375
 msgid "WPML"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:388
+#: inc/admin/class-ample-admin.php:398
 msgid "Features"
 msgstr ""
 
@@ -270,67 +254,67 @@ msgstr ""
 msgid "Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:390 inc/demo-config.php:26
+#: inc/admin/class-ample-admin.php:400 inc/demo-config.php:26
 msgid "Ample Pro"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:395
+#: inc/admin/class-ample-admin.php:405
 msgid "Price"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:396
+#: inc/admin/class-ample-admin.php:406
 msgid "Free"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:397
+#: inc/admin/class-ample-admin.php:407
 msgid "$69"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:400
+#: inc/admin/class-ample-admin.php:410
 msgid "Use as One Page theme"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:405 inc/customizer.php:331
+#: inc/admin/class-ample-admin.php:415 inc/customizer.php:331
 msgid "Slider"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:406
+#: inc/admin/class-ample-admin.php:416
 msgid "4 Slides"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:407
+#: inc/admin/class-ample-admin.php:417
 msgid "Unlimited Slides"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:410
+#: inc/admin/class-ample-admin.php:420
 msgid "Slider Settings"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:412
+#: inc/admin/class-ample-admin.php:422
 msgid "Slides type, duration & delay time"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:415
+#: inc/admin/class-ample-admin.php:425
 msgid "Google Fonts"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:417
+#: inc/admin/class-ample-admin.php:427
 msgid "600+"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:420
+#: inc/admin/class-ample-admin.php:430
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:421
+#: inc/admin/class-ample-admin.php:431
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:422
+#: inc/admin/class-ample-admin.php:432
 msgid "Primary color option & 35+"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:425
+#: inc/admin/class-ample-admin.php:435
 msgid "Font Size options"
 msgstr ""
 
@@ -338,76 +322,86 @@ msgstr ""
 msgid "Business Template"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:435
+#: inc/admin/class-ample-admin.php:445
 msgid "Social Links"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:440
+#: inc/admin/class-ample-admin.php:450
 msgid "Additional Top Header"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:442
+#: inc/admin/class-ample-admin.php:452
 msgid "Social Links + Header text option"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:445
+#: inc/admin/class-ample-admin.php:455
 msgid "Translation Ready"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:450
+#: inc/admin/class-ample-admin.php:460
 msgid "Woocommerce Compatible"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:455
+#: inc/admin/class-ample-admin.php:465
 msgid "Woocommerce archive page Layout"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:460
+#: inc/admin/class-ample-admin.php:470
 msgid "WPML/Polylang Compatible"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:465
+#: inc/admin/class-ample-admin.php:475
 msgid "Custom Widgets"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:470
+#: inc/admin/class-ample-admin.php:480
 msgid "TG: Testimonial"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:475
+#: inc/admin/class-ample-admin.php:485
 msgid "TG: Our Clients"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:480
+#: inc/admin/class-ample-admin.php:490
 msgid "TG: Fun Facts"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:485
+#: inc/admin/class-ample-admin.php:495
 msgid "TG: Team"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:490
+#: inc/admin/class-ample-admin.php:500
 msgid "TG: Pricing Table"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:495
+#: inc/admin/class-ample-admin.php:505
 msgid "Footer Copyright Editor"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:500
+#: inc/admin/class-ample-admin.php:510
 msgid "Demo Content"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:506
+#: inc/admin/class-ample-admin.php:516
 msgid "Forum"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:507
+#: inc/admin/class-ample-admin.php:517
 msgid "Emails/Priority Support Ticket"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:513
+#: inc/admin/class-ample-admin.php:523
 msgid "View Pro"
+msgstr ""
+
+#: inc/admin/class-ample-notice.php:59 inc/admin/class-ample-notice.php:78
+#: inc/admin/class-ample-welcome-notice.php:77
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/class-ample-notice.php:63 inc/admin/class-ample-notice.php:82
+#: inc/admin/class-ample-welcome-notice.php:81
+msgid "Cheatin&#8217; huh?"
 msgstr ""
 
 #: inc/admin/class-ample-tdi-notice.php:40
@@ -437,6 +431,57 @@ msgstr ""
 msgid ""
 "Also, if the purpose of importing the demo via \"%1$s\" plugin is "
 "fulfilled, you can simply delete this plugin now."
+msgstr ""
+
+#: inc/admin/class-ample-theme-review-notice.php:68
+#. Translators: %1$s current user display name.
+msgid ""
+"Howdy, %1$s! It seems that you have been using this theme for more than 15 "
+"days. We hope you are happy with everything that the theme has to offer. If "
+"you can spare a minute, please help us by leaving a 5-star review on "
+"WordPress.org.  By spreading the love, we can continue to develop new "
+"amazing features in the future, for free!"
+msgstr ""
+
+#: inc/admin/class-ample-theme-review-notice.php:80
+msgid "Sure"
+msgstr ""
+
+#: inc/admin/class-ample-theme-review-notice.php:85
+#: inc/admin/class-ample-upgrade-notice.php:95
+msgid "Maybe later"
+msgstr ""
+
+#: inc/admin/class-ample-theme-review-notice.php:90
+msgid "I already did"
+msgstr ""
+
+#: inc/admin/class-ample-upgrade-notice.php:90
+#. Translators: %1$s current user display name., %2$s this theme name., %3$s
+#. discount coupon code., %4$s discount percentage.
+msgid "Upgrade to pro"
+msgstr ""
+
+#: inc/admin/class-ample-upgrade-notice.php:100
+msgid "Got pre sales queries?"
+msgstr ""
+
+#: inc/admin/class-ample-welcome-notice.php:26
+msgid "Get started with Ample"
+msgstr ""
+
+#: inc/admin/class-ample-welcome-notice.php:54
+#. translators: 1: welcome page link starting html tag, 2: welcome page link
+#. ending html tag.
+msgid ""
+"Welcome! Thank you for choosing Ample! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
+
+#: inc/admin/class-ample-welcome-notice.php:63
+msgid ""
+"Clicking the button will install and activate the ThemeGrill demo importer "
+"plugin."
 msgstr ""
 
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
