@@ -23,8 +23,24 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 		 */
 		public function __construct() {
 			add_action( 'admin_menu', array( $this, 'admin_menu' ) );
-			add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
-			add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		}
+
+		/**
+		 * Localize array for import button AJAX request.
+		 */
+		public function enqueue_scripts() {
+			wp_enqueue_style( 'ample-admin-style', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), AMPLE_THEME_VERSION );
+
+			wp_enqueue_script( 'ample-plugin-install-helper', get_template_directory_uri() . '/inc/admin/js/plugin-handle.js', array( 'jquery' ), AMPLE_THEME_VERSION, true );
+
+			$welcome_data = array(
+				'uri'      => esc_url( admin_url( '/themes.php?page=demo-importer&browse=all&ample-hide-notice=welcome' ) ),
+				'btn_text' => esc_html__( 'Processing...', 'ample' ),
+				'nonce'    => wp_create_nonce( 'ample_demo_import_nonce' ),
+			);
+
+			wp_localize_script( 'ample-plugin-install-helper', 'ampleRedirectDemoPage', $welcome_data );
 		}
 
 		/**
@@ -33,72 +49,17 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 		public function admin_menu() {
 			$theme = wp_get_theme( get_template() );
 
-			$page = add_theme_page( esc_html__( 'About', 'ample' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'ample' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'ample-welcome', array(
-				$this,
-				'welcome_screen',
-			) );
-			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_styles' ) );
-		}
-
-		/**
-		 * Enqueue styles.
-		 */
-		public function enqueue_styles() {
-			global $ample_version;
-
-			wp_enqueue_style( 'ample-welcome', get_template_directory_uri() . '/css/admin/welcome.css', array(), $ample_version );
-		}
-
-		/**
-		 * Add admin notice.
-		 */
-		public function admin_notice() {
-			global $ample_version, $pagenow;
-
-			wp_enqueue_style( 'ample-message', get_template_directory_uri() . '/css/admin/message.css', array(), $ample_version );
-
-			// Let's bail on theme activation.
-			if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
-				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
-				update_option( 'ample_admin_notice_welcome', 1 );
-
-				// No option? Let run the notice wizard again..
-			} elseif ( ! get_option( 'ample_admin_notice_welcome' ) ) {
-				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
-			}
-		}
-
-		/**
-		 * Hide a notice if the GET variable is set.
-		 */
-		public static function hide_notices() {
-			if ( isset( $_GET['ample-hide-notice'] ) && isset( $_GET['_ample_notice_nonce'] ) ) {
-				if ( ! wp_verify_nonce( $_GET['_ample_notice_nonce'], 'ample_hide_notices_nonce' ) ) {
-					wp_die( __( 'Action failed. Please refresh the page and retry.', 'ample' ) );
-				}
-
-				if ( ! current_user_can( 'manage_options' ) ) {
-					wp_die( __( 'Cheatin&#8217; huh?', 'ample' ) );
-				}
-
-				$hide_notice = sanitize_text_field( $_GET['ample-hide-notice'] );
-				update_option( 'ample_admin_notice_' . $hide_notice, 1 );
-			}
-		}
-
-		/**
-		 * Show welcome notice.
-		 */
-		public function welcome_notice() {
-			?>
-			<div id="message" class="updated ample-message">
-				<a class="ample-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'ample-hide-notice', 'welcome' ) ), 'ample_hide_notices_nonce', '_ample_notice_nonce' ) ); ?>"><?php esc_html_e( 'Dismiss', 'ample' ); ?></a>
-				<p><?php printf( esc_html__( 'Welcome! Thank you for choosing ample! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
-				<p class="submit">
-					<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Ample', 'ample' ); ?></a>
-				</p>
-			</div>
-			<?php
+			$page = add_theme_page(
+				esc_html__( 'About', 'ample' ) . ' ' . $theme->display( 'Name' ),
+				esc_html__( 'About', 'ample' ) . ' ' . $theme->display( 'Name' ),
+				'activate_plugins',
+				'ample-welcome',
+				array(
+					$this,
+					'welcome_screen',
+				)
+			);
+			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_scripts' ) );
 		}
 
 		/**
@@ -107,11 +68,11 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 		 * @access private
 		 */
 		private function intro() {
-			global $ample_version;
+
 			$theme = wp_get_theme( get_template() );
 
 			// Drop minor version if 0
-			$major_version = substr( $ample_version, 0, 3 );
+			$major_version = substr( AMPLE_THEME_VERSION, 0, 3 );
 			?>
 			<div class="ample-theme-info">
 				<h1>
@@ -140,33 +101,82 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 			</p>
 
 			<h2 class="nav-tab-wrapper">
-				<a class="nav-tab <?php if ( empty( $_GET['tab'] ) && $_GET['page'] == 'ample-welcome' ) {
+				<a class="nav-tab
+				<?php
+				if ( empty( $_GET['tab'] ) && $_GET['page'] == 'ample-welcome' ) {
 					echo 'nav-tab-active';
-				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ample-welcome' ), 'themes.php' ) ) ); ?>">
+				}
+				?>
+				" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ample-welcome' ), 'themes.php' ) ) ); ?>">
 					<?php echo $theme->display( 'Name' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) {
+				<a class="nav-tab
+				<?php
+				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) {
 					echo 'nav-tab-active';
-				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'ample-welcome',
-					'tab'  => 'supported_plugins',
-				), 'themes.php' ) ) ); ?>">
+				}
+				?>
+				" href="
+				<?php
+				echo esc_url(
+					admin_url(
+						add_query_arg(
+							array(
+								'page' => 'ample-welcome',
+								'tab'  => 'supported_plugins',
+							),
+							'themes.php'
+						)
+					)
+				);
+				?>
+				">
 					<?php esc_html_e( 'Supported Plugins', 'ample' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) {
+				<a class="nav-tab
+				<?php
+				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) {
 					echo 'nav-tab-active';
-				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'ample-welcome',
-					'tab'  => 'free_vs_pro',
-				), 'themes.php' ) ) ); ?>">
+				}
+				?>
+				" href="
+				<?php
+				echo esc_url(
+					admin_url(
+						add_query_arg(
+							array(
+								'page' => 'ample-welcome',
+								'tab'  => 'free_vs_pro',
+							),
+							'themes.php'
+						)
+					)
+				);
+				?>
+				">
 					<?php esc_html_e( 'Free Vs Pro', 'ample' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) {
+				<a class="nav-tab
+				<?php
+				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) {
 					echo 'nav-tab-active';
-				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'ample-welcome',
-					'tab'  => 'changelog',
-				), 'themes.php' ) ) ); ?>">
+				}
+				?>
+				" href="
+				<?php
+				echo esc_url(
+					admin_url(
+						add_query_arg(
+							array(
+								'page' => 'ample-welcome',
+								'tab'  => 'changelog',
+							),
+							'themes.php'
+						)
+					)
+				);
+				?>
+				">
 					<?php esc_html_e( 'Changelog', 'ample' ); ?>
 				</a>
 			</h2>
@@ -202,7 +212,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 					<div class="under-the-hood two-col">
 						<div class="col">
 							<h3><?php esc_html_e( 'Theme Customizer', 'ample' ); ?></h3>
-							<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-secondary"><?php esc_html_e( 'Customize', 'ample' ); ?></a>
 							</p>
@@ -210,7 +220,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Documentation', 'ample' ); ?></h3>
-							<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://docs.themegrill.com/ample/?utm_source=ample-about&utm_medium=documentation-link&utm_campaign=documentation' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Documentation', 'ample' ); ?></a>
 							</p>
@@ -218,7 +228,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got theme support question?', 'ample' ); ?></h3>
-							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=ample-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support', 'ample' ); ?></a>
 							</p>
@@ -226,7 +236,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Need more features?', 'ample' ); ?></h3>
-							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://themegrill.com/themes/ample/?utm_source=ample-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
 							</p>
@@ -234,7 +244,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got sales related question?', 'ample' ); ?></h3>
-							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=ample-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a>
 							</p>
@@ -247,7 +257,7 @@ if ( ! class_exists( 'Ample_Admin' ) ) :
 								echo ' ' . $theme->display( 'Name' );
 								?>
 							</h3>
-							<p><?php esc_html_e( 'Click below to translate this theme into your own language.', 'ample' ) ?></p>
+							<p><?php esc_html_e( 'Click below to translate this theme into your own language.', 'ample' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'http://translate.wordpress.org/projects/wp-themes/ample' ); ?>" class="button button-secondary">
 									<?php

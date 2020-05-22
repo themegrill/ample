@@ -160,8 +160,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 /**
  * Assign the Ample version to a variable.
  */
-$theme            = wp_get_theme( 'ample' );
-$ample_version = $theme['Version'];
+$ample_theme = wp_get_theme( 'ample' );
+
+define( 'AMPLE_THEME_VERSION', $ample_theme->get( 'Version' ) );
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
@@ -169,6 +170,10 @@ $ample_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
 	require get_template_directory() . '/inc/admin/class-ample-tdi-notice.php';
+	require get_template_directory() . '/inc/admin/class-ample-notice.php';
+	require get_template_directory() . '/inc/admin/class-ample-welcome-notice.php';
+	require get_template_directory() . '/inc/admin/class-ample-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-ample-theme-review-notice.php';
 }
 
 /**
