@@ -53,6 +53,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 = TBD =
+* Add   - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 * Tweak - Add and improve theme-related notices.
 
 = Version 1.2.7 - 2020-02-20 =
