@@ -360,7 +360,7 @@ function ample_body_class( $classes ) {
 	if ( ample_option( 'ample_site_layout', 'wide' ) == 'wide' ) {
 		$classes[] = 'wide';
 	} else {
-		$classes[] = '';
+		$classes[] = 'boxed';
 	}
 
 	if ( is_page_template( 'page-templates/template-business.php' ) ) {
