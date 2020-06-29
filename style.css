@@ -96,6 +96,10 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
+* {
+	box-sizing: border-box;
+}
+
 article,
 aside,
 details,
@@ -1765,13 +1769,6 @@ img.header-image {
 	width: unset;
 }
 
-.no-sidebar-full-width.boxed #primary .entry-content > .alignwide,
-.no-sidebar.boxed #primary .entry-content > .alignwide {
-	margin-left: -40px;
-	margin-right: -40px;
-	max-width: unset;
-}
-
 /*
 ====> 13.4 Content Columns
 --------------------------------------------------------------*/
@@ -2450,8 +2447,8 @@ Gutenberg Blocks Layout.
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
 	.no-sidebar-full-width #primary .entry-content > .alignwide {
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -50px;
+		margin-right: -50px;
 	}
 	.no-sidebar #primary .entry-content > .alignwide {
 		margin-left: -50px;
@@ -2704,19 +2701,16 @@ Gutenberg Blocks Layout.
 
 	.no-sidebar-full-width #primary .entry-content > .alignwide,
 	.no-sidebar #primary .entry-content > .alignwide {
-		margin-left: -15px;
-		margin-right: -15px;
+		margin-left: -50px;
+		margin-right: -50px;
 	}
-	.no-sidebar-full-width.boxed #primary .entry-content > .alignwide,
-	.no-sidebar.boxed #primary .entry-content > .alignwide {
-		margin-left: 0;
-		margin-right: 0;
-	}
+
 	.no-sidebar-full-width.boxed #primary .entry-content > .alignfull,
 	.no-sidebar.boxed #primary .entry-content > .alignfull {
 		margin-left: -40px;
 		margin-right: -40px;
 	}
+
 	.no-sidebar #primary .entry-content > .alignfull {
 		margin-left: -15px;
 		margin-right: -15px;
@@ -2724,12 +2718,6 @@ Gutenberg Blocks Layout.
 }
 
 @media screen and (max-width: 600px) {
-	.no-sidebar-full-width.boxed #primary .entry-content > .alignwide,
-	.no-sidebar.boxed #primary .entry-content > .alignwide {
-		margin-left: 0;
-		margin-right: 0;
-		width: unset;
-	}
 	.big-slider .slider-entry-container {
 		width: 75%;
 	}
