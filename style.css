@@ -1752,6 +1752,11 @@ img.header-image {
 	max-width: unset;
 }
 
+.no-sidebar-full-width #primary .entry-content > .alignwide,
+.no-sidebar #primary .entry-content > .alignwide {
+	width: unset;
+}
+
 .no-sidebar-full-width.boxed #main,
 .no-sidebar.boxed #main {
 	overflow: hidden;
