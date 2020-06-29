@@ -1752,6 +1752,13 @@ img.header-image {
 	max-width: unset;
 }
 
+.no-sidebar-full-width.boxed #primary .entry-content > .alignwide,
+.no-sidebar.boxed #primary .entry-content > .alignwide {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: unset;
+}
+
 .no-sidebar-full-width #primary .entry-content > .alignwide,
 .no-sidebar #primary .entry-content > .alignwide {
 	width: unset;
@@ -2443,13 +2450,6 @@ Gutenberg Blocks Layout.
 14.0 Responsive Structure
 --------------------------------------------------------------*/
 
-@media screen and (max-width: 1500px) {
-	.no-sidebar-full-width .alignwide {
-		margin-left: -20px;
-		margin-right: -20px;
-	}
-}
-
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
 	.no-sidebar-full-width #primary .entry-content > .alignwide {
 		margin-left: -50px;
@@ -2481,14 +2481,6 @@ Gutenberg Blocks Layout.
 	.business-template .widget.widget_call_to_action_block > .inner-wrap,
 	.business-template .widget.widget_portfolio_block > .inner-wrap {
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 1078px) {
-
-	.no-sidebar-full-width .alignwide {
-		margin-left: -10px;
-		margin-right: -10px;
 	}
 }
 
@@ -2706,19 +2698,19 @@ Gutenberg Blocks Layout.
 
 	.no-sidebar-full-width #primary .entry-content > .alignwide,
 	.no-sidebar #primary .entry-content > .alignwide {
-		margin-left: -50px;
-		margin-right: -50px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.no-sidebar-full-width.boxed #primary .entry-content > .alignfull,
 	.no-sidebar.boxed #primary .entry-content > .alignfull {
-		margin-left: -40px;
-		margin-right: -40px;
+		margin-left: -25px;
+		margin-right: -25px;
 	}
 
 	.no-sidebar #primary .entry-content > .alignfull {
-		margin-left: -15px;
-		margin-right: -15px;
+		margin-left: -25px;
+		margin-right: -25px;
 	}
 }
 
