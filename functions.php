@@ -64,6 +64,12 @@ function ample_setup() {
 	// Gutenberg layout support.
 	add_theme_support( 'align-wide' );
 
+	// Gutenberg block layout support.
+	add_theme_support( 'wp-block-styles' );
+
+	// Gutenberg editor support.
+	add_theme_support( 'responsive-embeds' );
+
 	//Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 

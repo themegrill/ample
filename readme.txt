@@ -52,6 +52,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Enhancement - Gutenberg compatibility.
+
 = Version 1.2.8 -2020-05-22 =
 * Add   - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 * Tweak - Add and improve theme-related notices.
