@@ -157,13 +157,6 @@ require_once( get_template_directory() . '/inc/customizer.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
-
-/**
  * Assign the Ample version to a variable.
  */
 $ample_theme = wp_get_theme( 'ample' );
