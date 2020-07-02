@@ -13,8 +13,6 @@ External resources linked to the theme.
 Resources packed within the theme.
 * Font Awesome: SIL OFL 1.1 license
    http://fontawesome.io/license/
-* Image in the screenshot is from http://pixabay.com/ link:
-   http://pixabay.com/en/office-freelancer-computer-business-583839/
 * The BxSlider is licensed under MIT link:
    https://github.com/stevenwanderski/bxslider-4
 * TGM-Plugin-Activation by Thomas Griffin, Gary Jones, Juliette Reinders Folmer | GPL v2 Licensed
@@ -52,7 +50,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.9 -2020-07-02 =
 * Enhancement - Gutenberg compatibility.
 * Remove - Unrequired deprecated demo config for theme demo lists
 

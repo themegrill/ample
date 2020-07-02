@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: Ample 1.2.8\n"
+"Project-Id-Version: Ample 1.2.9\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-05-22 12:35:05+00:00\n"
+"POT-Creation-Date: 2020-07-02 06:23:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,11 +75,11 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: functions.php:83
+#: functions.php:89
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:90
 msgid "Footer Menu"
 msgstr ""
 
@@ -254,7 +254,7 @@ msgstr ""
 msgid "Ample"
 msgstr ""
 
-#: inc/admin/class-ample-admin.php:400 inc/demo-config.php:26
+#: inc/admin/class-ample-admin.php:400
 msgid "Ample Pro"
 msgstr ""
 
@@ -721,11 +721,7 @@ msgstr ""
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/demo-config.php:31
-msgid "Ample Pro One Page"
-msgstr ""
-
-#: inc/functions.php:135
+#: inc/functions.php:142
 msgid "WordPress"
 msgstr ""
 
@@ -733,61 +729,61 @@ msgstr ""
 msgid "ThemeGrill"
 msgstr ""
 
-#: inc/functions.php:139
+#: inc/functions.php:146
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/functions.php:139
+#: inc/functions.php:146
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/functions.php:139
+#: inc/functions.php:146
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/functions.php:490 inc/related-posts.php:61
+#: inc/functions.php:497 inc/related-posts.php:61
 msgid ""
 "<span class=\"entry-date\"><i class=\"fa fa-aw fa-calendar-o\"></i> <a "
 "href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">%3$s</a></span>"
 msgstr ""
 
-#: inc/functions.php:501
+#: inc/functions.php:508
 msgid "No Comments"
 msgstr ""
 
-#: inc/functions.php:501
+#: inc/functions.php:508
 msgid "1 Comment"
 msgstr ""
 
-#: inc/functions.php:501
+#: inc/functions.php:508
 msgid "% Comments"
 msgstr ""
 
-#: inc/functions.php:501
+#: inc/functions.php:508
 msgid "Comments Off"
 msgstr ""
 
-#: inc/functions.php:524
+#: inc/functions.php:531
 msgid "Pingback:"
 msgstr ""
 
-#: inc/functions.php:524
+#: inc/functions.php:531
 msgid "(Edit)"
 msgstr ""
 
-#: inc/functions.php:539
+#: inc/functions.php:546
 msgid "Post author"
 msgstr ""
 
-#: inc/functions.php:542
+#: inc/functions.php:549
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/functions.php:550
+#: inc/functions.php:557
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/functions.php:556
+#: inc/functions.php:563
 msgid "Reply"
 msgstr ""
 
