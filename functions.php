@@ -64,6 +64,12 @@ function ample_setup() {
 	// Gutenberg layout support.
 	add_theme_support( 'align-wide' );
 
+	// Gutenberg block layout support.
+	add_theme_support( 'wp-block-styles' );
+
+	// Gutenberg editor support.
+	add_theme_support( 'responsive-embeds' );
+
 	//Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 
@@ -149,13 +155,6 @@ require_once( get_template_directory() . '/inc/customizer.php' );
  * Detect plugin. For use on Front End only.
  */
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-
-/**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
 
 /**
  * Assign the Ample version to a variable.

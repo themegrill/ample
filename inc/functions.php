@@ -67,6 +67,13 @@ function ample_scripts() {
 	wp_enqueue_script( 'ample-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), false, true );
 }
 
+function ample_block_editor_styles() {
+	wp_enqueue_style( 'ample-editor-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300' );
+	wp_enqueue_style( 'ample-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'ample_block_editor_styles', 1, 1 );
+
 /**************************************************************************************/
 
 // Add admin scripts
@@ -150,7 +157,7 @@ endif;
  * Source: https://css-tricks.com/snippets/php/convert-hex-to-rgb/#comment-1052011
  */
 function ample_hex2rgb( $hexstr ) {
-	$int = hexdec( $hexstr );
+	$int = hexdec( str_replace( '#', '', $hexstr ) );
 	$rgb = array( "red" => 0xFF & ( $int >> 0x10 ), "green" => 0xFF & ( $int >> 0x8 ), "blue" => 0xFF & $int );
 	$r   = $rgb['red'];
 	$g   = $rgb['green'];
@@ -353,7 +360,7 @@ function ample_body_class( $classes ) {
 	if ( ample_option( 'ample_site_layout', 'wide' ) == 'wide' ) {
 		$classes[] = 'wide';
 	} else {
-		$classes[] = '';
+		$classes[] = 'boxed';
 	}
 
 	if ( is_page_template( 'page-templates/template-business.php' ) ) {
