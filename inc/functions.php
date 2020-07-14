@@ -139,7 +139,7 @@ if ( ! function_exists( 'ample_footer_copyright' ) ) :
 	function ample_footer_copyright() {
 		$site_link = '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>';
 
-		$wp_link = '<a href="' . 'http://wordpress.org' . '" target="_blank" title="' . esc_attr__( 'WordPress', 'ample' ) . '"><span>' . __( 'WordPress', 'ample' ) . '</span></a>';
+		$wp_link = '<a href="' . 'https://wordpress.org' . '" target="_blank" title="' . esc_attr__( 'WordPress', 'ample' ) . '"><span>' . __( 'WordPress', 'ample' ) . '</span></a>';
 
 		$tg_link = '<a href="' . 'https://themegrill.com/themes/ample' . '" target="_blank" title="' . esc_attr__( 'ThemeGrill', 'ample' ) . '" rel="author"><span>' . __( 'ThemeGrill', 'ample' ) . '</span></a>';
 
