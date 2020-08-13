@@ -50,7 +50,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.0 -2020-08-13 =
 * Enhancement - Update protocol to prevent not secure issue.
 * Remove - TGMPA library to recommend plugins.
 
