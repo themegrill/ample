@@ -168,15 +168,10 @@ define( 'AMPLE_THEME_VERSION', $ample_theme->get( 'Version' ) );
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-admin.php';
-	require get_template_directory() . '/inc/admin/class-ample-tdi-notice.php';
+	require get_template_directory() . '/inc/admin/class-ample-dashboard.php';
 	require get_template_directory() . '/inc/admin/class-ample-notice.php';
 	require get_template_directory() . '/inc/admin/class-ample-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-ample-upgrade-notice.php';
 	require get_template_directory() . '/inc/admin/class-ample-theme-review-notice.php';
 }
 
-/**
- * Load TGMPA Configs.
- */
-require get_template_directory() . '/inc/tgm-plugin-activation/class-tgm-plugin-activation.php';
-require get_template_directory() . '/inc/tgm-plugin-activation/tgmpa-ample.php';
