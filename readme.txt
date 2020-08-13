@@ -52,6 +52,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 == Changelog ==
 = TBD =
 * Enhancement - Update protocol to prevent not secure issue.
+* Remove - TGMPA library to recommend plugins.
 
 = Version 1.2.9 -2020-07-02 =
 * Enhancement - Gutenberg compatibility.
