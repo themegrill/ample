@@ -1628,7 +1628,7 @@ body.wide {
 
 #header-logo-image img {
 	margin-bottom: 0px;
-	max-height: 60px;
+	max-height: 100px;
 	height: auto;
 	width: auto;
 }
