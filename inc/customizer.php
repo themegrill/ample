@@ -9,7 +9,6 @@
 function ample_customize_register( $wp_customize ) {
 
 	require get_template_directory() . '/inc/customize-controls/class-ample-controls-multicheck-control.php';
-	require get_template_directory() . '/inc/customize-controls/class-ample-custom-css-control.php';
 	require get_template_directory() . '/inc/customize-controls/class-ample-upsell-section.php';
 	require get_template_directory() . '/inc/customize-controls/class-ample-image-radio-control.php';
 
@@ -297,29 +296,6 @@ function ample_customize_register( $wp_customize ) {
 		) )
 	);
 
-	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
-
-		$wp_customize->add_section( 'ample_custom_css_setting', array(
-			'priority' => 60,
-			'title'    => __( 'Custom CSS', 'ample' ),
-			'panel'    => 'ample_design_options',
-		) );
-
-		$wp_customize->add_setting( 'ample[ample_custom_css]', array(
-			'default'              => '',
-			'capability'           => 'edit_theme_options',
-			'type'                 => 'option',
-			'sanitize_callback'    => 'wp_filter_nohtml_kses',
-			'sanitize_js_callback' => 'wp_filter_nohtml_kses',
-		) );
-		$wp_customize->add_control(
-			new AMPLE_Custom_CSS_Control( $wp_customize, 'ample[ample_custom_css]', array(
-				'label'    => __( 'Write your custom css.', 'ample' ),
-				'section'  => 'ample_custom_css_setting',
-				'settings' => 'ample[ample_custom_css]',
-			) )
-		);
-	}
 	// End of the Design Options
 
 	/**************************************************************************************/
