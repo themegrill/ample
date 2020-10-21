@@ -102,6 +102,20 @@ class ample_call_to_action_widget extends WP_Widget {
 		$button_text = isset( $instance[ 'button_text' ] ) ? $instance[ 'button_text' ] : '';
 		$button_url = isset( $instance[ 'button_url' ] ) ? $instance[ 'button_url' ] : '#';
 
+		// For WPML plugin compatibility
+		if ( function_exists( 'icl_register_string' ) ) {
+			icl_register_string( 'Ample', 'TG: Call to action widget text' . $this->id, $text_main );
+			icl_register_string( 'Ample', 'TG: Call to action widget description' . $this->id, $text_description );
+			icl_register_string( 'Ample', 'TG: Call to action widget button text' . $this->id, $button_text );
+			icl_register_string( 'Ample', 'TG: Call to action widget button url' . $this->id, $button_url );
+		}
+		if ( function_exists( 'icl_t' ) ) {
+			$text_main        = icl_t( 'Ample', 'TG: Call to action widget text' . $this->id, $text_main );
+			$text_description = icl_t( 'Ample', 'TG: Call to action widget description' . $this->id, $text_description );
+			$button_text      = icl_t( 'Ample', 'TG: Call to action widget button text' . $this->id, $button_text );
+			$button_url       = icl_t( 'Ample', 'TG: Call to action widget button url' . $this->id, $button_url );
+		}
+
 		echo $before_widget;
 		$bg_image_style = '';
 		if ( !empty( $background_image ) ) {

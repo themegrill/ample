@@ -29,7 +29,22 @@ if ( ! function_exists( 'ample_featured_image_slider' ) ):
 						$classes = "slides displaynone";
 					}
 
-					if ( ! empty( $ample_slider_image ) ) { ?>
+					if ( ! empty( $ample_slider_image ) ) {
+						// For WPML plugin compatibility
+						if ( function_exists( 'icl_register_string' ) ) {
+							icl_register_string( 'Ample', 'Slider Image ' . $i, $ample_slider_image );
+							icl_register_string( 'Ample', 'Slider Title ' . $i, $ample_slider_title );
+							icl_register_string( 'Ample', 'Slider Button Text ' . $i, $ample_slider_button_text );
+							icl_register_string( 'Ample', 'Slider Link ' . $i, $ample_slider_link );
+						}
+
+						if ( function_exists( 'icl_t' ) ) {
+							$ample_slider_image       = icl_t( 'Ample', 'Slider Image ' . $i, $ample_slider_image );
+							$ample_slider_title       = icl_t( 'Ample', 'Slider Title ' . $i, $ample_slider_title );
+							$ample_slider_button_text = icl_t( 'Ample', 'Slider Button Text ' . $i, $ample_slider_button_text );
+							$ample_slider_link        = icl_t( 'Ample', 'Slider Link ' . $i, $ample_slider_link );
+						}
+						?>
 						<div class="<?php echo $classes; ?>">
 							<?php if ( ! empty( $ample_slider_title ) ) { ?>
 								<div class="slider-entry-container">

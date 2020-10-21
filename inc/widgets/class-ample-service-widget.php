@@ -104,6 +104,16 @@ class ample_service_widget extends WP_Widget {
 		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 		$image = isset( $instance[ 'image' ] ) ? $instance[ 'image' ] : '';
 
+		// For WPML plugin compatibility
+		if ( function_exists( 'icl_register_string' ) ) {
+			icl_register_string( 'Ample', 'TG: Service widget text' . $this->id, $text );
+			icl_register_string( 'Ample', 'TG: Service widget image' . $this->id, $image );
+		}
+		if ( function_exists( 'icl_t' ) ) {
+			$text  = icl_t( 'Ample', 'TG: Service widget text' . $this->id, $text );
+			$image = icl_t( 'Ample', 'TG: Service widget image' . $this->id, $image );
+		}
+
 		$page_array = array();
 		$icon = array();
 		for( $i=1; $i<=6; $i++ ) {

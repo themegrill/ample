@@ -135,6 +135,18 @@ class ample_portfolio_widget extends WP_Widget {
 		$button_text      = isset( $instance['button_text'] ) ? $instance['button_text'] : '';
 		$button_url       = isset( $instance['button_url'] ) ? $instance['button_url'] : '#';
 
+		// For WPML plugin compatibility
+		if ( function_exists( 'icl_register_string' ) ) {
+			icl_register_string( 'Ample', 'TG: Portfolio widget text' . $this->id, $text );
+			icl_register_string( 'Ample', 'TG: Portfolio widget button text' . $this->id, $button_text );
+			icl_register_string( 'Ample', 'TG: Portfolio widget button url' . $this->id, $button_url );
+		}
+		if ( function_exists( 'icl_t' ) ) {
+			$text        = icl_t( 'Ample', 'TG: Portfolio widget text' . $this->id, $text );
+			$button_text = icl_t( 'Ample', 'TG: Portfolio widget button text' . $this->id, $button_text );
+			$button_url  = icl_t( 'Ample', 'TG: Portfolio widget button url' . $this->id, $button_url );
+		}
+
 		$get_featured_posts = new WP_Query( array(
 			'posts_per_page' => $number,
 			'post_type'      => 'post',

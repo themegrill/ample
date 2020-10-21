@@ -89,6 +89,14 @@ class ample_featured_posts_widget extends WP_Widget {
 		$type     = isset( $instance['type'] ) ? $instance['type'] : 'latest';
 		$category = isset( $instance['category'] ) ? $instance['category'] : '';
 
+		// For WPML plugin compatibility
+		if ( function_exists( 'icl_register_string' ) ) {
+			icl_register_string( 'Ample', 'TG: Featured post widget text' . $this->id, $text );
+		}
+		if ( function_exists( 'icl_t' ) ) {
+			$text = icl_t( 'Ample', 'TG: Featured post widget text' . $this->id, $text );
+		}
+
 		if ( $type == 'latest' ) {
 			$get_featured_posts = new WP_Query( array(
 				'posts_per_page'      => $number,
