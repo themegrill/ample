@@ -11,7 +11,10 @@ class ample_portfolio_widget extends WP_Widget {
 			'description'                 => __( 'Display portfolio by using specific category', 'ample' ),
 			'customize_selective_refresh' => true,
 		);
-		$control_ops = array( 'width' => 200, 'height' => 250 );
+		$control_ops = array(
+			'width'  => 200,
+			'height' => 250,
+		);
 		parent::__construct( false, $name = __( 'TG: Portfolio', 'ample' ), $widget_ops );
 	}
 
@@ -60,8 +63,8 @@ class ample_portfolio_widget extends WP_Widget {
 
 		<p>
 			<?php _e( 'Background attachment:', 'ample' ); ?> <br />
-			<input type="radio" <?php checked( $attachment, 'scroll' ) ?> id="<?php echo $this->get_field_id( 'attachment' ); ?>" name="<?php echo $this->get_field_name( 'attachment' ); ?>" value="scroll" /><?php _e( 'Scroll', 'ample' ); ?>
-			<input type="radio" <?php checked( $attachment, 'fixed' ) ?> id="<?php echo $this->get_field_id( 'attachment' ); ?>" name="<?php echo $this->get_field_name( 'attachment' ); ?>" value="fixed" style="margin-left:20px;" /><?php _e( 'Fixed', 'ample' ); ?>
+			<input type="radio" <?php checked( $attachment, 'scroll' ); ?> id="<?php echo $this->get_field_id( 'attachment' ); ?>" name="<?php echo $this->get_field_name( 'attachment' ); ?>" value="scroll" /><?php _e( 'Scroll', 'ample' ); ?>
+			<input type="radio" <?php checked( $attachment, 'fixed' ); ?> id="<?php echo $this->get_field_id( 'attachment' ); ?>" name="<?php echo $this->get_field_name( 'attachment' ); ?>" value="fixed" style="margin-left:20px;" /><?php _e( 'Fixed', 'ample' ); ?>
 		</p>
 
 		<strong><?php _e( 'OTHER SETTINGS :', 'ample' ); ?></strong><br />
@@ -82,11 +85,15 @@ class ample_portfolio_widget extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'ample' ); ?>
 				:</label>
-			<?php wp_dropdown_categories( array(
-				'show_option_none' => ' ',
-				'name'             => $this->get_field_name( 'category' ),
-				'selected'         => $category,
-			) ); ?>
+			<?php
+			wp_dropdown_categories(
+				array(
+					'show_option_none' => ' ',
+					'name'             => $this->get_field_name( 'category' ),
+					'selected'         => $category,
+				)
+			);
+			?>
 		</p>
 
 		<p>
@@ -147,11 +154,13 @@ class ample_portfolio_widget extends WP_Widget {
 			$button_url  = icl_t( 'Ample', 'TG: Portfolio widget button url' . $this->id, $button_url );
 		}
 
-		$get_featured_posts = new WP_Query( array(
-			'posts_per_page' => $number,
-			'post_type'      => 'post',
-			'category__in'   => $category,
-		) );
+		$get_featured_posts = new WP_Query(
+			array(
+				'posts_per_page' => $number,
+				'post_type'      => 'post',
+				'category__in'   => $category,
+			)
+		);
 
 		echo $before_widget;
 		$image_style = '';
@@ -159,7 +168,8 @@ class ample_portfolio_widget extends WP_Widget {
 			$image_style .= 'background-image:url(' . $background_image . ');background-attachment:' . $attachment . ';background-repeat:no-repeat;background-size:cover;';
 		} else {
 			$image_style .= 'background-color:' . $background_color . ';';
-		} ?>
+		}
+		?>
 
 		<div class="portfolio-container" style="<?php echo $image_style; ?>">
 			<?php if ( $category > 0 ) : ?>
@@ -169,15 +179,19 @@ class ample_portfolio_widget extends WP_Widget {
 						if ( ! empty( $title ) ) {
 							echo $before_title . esc_html( $title ) . $after_title;
 						}
-						if ( ! empty( $text ) ) { ?>
+						if ( ! empty( $text ) ) {
+							?>
 							<div class="portfolio-main-description"><p> <?php echo esc_textarea( $text ); ?> </p>
-							</div> <?php }
+							</div> 
+							<?php
+						}
 						?>
 					</div>
 					<div class="portfolio-content clearfix">
 						<?php
 						$i = 1;
-						while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post();
+						while ( $get_featured_posts->have_posts() ) :
+							$get_featured_posts->the_post();
 							if ( $i % 4 == 0 ) {
 								$class = 'tg-one-fourth tg-one-fourth-last';
 							} elseif ( $i % 3 == 0 ) {
@@ -219,14 +233,16 @@ class ample_portfolio_widget extends WP_Widget {
 									<?php } ?>
 								</div>
 							</div>
-							<?php $i ++;
+							<?php
+							$i ++;
 						endwhile;
 						if ( ! empty( $button_text ) ) {
 							if ( ! empty( $button_url ) ) {
 								$button_link = $button_url;
 							} else {
 								$button_link = get_category_link( $category );
-							} ?>
+							}
+							?>
 							<div class="clearfix"></div>
 							<div class="portfolio-view-more inner-wrap">
 								<a class="portfolio-button" href="<?php echo $button_link; ?>" title="<?php echo esc_attr( $button_text ); ?>"><span><?php echo esc_html( $button_text ); ?></span></a>
@@ -240,6 +256,7 @@ class ample_portfolio_widget extends WP_Widget {
 		// Reset Post Data
 		wp_reset_query();
 		?>
-		<?php echo $after_widget;
+		<?php
+		echo $after_widget;
 	}
 }

@@ -11,7 +11,10 @@ class ample_featured_posts_widget extends WP_Widget {
 			'description'                 => __( 'Display latest posts or posts of specific category', 'ample' ),
 			'customize_selective_refresh' => true,
 		);
-		$control_ops = array( 'width' => 200, 'height' => 250 );
+		$control_ops = array(
+			'width'  => 200,
+			'height' => 250,
+		);
 		parent::__construct( false, $name = __( 'TG: Featured Posts', 'ample' ), $widget_ops );
 	}
 
@@ -44,20 +47,24 @@ class ample_featured_posts_widget extends WP_Widget {
 		</p>
 
 		<p>
-			<input type="radio" <?php checked( $type, 'latest' ) ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="latest" /><?php _e( 'Show latest Posts', 'ample' ); ?>
+			<input type="radio" <?php checked( $type, 'latest' ); ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="latest" /><?php _e( 'Show latest Posts', 'ample' ); ?>
 			<br />
-			<input type="radio" <?php checked( $type, 'category' ) ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="category" /><?php _e( 'Show posts from a category', 'ample' ); ?>
+			<input type="radio" <?php checked( $type, 'category' ); ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="category" /><?php _e( 'Show posts from a category', 'ample' ); ?>
 			<br />
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'ample' ); ?>
 				:</label>
-			<?php wp_dropdown_categories( array(
-				'show_option_none' => ' ',
-				'name'             => $this->get_field_name( 'category' ),
-				'selected'         => $category,
-			) ); ?>
+			<?php
+			wp_dropdown_categories(
+				array(
+					'show_option_none' => ' ',
+					'name'             => $this->get_field_name( 'category' ),
+					'selected'         => $category,
+				)
+			);
+			?>
 		</p>
 		<?php
 	}
@@ -98,20 +105,25 @@ class ample_featured_posts_widget extends WP_Widget {
 		}
 
 		if ( $type == 'latest' ) {
-			$get_featured_posts = new WP_Query( array(
-				'posts_per_page'      => $number,
-				'post_type'           => 'post',
-				'ignore_sticky_posts' => true,
-			) );
+			$get_featured_posts = new WP_Query(
+				array(
+					'posts_per_page'      => $number,
+					'post_type'           => 'post',
+					'ignore_sticky_posts' => true,
+				)
+			);
 		} else {
-			$get_featured_posts = new WP_Query( array(
-				'posts_per_page' => $number,
-				'post_type'      => 'post',
-				'category__in'   => $category,
-			) );
+			$get_featured_posts = new WP_Query(
+				array(
+					'posts_per_page' => $number,
+					'post_type'      => 'post',
+					'category__in'   => $category,
+				)
+			);
 		}
 
-		echo $before_widget; ?>
+		echo $before_widget;
+		?>
 
 		<div class="featured-posts-header">
 			<?php if ( ! empty( $title ) ) { ?>
@@ -127,7 +139,8 @@ class ample_featured_posts_widget extends WP_Widget {
 		<div class="featured-posts-content clearfix">
 			<?php
 			$i = 1;
-			while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post();
+			while ( $get_featured_posts->have_posts() ) :
+				$get_featured_posts->the_post();
 				?>
 				<?php
 				if ( $i % 2 == 0 ) {
@@ -148,13 +161,17 @@ class ample_featured_posts_widget extends WP_Widget {
 							$thumb_id        = get_post_thumbnail_id( get_the_ID() );
 							$img_altr        = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 							$img_alt         = ! empty( $img_altr ) ? $img_altr : $title_attribute;
-							$image           .= '<figure>';
-							$image           .= '<a href="' . get_permalink() . '" title="' . $title_attribute . '">';
-							$image           .= get_the_post_thumbnail( $post->ID, 'ample-featured-blog-small', array(
+							$image          .= '<figure>';
+							$image          .= '<a href="' . get_permalink() . '" title="' . $title_attribute . '">';
+							$image          .= get_the_post_thumbnail(
+								$post->ID,
+								'ample-featured-blog-small',
+								array(
 									'title' => $title_attribute,
 									'alt'   => $img_alt,
-								) ) . '</a>';
-							$image           .= '</figure>';
+								)
+							) . '</a>';
+							$image          .= '</figure>';
 
 							echo $image;
 							?>
@@ -173,8 +190,10 @@ class ample_featured_posts_widget extends WP_Widget {
 						</div>
 					</div>
 				</div>
-				<?php $i ++;
-			endwhile; ?>
+				<?php
+				$i ++;
+			endwhile;
+			?>
 		</div>
 
 		<?php

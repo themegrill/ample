@@ -7,7 +7,7 @@
  * @since      Ample 0.1
  */
 
-if ( ! function_exists( 'ample_featured_image_slider' ) ):
+if ( ! function_exists( 'ample_featured_image_slider' ) ) :
 	/**
 	 * display slider
 	 */
@@ -24,9 +24,9 @@ if ( ! function_exists( 'ample_featured_image_slider' ) ):
 					$image_attributes         = wp_get_attachment_image_src( $attachment_post_id, 'full' );
 
 					if ( $i == 1 ) {
-						$classes = "slides displayblock";
+						$classes = 'slides displayblock';
 					} else {
-						$classes = "slides displaynone";
+						$classes = 'slides displaynone';
 					}
 
 					if ( ! empty( $ample_slider_image ) ) {
@@ -59,19 +59,24 @@ if ( ! function_exists( 'ample_featured_image_slider' ) ):
 									<?php endif; ?>
 								</div>
 							<?php } ?>
-							<?php $img_altr = get_post_meta( $attachment_post_id, '_wp_attachment_image_alt', true );
-							$img_alt        = ! empty( $img_altr ) ? $img_altr : $ample_slider_title; ?>
+							<?php
+							$img_altr = get_post_meta( $attachment_post_id, '_wp_attachment_image_alt', true );
+							$img_alt  = ! empty( $img_altr ) ? $img_altr : $ample_slider_title;
+							?>
 							<figure>
 								<img width="<?php echo esc_attr( $image_attributes[1] ); ?>" height="<?php echo esc_attr( $image_attributes[2] ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>" src="<?php echo esc_url( $ample_slider_image ); ?>">
 							</figure>
 						</div>
-					<?php }
-				} ?>
+						<?php
+					}
+				}
+				?>
 			</div>
 			<div class="slide-next"></div>
 			<div class="slide-prev"></div>
 		</div><!-- .big-slider-wrapper -->
-	<?php }
+		<?php
+	}
 endif;
 
 /****************************************************************************************/
@@ -105,7 +110,8 @@ if ( ! function_exists( 'ample_render_header_image' ) ) :
 			the_custom_header_markup();
 		} else {
 			$header_image = get_header_image();
-			if ( ! empty( $header_image ) ) { ?>
+			if ( ! empty( $header_image ) ) {
+				?>
 				<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 				<?php
 			}
@@ -150,7 +156,6 @@ if ( ! function_exists( 'ample_header_title' ) ) :
 
 			elseif ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) :
 				$ample_header_title = woocommerce_page_title( false );
-
 
 			else :
 				$ample_header_title = __( 'Archives', 'ample' );
