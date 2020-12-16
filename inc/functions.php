@@ -136,18 +136,23 @@ add_action( 'ample_footer_copyright', 'ample_footer_copyright', 10 );
  * Function to show the footer info, copyright information
  */
 if ( ! function_exists( 'ample_footer_copyright' ) ) :
+
 	function ample_footer_copyright() {
+
 		$site_link = '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>';
 
-		$wp_link = '<a href="' . 'https://wordpress.org' . '" target="_blank" title="' . esc_attr__( 'WordPress', 'ample' ) . '"><span>' . __( 'WordPress', 'ample' ) . '</span></a>';
+		$wp_link = '<a href="' . 'https://wordpress.org' . '" target="_blank" title="' . esc_attr__( 'WordPress', 'ample' ) . '" rel="nofollow"><span>' . esc_html__( 'WordPress', 'ample' ) . '</span></a>';
 
-		$tg_link = '<a href="' . 'https://themegrill.com/themes/ample' . '" target="_blank" title="' . esc_attr__( 'ThemeGrill', 'ample' ) . '" rel="author"><span>' . __( 'ThemeGrill', 'ample' ) . '</span></a>';
+		$tg_link = '<a href="' . 'https://themegrill.com/themes/ample' . '" target="_blank" title="' . esc_attr__( 'Ample', 'ample' ) . '" rel="nofollow"><span>' . esc_html__( 'Ample', 'ample' ) . '</span></a>';
 
-		$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'ample' ), date( 'Y' ), $site_link ) . ' ' . sprintf( __( 'Powered by %s.', 'ample' ), $wp_link ) . ' ' . sprintf( __( 'Theme: %1$s by %2$s.', 'ample' ), 'Ample', $tg_link );
+		$default_footer_value = sprintf( esc_html__( 'Copyright &copy; %1$s %2$s. All rights reserved.', 'ample' ), date( 'Y' ), $site_link ) . '<br>' . sprintf( esc_html__( 'Theme: %1$s by %2$s.', 'ample' ), $tg_link, 'ThemeGrill' ) . ' ' . sprintf( esc_html__( 'Powered by %s.', 'ample' ), $wp_link );
 
 		$ample_footer_copyright = '<div class="copyright">' . $default_footer_value . '</div>';
+
 		echo $ample_footer_copyright;
+
 	}
+
 endif;
 
 /**************************************************************************************/
