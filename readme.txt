@@ -51,7 +51,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.2 -2021-03-11 =
 * Fix - Mobile hamburger menu issue in WordPress 5.7.
 
 = Version 1.3.1 -2020-12-17 =
