@@ -2568,7 +2568,7 @@ Gutenberg Blocks Layout.
 		position: absolute;
 	}
 
-	.site-header .menu-toggle:before {
+	.menu-toggle:before {
 		color: #80abc8;
 		content: "\f0c9";
 		font-family: fontawesome;

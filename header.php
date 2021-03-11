@@ -83,7 +83,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 
 				<div id="header-right-section">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<p class="menu-toggle"></p>
+						<span class="menu-toggle"></span>
 						<?php
 						if ( has_nav_menu( 'primary' ) ) {
 							wp_nav_menu(
