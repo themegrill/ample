@@ -14,7 +14,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
 	/**
-	 * This hook is important for wordpress plugins and other many things
+	 * This hook is important for WordPress plugins and other many things
 	 */
 	wp_head();
 	?>
@@ -40,9 +40,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 	?>
 	<header id="masthead" class="site-header <?php echo $header_extra_class; ?>" role="banner">
 		<div class="header">
-			<?php if ( ample_option( 'ample_header_image_position', 'above' ) == 'above' ) {
+			<?php
+			if ( ample_option( 'ample_header_image_position', 'above' ) == 'above' ) {
 				ample_render_header_image();
-			} ?>
+			}
+			?>
 
 			<div class="main-head-wrap inner-wrap clearfix">
 				<div id="header-left-section">
@@ -52,10 +54,12 @@ if ( function_exists( 'wp_body_open' ) ) {
 							<?php
 							if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
 								ample_the_custom_logo();
-							} ?>
+							}
+							?>
 						</div><!-- #header-logo-image -->
 
-					<?php }
+						<?php
+					}
 
 					$screen_reader = '';
 					if ( ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'logo_only' || ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) ) {
@@ -64,7 +68,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 					?>
 					<div id="header-text" class="<?php echo $screen_reader; ?>">
 						<?php
-						if ( is_front_page() || is_home() ) : ?>
+						if ( is_front_page() || is_home() ) :
+							?>
 							<h1 id="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 							</h1>
@@ -72,18 +77,21 @@ if ( function_exists( 'wp_body_open' ) ) {
 							<h3 id="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 							</h3>
-						<?php endif;
+							<?php
+						endif;
 						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
+						if ( $description || is_customize_preview() ) :
+							?>
 							<p id="site-description"><?php echo $description; ?></p>
-						<?php endif;
+							<?php
+						endif;
 						?>
 					</div>
 				</div><!-- #header-left-section -->
 
 				<div id="header-right-section">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<p class="menu-toggle"></p>
+						<span class="menu-toggle"></span>
 						<?php
 						if ( has_nav_menu( 'primary' ) ) {
 							wp_nav_menu(
@@ -103,14 +111,17 @@ if ( function_exists( 'wp_body_open' ) ) {
 					</div>
 				</div>
 			</div><!-- .main-head-wrap -->
-			<?php if ( ample_option( 'ample_header_image_position', 'above' ) == 'below' ) {
+			<?php
+			if ( ample_option( 'ample_header_image_position', 'above' ) == 'below' ) {
 				ample_render_header_image();
-			} ?>
+			}
+			?>
 		</div><!-- .header -->
 	</header><!-- end of header -->
 	<div class="main-wrapper" id="main">
 
-		<?php if ( ample_option( 'ample_activate_slider', '0' ) == '1' ) {
+		<?php
+		if ( ample_option( 'ample_activate_slider', '0' ) == '1' ) {
 			if ( is_front_page() ) {
 				ample_featured_image_slider();
 			}
@@ -126,9 +137,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 							<h1 class="header-post-title-class entry-title"><?php echo ample_header_title(); ?></h1>
 						<?php endif; ?>
 					</div>
-					<?php if ( function_exists( 'ample_breadcrumb' ) ) {
+					<?php
+					if ( function_exists( 'ample_breadcrumb' ) ) {
 						ample_breadcrumb();
-					} ?>
+					}
+					?>
 				</div>
 			</div>
 		<?php } ?>
