@@ -11,7 +11,10 @@ External resources linked to the theme.
   Apache License, version 2.0 http://www.apache.org/licenses/LICENSE-2.0.html
 
 Resources packed within the theme.
-* Images on screenshot is from https://pxhere.com/ link. License: Creative Commons Zero (CC0)
+* Images used in the screenshot are licensed under Creative Commons Zero (CC0):
+
+  https://pxhere.com/en/photo/766903
+  
 * Font Awesome: SIL OFL 1.1 license
    http://fontawesome.io/license/
 * The BxSlider is licensed under MIT link:
@@ -51,6 +54,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Tweak - Update screenshot image source link.
+
 = Version 1.3.2 -2021-03-11 =
 * Fix - Mobile hamburger menu issue in WordPress 5.7.
 
