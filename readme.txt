@@ -54,7 +54,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.3 -2021-05-17 =
 * Fix - Screenshot image size.
 * Tweak - Update screenshot image source link.
 
