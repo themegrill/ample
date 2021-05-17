@@ -55,6 +55,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 = TBD =
+* Tweak - Update screenshot image.
 * Tweak - Update screenshot image source link.
 
 = Version 1.3.2 -2021-03-11 =
