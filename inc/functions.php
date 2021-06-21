@@ -31,7 +31,7 @@ function ample_scripts() {
 	// Load bxslider CSS
 	wp_enqueue_style( 'ample-bxslider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.css', array(), '4.1.2' );
 
-	wp_enqueue_style( 'ample-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300' );
+	wp_enqueue_style( 'ample-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300&display=swap' );
 
 	// Load fontawesome
 	wp_enqueue_style( 'ample-fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
@@ -68,7 +68,7 @@ function ample_scripts() {
 }
 
 function ample_block_editor_styles() {
-	wp_enqueue_style( 'ample-editor-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300' );
+	wp_enqueue_style( 'ample-editor-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300&display=swap' );
 	wp_enqueue_style( 'ample-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
 }
 
