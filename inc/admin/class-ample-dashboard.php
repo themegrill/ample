@@ -97,7 +97,7 @@ class Ample_Dashboard {
 						<h3><?php esc_html_e( 'Next Steps', 'ample' ); ?></h3>
 						<ul>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-media-text">' . esc_html__( 'Documentation', 'ample' ) . '</a>', esc_url( 'https://docs.themegrill.com/ample' ) ); ?></li>
-							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'ample' ) . '</a>', esc_url( 'https://demo.themegrill.com/ample-demos' ) ); ?></li>
+							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'ample' ) . '</a>', esc_url( 'https://themegrilldemos.com/ample-demos/' ) ); ?></li>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-migrate">' . esc_html__( 'Premium Version', 'ample' ) . '</a>', esc_url( 'https://themegrill.com/themes/ample' ) ); ?></li>
 						</ul>
 					</div>
