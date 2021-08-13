@@ -93,7 +93,7 @@ class Ample_Theme_Review_Notice {
 								'<strong>',
 								esc_html( wp_get_theme( get_template() ) ),
 								'</strong>'
-						);
+							);
 						?>
 					</p>
 					<strong>
@@ -105,7 +105,7 @@ class Ample_Theme_Review_Notice {
 								/* translators: %s: Smiley icon */
 								esc_html__( 'Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s', 'ample' ),
 								'<span class="dashicons dashicons-smiley smile-icon"></span>'
-						);
+							);
 						?>
 					</p>
 
