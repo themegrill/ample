@@ -802,8 +802,8 @@ msgid ""
 "Ample is a multipurpose responsive WordPress theme made to help you create "
 "a beautiful professional looking site in no time. It has numerous built-in "
 "options to give your site the look that you want. Get free support at "
-"https://themegrill.com/support-forum/ and check the demo at "
-"https://demo.themegrill.com/ample/"
+"https://themegrill.com/contact/ and check the demo at "
+"https://themegrilldemos.com/ample/"
 msgstr ""
 
 #. Author of the plugin/theme
