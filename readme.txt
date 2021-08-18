@@ -55,7 +55,7 @@ If you want to translate this theme to your language, Please visit:- https://tra
 
 == Changelog ==
 = Version TBD =
-* Fix - Font display swap property and value for google fonts.
+* Enhancement - Added CSS font-display property and swap value for better performance.
 
 = Version 1.3.3 -2021-05-17 =
 * Fix - Screenshot image size.
