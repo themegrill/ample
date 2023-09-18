@@ -54,6 +54,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= Version 1.3.5 -2023-09-18 =
+* Tweak - Updated WordPress tested upto version to 6.3.
+
 = Version 1.3.4 -2021-08-18 =
 * Enhancement - Added CSS font-display property and swap value for better performance.
 
