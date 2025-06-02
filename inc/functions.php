@@ -28,13 +28,52 @@ add_action( 'wp_enqueue_scripts', 'ample_scripts' );
  * Enqueue scripts and styles.
  */
 function ample_scripts() {
+
+	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	// Load bxslider CSS
 	wp_enqueue_style( 'ample-bxslider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.css', array(), '4.1.2' );
 
 	wp_enqueue_style( 'ample-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300&display=swap' );
 
-	// Load fontawesome
-	wp_enqueue_style( 'ample-fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
+	// Font Awesome 6.7.2.
+	$font_awesome_styles = array(
+		array(
+			'handle'  => 'font-awesome-4',
+			'file'    => '/v4-shims',
+			'version' => '4.7.0',
+		),
+		array(
+			'handle'  => 'font-awesome-all',
+			'file'    => '/all',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-solid',
+			'file'    => '/solid',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-regular',
+			'file'    => '/regular',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-brands',
+			'file'    => '/brands',
+			'version' => '6.7.2',
+		),
+	);
+
+	foreach ( $font_awesome_styles as $style ) {
+		wp_register_style(
+			$style['handle'],
+			get_template_directory_uri() . '/fontawesome/css' . $style['file'] . $suffix . '.css',
+			false,
+			$style['version']
+		);
+		wp_enqueue_style( $style['handle'] );
+	}
+//	wp_enqueue_style( 'ample-fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 
 	/**
 	 * Loads our main stylesheet.

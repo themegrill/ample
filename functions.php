@@ -10,114 +10,133 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
-if ( ! isset( $content_width ) )
-   $content_width = 710; /* pixels */
-
+if ( ! isset( $content_width ) ) {
+	$content_width = 710; /* pixels */
+}
 /**
  * $content_width global variable adjustment as per layout option.
  */
 function ample_content_width() {
-   global $post;
-   global $content_width;
+	global $post;
+	global $content_width;
 
-   if( $post ) { $layout_meta = get_post_meta( $post->ID, 'ample_page_layout', true ); }
-   if( empty( $layout_meta ) || is_archive() || is_search() ) { $layout_meta = 'default_layout'; }
-   $ample_default_layout = ample_option( 'ample_default_layout', 'right_sidebar' );
+	if ( $post ) {
+		$layout_meta = get_post_meta( $post->ID, 'ample_page_layout', true ); }
+	if ( empty( $layout_meta ) || is_archive() || is_search() ) {
+		$layout_meta = 'default_layout'; }
+	$ample_default_layout = ample_option( 'ample_default_layout', 'right_sidebar' );
 
-   if( $layout_meta == 'default_layout' ) {
-      if ( $ample_default_layout == 'no_sidebar_full_width' ) { $content_width = 1100; /* pixels */ }
-      elseif ( $ample_default_layout == 'both_sidebar' ) { $content_width = 500; /* pixels */ }
-      else { $content_width = 710; /* pixels */ }
-   }
-   elseif ( $layout_meta == 'no_sidebar_full_width' ) { $content_width = 1100; /* pixels */ }
-   elseif ( $layout_meta == 'both_sidebar' ) { $content_width = 500; /* pixels */ }
-   else { $content_width = 710; /* pixels */ }
+	if ( $layout_meta == 'default_layout' ) {
+		if ( $ample_default_layout == 'no_sidebar_full_width' ) {
+			$content_width = 1100; /* pixels */ } elseif ( $ample_default_layout == 'both_sidebar' ) {
+			$content_width = 500; /* pixels */ } else {
+				$content_width = 710; /* pixels */ }
+	} elseif ( $layout_meta == 'no_sidebar_full_width' ) {
+		$content_width = 1100; /* pixels */ } elseif ( $layout_meta == 'both_sidebar' ) {
+		$content_width = 500; /* pixels */ } else {
+			$content_width = 710; /* pixels */ }
 }
 add_action( 'template_redirect', 'ample_content_width' );
 
 add_action( 'after_setup_theme', 'ample_setup' );
 
 if ( ! function_exists( 'ample_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- */
-function ample_setup() {
-
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
 	 */
-	load_theme_textdomain( 'ample', get_template_directory() . '/languages' );
+	function ample_setup() {
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 */
+		load_theme_textdomain( 'ample', get_template_directory() . '/languages' );
 
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	// Gutenberg layout support.
-	add_theme_support( 'align-wide' );
+		/*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+		add_theme_support( 'title-tag' );
 
-	// Gutenberg block layout support.
-	add_theme_support( 'wp-block-styles' );
+		// Gutenberg layout support.
+		add_theme_support( 'align-wide' );
 
-	// Gutenberg editor support.
-	add_theme_support( 'responsive-embeds' );
+		// Gutenberg block layout support.
+		add_theme_support( 'wp-block-styles' );
 
-	//Enable support for Post Thumbnails on posts and pages.
-	add_theme_support( 'post-thumbnails' );
+		// Gutenberg editor support.
+		add_theme_support( 'responsive-embeds' );
 
-	// Added WooCommerce support.
-	add_theme_support( 'woocommerce' );
-	add_theme_support( 'wc-product-gallery-zoom' );
-	add_theme_support( 'wc-product-gallery-lightbox' );
-	add_theme_support( 'wc-product-gallery-slider' );
+		//Enable support for Post Thumbnails on posts and pages.
+		add_theme_support( 'post-thumbnails' );
 
-   // Cropping the images to different sizes to be used in the theme
-	add_image_size( 'ample-featured-blog-large', 710, 300, true );
-	add_image_size( 'ample-featured-blog-small', 230, 230, true );
-	add_image_size( 'ample-portfolio-image', 330, 330, true );
+		// Added WooCommerce support.
+		add_theme_support( 'woocommerce' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
-	// Registering navigation menus.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'ample' ),
-		'footer' => __( 'Footer Menu', 'ample' ),
-	) );
+		// Cropping the images to different sizes to be used in the theme
+		add_image_size( 'ample-featured-blog-large', 710, 300, true );
+		add_image_size( 'ample-featured-blog-small', 230, 230, true );
+		add_image_size( 'ample-portfolio-image', 330, 330, true );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
-	) );
+		// Registering navigation menus.
+		register_nav_menus(
+			array(
+				'primary' => __( 'Primary Menu', 'ample' ),
+				'footer'  => __( 'Footer Menu', 'ample' ),
+			)
+		);
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'ample_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
-	// Adding excerpt option box for pages as well
-	add_post_type_support( 'page', 'excerpt' );
+		// Set up the WordPress core custom background feature.
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'ample_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
-	// Adds the support for the Custom Logo introduced in WordPress 4.5
- 	add_theme_support( 'custom-logo',
- 		array(
- 			'flex-width' => true,
- 			'flex-height' => true,
- 		)
- 	);
+		// Adding excerpt option box for pages as well
+		add_post_type_support( 'page', 'excerpt' );
 
- 	// Support for selective refresh widgets in Customizer
-	add_theme_support( 'customize-selective-refresh-widgets' );
-}
+		// Adds the support for the Custom Logo introduced in WordPress 4.5
+		add_theme_support(
+			'custom-logo',
+			array(
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
+
+		// Support for selective refresh widgets in Customizer
+		add_theme_support( 'customize-selective-refresh-widgets' );
+	}
 endif; // ample_setup
 
 /**
@@ -144,17 +163,22 @@ require get_template_directory() . '/inc/custom-header.php';
 /**
  * Add meta Box
  */
-require get_template_directory() . '/inc/admin/meta-boxes.php';
+add_action(
+	'init',
+	function () {
+		require get_template_directory() . '/inc/admin/meta-boxes.php';
+	}
+);
 
 /**
  * Add Customizer
  */
-require_once( get_template_directory() . '/inc/customizer.php' );
+require_once get_template_directory() . '/inc/customizer.php';
 
 /**
  * Detect plugin. For use on Front End only.
  */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 /**
  * Assign the Ample version to a variable.
@@ -174,4 +198,3 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-ample-upgrade-notice.php';
 	require get_template_directory() . '/inc/admin/class-ample-theme-review-notice.php';
 }
-

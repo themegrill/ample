@@ -54,6 +54,9 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= Version 1.3.6 -2025-06-02 =
+* Update - Fontawesome to 6.7.2.
+
 = Version 1.3.5 -2023-09-18 =
 * Tweak - Updated WordPress tested upto version to 6.3.
 
