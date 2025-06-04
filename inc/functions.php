@@ -67,7 +67,7 @@ function ample_scripts() {
 	foreach ( $font_awesome_styles as $style ) {
 		wp_register_style(
 			$style['handle'],
-			get_template_directory_uri() . '/fontawesome/css' . $style['file'] . $suffix . '.css',
+			get_template_directory_uri() . '/font-awesome/css' . $style['file'] . $suffix . '.css',
 			false,
 			$style['version']
 		);
