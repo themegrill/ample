@@ -54,6 +54,11 @@ If you want to translate this theme to your language, Please visit:- https://tra
 /**********************************************************/
 
 == Changelog ==
+= Version 1.3.9 - 2026-10-07 =
+* Fix - PHP 8 warning in the slider when its image is not in the media library.
+* Fix - PHP 8 warnings when a widget is saved without every field.
+* Update - Starter Templates plugin name in the welcome notice.
+
 = Version 1.3.8 - 2025-08-12 =
 * Update - General security measure.
 
