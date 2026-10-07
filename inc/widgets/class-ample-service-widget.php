@@ -77,6 +77,12 @@ class ample_service_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$keys = array( 'service_menu_id', 'title', 'text', 'image', 'select_column' );
+		for ( $i = 1; $i <= 16; $i++ ) {
+			$keys[] = 'page_id' . $i;
+		}
+		$new_instance = wp_parse_args( (array) $new_instance, array_fill_keys( $keys, '' ) );
+
 		$instance = $old_instance;
 		$instance[ 'title' ] = strip_tags( $new_instance[ 'title' ] );
 		for( $i=1; $i<=6; $i++ ) {

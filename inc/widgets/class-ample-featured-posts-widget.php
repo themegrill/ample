@@ -63,6 +63,16 @@ class ample_featured_posts_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'featured_menu_id', 'title', 'text', 'number', 'type', 'category'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );

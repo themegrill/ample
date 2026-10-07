@@ -102,6 +102,16 @@ class ample_portfolio_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'portfolio_menu_id', 'background_color', 'background_image', 'attachment', 'title', 'text', 'number', 'category', 'button_text', 'button_url', 'column'
+				),
+				''
+			)
+		);
+
 		$instance                     = $old_instance;
 		$instance['background_color'] = $new_instance['background_color'];
 		$instance['background_image'] = esc_url_raw( $new_instance['background_image'] );

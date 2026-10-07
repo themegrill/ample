@@ -73,6 +73,16 @@ class ample_call_to_action_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'background_color', 'background_image', 'bg_attachment', 'text_main', 'text_description', 'button_text', 'button_url'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 
 		$instance['background_color'] =  $new_instance['background_color'];
